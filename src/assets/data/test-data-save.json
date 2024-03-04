@@ -1,0 +1,267 @@
+[
+  {
+    "title": "Quality of life",
+    "questions": [
+      {
+        "question": "Your company Ecology awareness strategy is comprehensive.",
+        "questionType": 3
+      },
+      {
+        "question": "Your company Ecology awareness roadmap has clearly defined time bounds.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company Ecology awareness roadmap has clearly defined ROI targets.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company Ecology awareness roadmap is approved by the C-level executives.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company has a dedicated Ecology awareness development budget.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company Ecology awareness strategy is broadly known by its employees.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "What companies are top of mind in the area of Ecology awareness strategy consulting?",
+        "questionType": 2
+      },
+      {
+        "question": "Which of your peers / competitors do you think have come the furthest in their Ecology awareness strategy?",
+        "questionType": 2
+      }
+    ]
+  },
+  {
+    "title": "People",
+    "questions": [
+      {
+        "question": "Your company recruits Ecology awareness talent primarily through recruiting agencies.",
+        "questionType": 1,
+        "agree": false
+      },
+      {
+        "question": "New Ecology awareness talents have an onboarding process to become effective quickly.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company has the Ecology awareness talent in place to capitalize on the most cutting edge Ecology awareness systems possible today.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Ecology awareness talents have career development paths aimed at keeping them highly motivated.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company makes a clear distinction between centralized and decentralized Ecology awareness competence.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company has a strategy for attracting more Ecology awareness talent than its competitors.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Individuals with a history of highly successful Ecology awareness projects are tasked with screening potential new hires.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company has a strategy in place for increasing the Ecology awareness competence of its technical employees.",
+        "questionType": 1,
+        "agree": true
+      }
+    ]
+  },
+  {
+    "title": "Data",
+    "questions": [
+      {
+        "question": "Your company continuously produces data from its customer-facing services.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company uses tools to specify and manage data-lifecycles.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company uses tools to track data-lineage.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company uses tools to version control data.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company uses tools to manage business-approved data-processing algorithms.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company uses the same tools to manage both internal and external data sources.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company controls access to data using centralized authentication and authorization.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company has a data-archiving strategy that includes everything from date formats to binary serialization.",
+        "questionType": 1,
+        "agree": true
+      }
+    ]
+  },
+  {
+    "title": "Technology",
+    "questions": [
+      {
+        "question": "Your company has decoupled platforms for data storage, processing, Ecology awareness deployment, and more.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company has a standardized Ecology awareness development environment.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company has developer tools capable of capitalizing on the most cutting edge Ecology awareness systems possible today.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company uses specialized hardware for Ecology awareness development.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company uses industry standard Ecology awareness model formats, data formats, and interfaces for production services.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company uses technology that is more advanced than your competitors.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "What tooling and software are top of mind when it comes to Ecology awareness technology?",
+        "questionType": 2
+      },
+      {
+        "question": "What company or organizations are top of mind when it comes to leading Ecology awareness tooling and software?",
+        "questionType": 2
+      }
+    ]
+  },
+  {
+    "title": "Tactics / Operations Model",
+    "questions": [
+      {
+        "question": "Your company develops Ecology awareness-capabilities that are reusable.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company catalogues and tracks each Ecology awareness-system lifecycle.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company monitors its Ecology awareness-systems through business KPIs.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company ensures data quality through master data management.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company has a dedicated development environment for rapid prototyping.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company architects IT systems so they can be replaced with minimal effort.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company can implement new Ecology awareness capabilities more quickly than its competitors.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company requires all code to be version controlled, documented, and pass unit / integration tests.",
+        "questionType": 1,
+        "agree": true
+      }
+    ]
+  },
+  {
+    "title": "Cross-Functional Abilities",
+    "questions": [
+      {
+        "question": "Your company uses Ecology awareness evangelists to communicate learnings and replicate successful Ecology awareness projects internally.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company has a strategy for increasing Ecology awareness literacy (competence/understanding) across non-technical personnel.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company has established industry partnerships with trusted technology experts in order to extend its Ecology awareness development capabilities.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company has centralized processes to ensure compliance with privacy guidelines, GDPR, and more.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company has infosec processes in place which govern Ecology awareness development.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company has a dedicated research and new-growth budget.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company leverages Ecology awareness to reach sustainability goals.",
+        "questionType": 1,
+        "agree": true
+      },
+      {
+        "question": "Your company has a dedicated Ecology awareness ethics manager.",
+        "questionType": 1,
+        "agree": true
+      }
+    ]
+  }
+]
