@@ -43,32 +43,60 @@ export class ResultSectionComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log("FREDYYYYYY");
     forkJoin([
       this.apiService.getTestData(),
       this.appService.answers$.pipe(filter(Boolean), take(1))
     ]).subscribe(([categories, answers]) => this.calculateResult(categories, answers))
   }
 
+  // private calculateResult(categories: Category[], testAnswers: TestAnswers): void {
+  //   const categoriesTotals = categories.map(category => category.questions.filter(question => question.questionType === QuestionTypeEnum.Agree).length * 5);
+  //   this.total = categories.length * 50;
+  //   const categoriesScores = testAnswers.answers
+  //     .map((category, ci) =>
+  //       Math.round(category.reduce((catAcc, answer, i) => {
+  //         const question = categories![ci].questions[i];
+  //         const score = answer.score || 0;
+  //         catAcc += score ? Math.abs(score - (question.agree ? 0 : 6)) : 0;
+  //         return catAcc;
+  //       }, 0) * 50 / categoriesTotals[ci])
+  //     );
+  //   this.categoriesScores = categoriesScores;
+  //   this.score = categoriesScores.reduce((acc, categoriesScore) => {
+  //     acc += categoriesScore;
+  //     return acc;
+  //   }, 0);
+  //   this.getResultObject();
+  //   this.buildChart(categories.map((category, i) => ({ ...category, score: categoriesScores[i] })));
+  // }
+
   private calculateResult(categories: Category[], testAnswers: TestAnswers): void {
-    const categoriesTotals = categories.map(category => category.questions.filter(question => question.questionType === QuestionTypeEnum.Agree).length * 5);
-    this.total = categories.length * 50;
-    const categoriesScores = testAnswers.answers
-      .map((category, ci) =>
-        Math.round(category.reduce((catAcc, answer, i) => {
-          const question = categories![ci].questions[i];
-          const score = answer.score || 0;
-          catAcc += score ? Math.abs(score - (question.agree ? 0 : 6)) : 0;
-          return catAcc;
-        }, 0) * 50 / categoriesTotals[ci])
-      );
+    const categoriesTotals = categories.map(category =>
+      category.questions.filter(question => question.questionType === QuestionTypeEnum.Agree).length * 5
+    );
+    this.total = categories.reduce((total, category) => total + category.questions.length * 500, 0);
+
+    const categoriesScores = testAnswers.answers.map((category, ci) => {
+      let categoryScore = 0;
+      category.forEach((answer, i) => {
+        const question = categories[ci].questions.find((_, index) => index === i);
+        if (question) {
+          const boolValue = answer.Bool;
+          categoryScore += boolValue ? 5 : 0; // Assuming each true value adds 5 to the score
+        }
+      });
+      return Math.round((categoryScore) * 50);
+    });
+
     this.categoriesScores = categoriesScores;
-    this.score = categoriesScores.reduce((acc, categoriesScore) => {
-      acc += categoriesScore;
-      return acc;
-    }, 0);
+
+    this.score = categoriesScores.reduce((acc, categoryScore) => acc + categoryScore, 0);
+
     this.getResultObject();
     this.buildChart(categories.map((category, i) => ({ ...category, score: categoriesScores[i] })));
   }
+
 
   private buildChart(categories: ExtendedCategory[]): void {
     const ctx = document.getElementById('myChart') as ChartItem;
@@ -77,7 +105,7 @@ export class ResultSectionComponent implements OnInit {
       data: {
         labels: categories.map(x => x.title),
         datasets: [{
-          data: categories.map(x => x.score),
+          data: categories.map(x => x.score/10),
           fill: true,
           backgroundColor: 'rgba(208, 215, 221, 0.5)',
           borderColor: 'rgb(208, 215, 221)',
@@ -102,7 +130,7 @@ export class ResultSectionComponent implements OnInit {
         scales: {
           r: {
             min: 0,
-            max: 50,
+            max: 100,
             ticks: {
               stepSize: 10,
               color: 'black',

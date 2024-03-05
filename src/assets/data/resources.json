@@ -1,14 +1,20 @@
 [
   {
-    "title": " The Essential Handbook For Leaders",
+    "title": " The Essential Handbook For Companies to Improve their ecology awareness",
     "description": "",
-    "imageUrl": "assets/images/resources/ai-handbook.jpg",
-    "url": "https://drive.google.com/file/d/1qMhIFLBahNBCAvtmKgzmc-e7DbQScdEU/view"
+    "imageUrl": "assets/images/resources/guide.webp",
+    "url": "#"
   },
   {
-    "title": "The 7 levels of green purgatory and how to escape them",
+    "title": "Green Horizons: A Comprehensive Guide for Reducing Corporate Carbon Footprints and Enhancing Sustainability",
     "description": "",
-    "imageUrl": "assets/images/resources/seven-levels.jpg",
-    "url": "https://drive.google.com/file/d/1__sWFJ8H7BDv9ZsehQnztQxEku9pSrM9/view"
+    "imageUrl": "assets/images/resources/handbook.webp",
+    "url": "#"
+  },
+  {
+    "title": "Roots of Renewal: A Corporate Guide to Ecological Regeneration and Sustainable Growth",
+    "description": "",
+    "imageUrl": "assets/images/resources/businessman.webp",
+    "url": "#"
   }
 ]
