@@ -5,7 +5,7 @@
       {
         "question": "Improve Community Quality of Life",
         "questionType": 3,
-        "agree": true,
+        "agree": null,
         "subsection": "Wellbeing",
         "subsectionTitle": "Improve community Quality of Life",
         "subsectionIntent": "Intent: Improve the net quality of life of all communities affected by the organisation and/or project and mitigate negative impacts to communities.",
@@ -15,7 +15,7 @@
       {
         "question": "Your company Ecology Awareness roadmap has clearly defined time bounds.",
         "questionType": 3,
-        "agree": true,
+        "agree": null,
         "subsection": "Wellbeing",
         "subsectionTitle": "Improve communit xy Quality of Life",
         "subsectionIntent": "Intent: Improve the net quality of life of all communities affected by the organisation and/or project and mitigate negative impacts to communities.",
@@ -61,7 +61,7 @@
       {
         "question": "New Ecology Awareness talents have an onboarding process to become effective quickly.",
         "questionType": 3,
-        "agree": true,
+        "agree": null,
         "subsection": "Leadership Support",
         "subsectionTitle": "Leadership Support and Commitment",
         "subsectionIntent": "Intent: Obtain commitment and support from organizational leaders to prioritize and champion Ecology Awareness initiatives.",
@@ -77,7 +77,7 @@
       {
         "question": "Your company continuously produces data from its customer-facing services.",
         "questionType": 3,
-        "agree": true,
+        "agree": null,
         "subsection": "Data Management",
         "subsectionTitle": "Data Management and Governance",
         "subsectionIntent": "Intent: Implement effective data management and governance practices to ensure the quality, security, and accessibility of data.",
@@ -87,7 +87,7 @@
       {
         "question": "Your company uses tools to specify and manage data-lifecycles.",
         "questionType": 3,
-        "agree": true,
+        "agree": null,
         "subsection": "Data Governance",
         "subsectionTitle": "Data Governance and Lifecycle Management",
         "subsectionIntent": "Intent: Establish policies and procedures for governing data throughout its lifecycle, from creation to disposal, to ensure compliance, integrity, and usability.",
@@ -102,7 +102,7 @@
       {
         "question": "Your company actively supports local conservation efforts for endangered species.",
         "questionType": 3,
-        "agree": true,
+        "agree": null,
         "subsection": "Data Management",
         "subsectionTitle": "Data Management and Governance",
         "subsectionIntent": "Intent: Implement effective data management and governance practices to ensure the quality, security, and accessibility of data.",
@@ -112,7 +112,7 @@
       {
         "question": "Your company partners with local environmental organizations for habitat restoration projects.",
         "questionType": 3,
-        "agree": true,
+        "agree": null,
         "subsection": "Data Governance",
         "subsectionTitle": "Data Governance and Lifecycle Management",
         "subsectionIntent": "Intent: Establish policies and procedures for governing data throughout its lifecycle, from creation to disposal, to ensure compliance, integrity, and usability.",
@@ -127,7 +127,7 @@
       {
         "question": "Your company actively supports local conservation efforts for endangered species.",
         "questionType": 3,
-        "agree": true,
+        "agree": null,
         "subsection": "Data Management",
         "subsectionTitle": "Data Management and Governance",
         "subsectionIntent": "Intent: Implement effective data management and governance practices to ensure the quality, security, and accessibility of data.",
@@ -137,7 +137,7 @@
       {
         "question": "Your company partners with local environmental organizations for habitat restoration projects.",
         "questionType": 3,
-        "agree": true,
+        "agree": null,
         "subsection": "Data Governance",
         "subsectionTitle": "Data Governance and Lifecycle Management",
         "subsectionIntent": "Intent: Establish policies and procedures for governing data throughout its lifecycle, from creation to disposal, to ensure compliance, integrity, and usability.",
@@ -152,7 +152,7 @@
       {
         "question": "Your company actively supports local conservation efforts for endangered species.",
         "questionType": 3,
-        "agree": true,
+        "agree": null,
         "subsection": "Data Management",
         "subsectionTitle": "Data Management and Governance",
         "subsectionIntent": "Intent: Implement effective data management and governance practices to ensure the quality, security, and accessibility of data.",
@@ -162,7 +162,7 @@
       {
         "question": "Your company partners with local environmental organizations for habitat restoration projects.",
         "questionType": 3,
-        "agree": true,
+        "agree": null,
         "subsection": "Data Governance",
         "subsectionTitle": "Data Governance and Lifecycle Management",
         "subsectionIntent": "Intent: Establish policies and procedures for governing data throughout its lifecycle, from creation to disposal, to ensure compliance, integrity, and usability.",
