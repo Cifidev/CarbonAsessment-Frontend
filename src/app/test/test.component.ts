@@ -70,9 +70,17 @@ export class TestComponent implements OnInit {
     });
 
     this.appService.answers$.pipe(take(1)).subscribe(value => this.form?.patchValue(value || {}))
-
     this.form.valueChanges.subscribe(value => this.appService.setAnswers(value));
   }
+
+  selectAnswer(value: number, questionIndex: number) {
+    const control = ((this.form?.controls.answers as TypedFormArray<Answer[]>)
+        .controls[this.activeStepIdx] as TypedFormArray<Answer>)
+        .at(questionIndex).get('Bool');
+    if (control) {
+        control.setValue(value);
+    }
+}
 
   getTestData(): void {
     this.isLoading = true;

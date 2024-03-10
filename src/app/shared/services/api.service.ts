@@ -44,23 +44,44 @@ export class ApiService {
   }
 
   submitAnswers({ answers }: TestAnswers): Observable<FirebaseResponse> {
+    // Function to submit test answers to the server
+    console.log("HELLOOO  ");
+    // Log a message indicating that the function has been called
+    
     return forkJoin([
+      // Combine multiple Observables into a single Observable
       this.appService.userInfo$.pipe(filter(Boolean), take(1)),
+      // Retrieve user information from the app service
+      
       this.getTestData()
+      // Retrieve test data from the server
     ]).pipe(switchMap(([{ id: userId, ...user }, categories]) =>
+      // Map and switch to another Observable, using the combined results
       this.http.put<FirebaseResponse>(this.firebaseUrl + `users/${userId}.json`,
+        // Make an HTTP PUT request to update user data in Firebase
         {
           ...user,
+          // Spread user information
           time: new Date().toString(),
+          // Add current timestamp to indicate the time of submission
           answers: categories.map((category, ci) => ({
+            // Map through categories to structure the answers
             category: category.title,
+            // Include the category title
             questions: category.questions.map((question, qi) => ({
+              // Map through questions within each category
               ...question,
+              // Spread question information
               ...answers[ci][qi]
+              // Include the answers for each question
             }))
           }))
+          // Map through questions and include answers for each category
         }
       )
     ))
+    // End of switchMap operator
   }
+  // End of function
+  
 }
