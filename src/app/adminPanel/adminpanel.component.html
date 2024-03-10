@@ -1,0 +1,66 @@
+<div class="landing-wrapper">
+  <div class="container-fluid container-lg marginT5EM">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="pe-2">Green Cross Administration Panel</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid container-lg">
+    <div class="row">
+      <div class="col-lg-12">
+        <ng-container>
+          <button (click)="showResults()" class="btn btn-outline-primary my-4">
+            Search Results
+          </button>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  <ng-container *ngIf="isResultInfoVisible">
+    <div class="container-fluid container-lg">
+      <div class="row">
+        <div class="col-lg-6">
+          <input
+            type="text"
+            [formControl]="searchText"
+            placeholder="Search"
+            class="inputSearch"
+          />
+        </div>
+      </div>
+      <ng-container *ngIf="showResultTable">
+        <div class="row">
+          <div class="col-lg-6 tableSearch">
+            <table class="">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Name contant</th>
+                  <th>Email</th>
+                  <th>View</th>
+                  <!-- Columna para acciones -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of filteredData">
+                  <td>{{ item.id }}</td>
+                  <td>{{ item.companyName }}</td>
+                  <td>{{ item.contactName }}</td>
+                  <td>{{ item.email }}</td>
+                  <td>
+                    <span
+                      class="icon bi bi-arrow-right-circle"
+                      (click)="handleIconClick(item.id)"
+                    ></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </ng-container>
+</div>
