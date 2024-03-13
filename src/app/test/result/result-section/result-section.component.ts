@@ -27,16 +27,16 @@ export class ResultSectionComponent implements OnInit {
   }
 
   private static getScoreColor(score: number): string {
-    if (score >= 40) {
+    if (score >= 100) {
       return '#22AF49';
     }
-    if (score >= 30) {
+    if (score >= 60) {
       return '#A8BF19';
     }
-    if (score >= 20) {
+    if (score >= 40) {
       return '#FFF500';
     }
-    if (score >= 10) {
+    if (score >= 20) {
       return '#FF9D47';
     }
     return '#FF4740'
@@ -72,6 +72,7 @@ export class ResultSectionComponent implements OnInit {
   // }
 
   private calculateResult(categories: Category[], testAnswers: TestAnswers): void {
+    console.log("Calculating result");
     const categoriesTotals = categories.map(category =>
       category.questions.filter(question => question.questionType === QuestionTypeEnum.Agree).length * 5
     );
@@ -82,7 +83,7 @@ export class ResultSectionComponent implements OnInit {
       category.forEach((answer, i) => {
         const question = categories[ci].questions.find((_, index) => index === i);
         if (question) {
-          const boolValue = answer.Bool;
+          const boolValue = answer.Bool === 1;
           categoryScore += boolValue ? 5 : 0; // Assuming each true value adds 5 to the score
         }
       });

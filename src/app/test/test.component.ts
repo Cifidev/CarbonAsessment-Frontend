@@ -33,6 +33,7 @@ export class TestComponent implements OnInit {
   isLoading = true;
   form?: TypedFormGroup<TestAnswers>;
 
+
   constructor(private apiService: ApiService, private appService: AppService, private router: Router) {
   }
 
@@ -48,23 +49,23 @@ export class TestComponent implements OnInit {
     this.form = new TypedFormGroup<TestAnswers>({
       answers: new TypedFormArray<Answer[]>(
         categories.map(category => new TypedFormArray<Answer>(
-            category.questions.map((question) => {
-                const controls: TypedFormGroup<Answer>['controls'] = {};
-                switch (question.questionType) {
-                  case QuestionTypeEnum.Agree:
-                    controls.score = new FormControl(0);
-                    break;
-                  case QuestionTypeEnum.FreeText:
-                    controls.freeText = new FormControl('');
-                    break;
-                    case QuestionTypeEnum.Bool:
-                    controls.Bool = new FormControl(false);
-                    break;
-                }
-                return new TypedFormGroup<Answer>(controls)
-              }
-            )
+          category.questions.map((question) => {
+            const controls: TypedFormGroup<Answer>['controls'] = {};
+            switch (question.questionType) {
+              case QuestionTypeEnum.Agree:
+                controls.score = new FormControl(0);
+                break;
+              case QuestionTypeEnum.FreeText:
+                controls.freeText = new FormControl('');
+                break;
+              case QuestionTypeEnum.Bool:
+                controls.Bool = new FormControl(false);
+                break;
+            }
+            return new TypedFormGroup<Answer>(controls)
+          }
           )
+        )
         )
       )
     });
@@ -75,12 +76,12 @@ export class TestComponent implements OnInit {
 
   selectAnswer(value: number, questionIndex: number) {
     const control = ((this.form?.controls.answers as TypedFormArray<Answer[]>)
-        .controls[this.activeStepIdx] as TypedFormArray<Answer>)
-        .at(questionIndex).get('Bool');
+      .controls[this.activeStepIdx] as TypedFormArray<Answer>)
+      .at(questionIndex).get('Bool');
     if (control) {
-        control.setValue(value);
+      control.setValue(value);
     }
-}
+  }
 
   getTestData(): void {
     this.isLoading = true;
@@ -124,6 +125,32 @@ export class TestComponent implements OnInit {
       return;
     }
     this.isLoading = true;
+    //Preparing data to be submited to server for storage
+    const formAnswers = this.form.value;
+    // Loop through each category in this.categories
+    this.categories.forEach((category, categoryIndex) => {
+
+      // Check if answers for current categoryIndex exist and are not undefined
+      if (
+        this.form &&
+        this.form.value.answers[categoryIndex] !== undefined
+      ) {
+        // Loop through each question in the category
+        category.questions.forEach((question, questionIndex) => {
+          // Check if answers for current questionIndex exist and are not undefined
+          if (
+            formAnswers.answers[categoryIndex][questionIndex] !== undefined
+          ) {
+            // Access the Bool value from this.form.value
+            const boolValue = formAnswers.answers[categoryIndex][questionIndex].Bool;
+            // Update the agree field based on the Bool value
+            category.questions[questionIndex].agree = boolValue === 1 ? true : false;
+          }
+        });
+      }
+    });
+    this.loadReadingMode();
+    //Integración: aquí podremos enviar this.categories a back con respuestas correctas.
     this.apiService.submitAnswers(this.form.value)
       .pipe(finalize(() => this.isLoading = false))
       .subscribe(() => {
@@ -144,5 +171,30 @@ export class TestComponent implements OnInit {
     }
     this.activeStepIdx = i;
     window.scrollTo(0, 0);
+  }
+
+  loadReadingMode() {
+    //Integración: este método transforma json de preguntas con respuesta en el formato que el formulario necesita para rellenar preguntas
+
+    const categories = this.categories;
+    // Function to convert the JSON format to the desired format
+    function convertToBoolArray(category: any[]): { answers: any[][] } {
+      const answers = category.map(category =>
+        category.questions.map((question: { agree: any; }) => ({
+          Bool: question.agree ? 1 : 2
+        }))
+      );
+
+      return {answers}
+    }
+
+    // Convert JSON data to the desired format
+    if (categories) {
+      const boolArray = convertToBoolArray(categories);
+      console.log(JSON.stringify(boolArray, null, 2));
+
+      this.appService.setAnswers(boolArray)
+    }
+
   }
 }
