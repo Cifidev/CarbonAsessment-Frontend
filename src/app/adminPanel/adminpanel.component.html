@@ -40,6 +40,7 @@
                   <th>Name contant</th>
                   <th>Email</th>
                   <th>View</th>
+                  <th>Checked</th>
                   <!-- Columna para acciones -->
                 </tr>
               </thead>
@@ -54,6 +55,17 @@
                       class="icon bi bi-arrow-right-circle"
                       (click)="handleIconClick(item.id)"
                     ></span>
+                  </td>
+                  <td>
+                    <ng-container *ngIf="item.checked">
+                      <span class="icon bi bi-check2-circle"></span>
+                    </ng-container>
+                    <ng-container *ngIf="!item.checked">
+                      <span
+                        class="icon bi bi-x-circle"
+                        
+                      ></span>
+                    </ng-container>
                   </td>
                 </tr>
               </tbody>

@@ -44,9 +44,9 @@ enum InputTypesEnum {
 export class AdminPanelComponent implements OnInit {
   searchText: FormControl = new FormControl();
   data: any[] = [
-    { id: 1, companyName: 'Empresa A', contactName: 'Juan', email: 'juan@empresaA.com' },
-    { id: 2, companyName: 'Empresa B', contactName: 'Maria', email: 'maria@empresaB.com' },
-    { id: 3, companyName: 'Empresa C', contactName: 'Pedro', email: 'pedro@empresaC.com' }
+    { id: 1, companyName: 'Empresa A', contactName: 'Juan', email: 'juan@empresaA.com', checked: true},
+    { id: 2, companyName: 'Empresa B', contactName: 'Maria', email: 'maria@empresaB.com', checked: false },
+    { id: 3, companyName: 'Empresa C', contactName: 'Pedro', email: 'pedro@empresaC.com', checked: true }
     // Aquí irían más datos si los tuvieras
   ];
   filteredData: any[];
@@ -92,10 +92,9 @@ export class AdminPanelComponent implements OnInit {
     if(localStorage.getItem("idTableSearch") == undefined || localStorage.getItem("idTableSearch") == ""){
       localStorage.setItem("idTableSearch",itemId.toString());
     }else{
-      localStorage.clear();
       localStorage.setItem("idTableSearch",itemId.toString());
     }
-    this.router.navigateByUrl('/test');
+    this.router.navigateByUrl('/viewTest');
 
   }
   filterData(value: string) {

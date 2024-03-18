@@ -29,12 +29,14 @@ interface IInput {
     value: IOption['value'];
   }
   icon?: string;
+  tipe?:string;
 }
 
 enum InputTypesEnum {
   Select,
   Text,
-  TextArea
+  TextArea, 
+  Password
 }
 @Component({
   selector: 'app-login',
@@ -45,11 +47,12 @@ export class LoginComponent implements OnInit {
   isUserInfoVisible = false;
   savedUser?: User;
   form: TypedFormGroup<IForm>;
-  inputs: IInput[] = [
-    { label: 'User', formControlName: 'username', icon: 'bi bi-person' },
-    { label: 'Pass', formControlName: 'pass' },
-  ];
   inputTypes = InputTypesEnum;
+  inputs: IInput[] = [
+    { label: 'User', formControlName: 'username', icon: 'bi bi-person', tipe: 'text'},
+    { label: 'Pass', formControlName: 'pass', icon: 'bi bi-lock', tipe: 'password'},
+  ];
+  
   isLoading = false;
   constructor(private appService: AppService, private router: Router, private apiService: ApiService) {
     this.form = new TypedFormGroup<IForm>({
