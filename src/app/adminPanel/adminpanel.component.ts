@@ -85,7 +85,7 @@ export class AdminPanelComponent implements OnInit {
     this.greencrossServices.get('getUserForm').subscribe(
       (data) => {
         console.log(data);
-        // this.createTable(data);
+        this.createTable(data);
       },
       (err) => {
         console.log(err);
@@ -99,7 +99,7 @@ export class AdminPanelComponent implements OnInit {
 
   createTable(data:any){
     const newDataArray: any[] = data.map((item:any) => ({
-      id: item._id,
+      id: item.user.id,
       companyName: item.user.companyName,
       contactName: item.user.firstName + ' ' + item.user.lastName,
       email: item.user.email, 
@@ -107,17 +107,38 @@ export class AdminPanelComponent implements OnInit {
     }));
     this.data = newDataArray;
   }
-  handleIconClick(itemId: number) {
-    // Aquí puedes implementar la lógica para manejar el clic en el icono
-    console.log('Se hizo clic en el icono del elemento con ID:', itemId);
-    if(localStorage.getItem("idTableSearch") == undefined || localStorage.getItem("idTableSearch") == ""){
-      localStorage.setItem("idTableSearch",itemId.toString());
-    }else{
-      localStorage.setItem("idTableSearch",itemId.toString());
-    }
-    this.router.navigateByUrl('/viewTest');
+  
+  // handleIconClick(itemId: number) {
+  //   // Aquí puedes implementar la lógica para manejar el clic en el icono
+  //   console.log('Se hizo clic en el icono del elemento con ID:', itemId);
+  //   if(localStorage.getItem("idTableSearch") == undefined || localStorage.getItem("idTableSearch") == ""){
+  //     localStorage.setItem("idTableSearch",itemId.toString());
+  //   }else{
+  //     localStorage.setItem("idTableSearch",itemId.toString());
+  //   }
+  //   this.router.navigateByUrl('/viewTest');
 
-  }
+  // }
+
+  handleIconClick(itemId: string) {
+    // Make the API request to your backend with the itemId as a parameter
+    this.greencrossServices.getParam("getUserTest",itemId).subscribe(
+      (data) => {
+        console.log(data);
+        localStorage.setItem("fullTest",data.questions);
+        this.router.navigateByUrl('/viewTest');
+        // Process the response data as needed
+      },
+      (err) => {
+        console.log(err);
+        // Handle any errors if the request fails
+      },
+      () => {
+        // Perform any cleanup or finalization tasks if needed
+      }
+    );
+    }
+  
   filterData(value: string) {
     if(this.searchText.value != ''){
       this.showResultTable = true;
