@@ -2,6 +2,6 @@ import { answerInfo } from "./answerInfo";
 import { User } from "./user";
 
 export class FormUpdate {
-  userinfo: User;
+  userInfo: any;
   answerInfo: answerInfo;
 }

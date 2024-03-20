@@ -8,6 +8,7 @@ import { Category } from '@shared/models/category';
 import { FormUpdate } from '@shared/models/formUpdate';
 import { QuestionInfo } from '@shared/models/questionInfo';
 import { TestAnswers } from '@shared/models/test-answers';
+import { User } from '@shared/models/user';
 import { ApiService } from '@shared/services/api.service';
 import { AppService } from '@shared/services/app.service';
 import { GreencrossService } from '@shared/services/greencross.service';
@@ -43,7 +44,7 @@ export class TestComponent implements OnInit {
     private appService: AppService,
     private greencrossServices: GreencrossService,
     private router: Router
-  ) {}
+  ) { }
 
   get prevStepTitle(): string {
     return this.categories![this.activeStepIdx - 1].title;
@@ -95,7 +96,7 @@ export class TestComponent implements OnInit {
   selectAnswer(value: number, questionIndex: number) {
     const control = (
       (this.form?.controls.answers as TypedFormArray<Answer[]>).controls[
-        this.activeStepIdx
+      this.activeStepIdx
       ] as TypedFormArray<Answer>
     )
       .at(questionIndex)
@@ -120,7 +121,7 @@ export class TestComponent implements OnInit {
     }
     const questions = (
       (this.form.controls.answers as TypedFormArray<Answer[]>).controls[
-        i
+      i
       ] as TypedFormArray<Answer>
     ).controls;
     const answeredQuestionsCount = questions.filter(
@@ -171,10 +172,13 @@ export class TestComponent implements OnInit {
     //Integración: aquí podremos enviar this.categories a back con respuestas correctas.
     const userI = localStorage.getItem('GreenCross_user');
     if (userI) {
-      this.formUpdate.userinfo = JSON.parse(userI);
+      this.formUpdate.userInfo = {
+        user: JSON.parse(userI) as User // Type assertion
+      };
+
+      this.formUpdate.answerInfo = new answerInfo();
+      this.formUpdate.answerInfo.questions = this.categories;
     }
-    this.formUpdate.answerInfo.questions = this.categories;
-   
     this.greencrossServices.post('setFormResult', this.formUpdate).subscribe(
       (data) => {
         console.log(data);
@@ -182,7 +186,7 @@ export class TestComponent implements OnInit {
       (err) => {
         console.log(err);
       },
-      () => {}
+      () => { }
     );
     this.apiService
       .submitAnswers(this.form.value)
