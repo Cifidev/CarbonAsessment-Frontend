@@ -65,11 +65,7 @@ export class GreencrossService {
 	}
 	post(service: string, body: any): Observable<any> {
 		let headers = new HttpHeaders({
-			'Content-Type': 'application/json',
-			'Access-Control-Allow-Origin': 'http://localhost:4200', // Especifica el origen permitido
-			'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE', // Métodos HTTP permitidos
-			'Access-Control-Allow-Headers': 'Content-Type, Authorization', // Encabezados personalizados permitidos
-			'Access-Control-Allow-Credentials': 'true' // Permitir cookies
+			'Content-Type': 'application/json'
 		});
 		return this.http
 			.post(environment.urlback + this.endpoints[service], body, {

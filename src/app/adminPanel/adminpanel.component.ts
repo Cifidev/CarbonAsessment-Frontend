@@ -7,6 +7,7 @@ import { ApiService } from "@shared/services/api.service";
 import { AppService } from "@shared/services/app.service";
 import { GreencrossService } from '@shared/services/greencross.service';
 import { TypedFormGroup } from "@shared/utils/typed-form-group";
+import { Observable, finalize } from 'rxjs';
 
 interface IForm extends UserLogin {
   //acceptTerms: boolean;
@@ -126,35 +127,31 @@ export class AdminPanelComponent implements OnInit {
     // Make the API request to your backend with the itemId as a parameter
     let user;
     user = this.fullData.filter(item => item.user.id == itemId);
-    // const userId = user.id || undefined;
-    // const formValue = this.form.value;
-    // ((userId && formValue.email === this.savedUser?.email
-    //   ? this.apiService.updateUserData(userId, formValue)
-    //   : this.apiService.saveUserData(formValue)) as Observable<any>)
-    //   .pipe(finalize(() => this.isLoading = false))
-    //   .subscribe(value => {
-    //     this.appService.setUserInfo({ id: userId || value.name, ...formValue });
-    //     this.router.navigateByUrl('/test');
-    //   })
-
-
-
-    this.greencrossServices.getParam("getUserTest",itemId).subscribe(
-      (data) => {
-        console.log(data);
-        localStorage.setItem("fullTest",JSON.stringify(data.questions));
-      
-        // Process the response data as needed
-      },
-      (err) => {
-        console.log(err);
-        // Handle any errors if the request fails
-      },
-      () => {
-        // Perform any cleanup or finalization tasks if needed
-        this.router.navigateByUrl('/viewTest');
-      }
-    );
+    const userId = user[0].user.id || undefined;
+    const formValue = user[0].user;
+    ((userId && formValue.email === this.savedUser?.email
+      ? this.apiService.updateUserData(userId, formValue)
+      : this.apiService.saveUserData(formValue)) as Observable<any>)
+      .pipe(finalize(() => this.isLoading = false))
+      .subscribe(value => {
+        this.appService.setUserInfo({ id: userId || value.name, ...formValue });
+        this.greencrossServices.getParam("getUserTest",itemId).subscribe(
+          (data) => {
+            console.log(data);
+            localStorage.setItem("fullTest",JSON.stringify(data.questions));
+          
+            // Process the response data as needed
+          },
+          (err) => {
+            console.log(err);
+            // Handle any errors if the request fails
+          },
+          () => {
+            // Perform any cleanup or finalization tasks if needed
+            this.router.navigateByUrl('/viewTest');
+          }
+        );
+      })
     }
   
   filterData(value: string) {
