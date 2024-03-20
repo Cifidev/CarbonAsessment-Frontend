@@ -9,15 +9,32 @@ import { environment } from "../../../environments/environment";
 import { User } from "@shared/models/user";
 import { FirebaseResponse } from "@shared/models/firebase-response";
 import { AppService } from "@shared/services/app.service";
+import { Component } from '@angular/core';
+import { DataService } from '../../data.service';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class ApiService {
   private testData$?: Observable<Category[]>;
   firebaseUrl = environment.firebase.databaseUrl;
 
-  constructor(private http: HttpClient, private appService: AppService) {
+  constructor(private http: HttpClient, private appService: AppService, private dataService: DataService) {
+  }
+
+  sendData(): void {
+    const data = {
+      param1: 'value1',
+      param2: 'value98'
+    };
+
+    this.dataService.sendDataToBackend(data)
+      .subscribe(response => {
+        console.log('Response from backend:', response);
+      }, error => {
+        console.error('Error:', error);
+      });
   }
 
   getTestData(): Observable<Category[]> {
@@ -45,7 +62,6 @@ export class ApiService {
 
   submitAnswers({ answers }: TestAnswers): Observable<FirebaseResponse> {
     // Function to submit test answers to the server
-    console.log("HELLOOO  ");
     // Log a message indicating that the function has been called
     
     return forkJoin([

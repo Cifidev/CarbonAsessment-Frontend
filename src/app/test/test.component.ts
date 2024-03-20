@@ -166,6 +166,8 @@ export class TestComponent implements OnInit {
   }
 
   goToStep(i: number) {
+    // Integración: método prueba de concepto para hacer peticion a back
+    this.apiService.sendData();
     if (this.activeStepIdx === i) {
       return;
     }
