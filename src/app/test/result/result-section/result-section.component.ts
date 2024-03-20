@@ -43,7 +43,6 @@ export class ResultSectionComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log("FREDYYYYYY");
     forkJoin([
       this.apiService.getTestData(),
       this.appService.answers$.pipe(filter(Boolean), take(1))

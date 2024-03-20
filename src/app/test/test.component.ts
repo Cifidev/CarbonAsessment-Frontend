@@ -51,7 +51,16 @@ export class TestComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    if (localStorage.getItem('GreenCross_answers') != undefined) {
+      this.read = true;
+    } else {
+      this.read = false;
+    }
+    if(this.read){
     this.getTestData();
+  }else{
+    this.getfullTestData();
+  }
   }
 
   initForm(categories: Category[]): void {
@@ -86,11 +95,6 @@ export class TestComponent implements OnInit {
     this.form.valueChanges.subscribe((value) =>
       this.appService.setAnswers(value)
     );
-    if (localStorage.getItem('GreenCross_answers') != undefined) {
-      this.read = true;
-    } else {
-      this.read = false;
-    }
   }
 
   selectAnswer(value: number, questionIndex: number) {
