@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from "@angular/common/http";
 import { ReactiveFormsModule } from "@angular/forms";
 import { GoogleTagManagerModule } from "angular-google-tag-manager";
+import { GreencrossService } from '@shared/services/greencross.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { GoogleTagManagerModule } from "angular-google-tag-manager";
       id: 'G-FD9PXZ4KPC',
     })
   ],
-  providers: [],
+  providers: [
+    GreencrossService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
