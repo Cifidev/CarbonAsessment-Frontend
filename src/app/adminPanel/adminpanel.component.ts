@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { TypedFormGroup } from "@shared/utils/typed-form-group";
 import { FormControl, Validators } from "@angular/forms";
-import { User } from "@shared/models/user";
-import { AppService } from "@shared/services/app.service";
 import { Router } from "@angular/router";
-import { finalize, Observable, take } from "rxjs";
-import { ApiService } from "@shared/services/api.service";
+import { User } from "@shared/models/user";
 import { UserLogin } from '@shared/models/userLogin';
+import { ApiService } from "@shared/services/api.service";
+import { AppService } from "@shared/services/app.service";
+import { GreencrossService } from '@shared/services/greencross.service';
+import { TypedFormGroup } from "@shared/utils/typed-form-group";
 
 interface IForm extends UserLogin {
   //acceptTerms: boolean;
@@ -61,7 +61,7 @@ export class AdminPanelComponent implements OnInit {
   ];
   inputTypes = InputTypesEnum;
   isLoading = false;
-  constructor(private appService: AppService, private router: Router, private apiService: ApiService) {
+  constructor(private appService: AppService, private router: Router, private apiService: ApiService, private greencrossServices: GreencrossService) {
     this.form = new TypedFormGroup<IForm>({
       username: new FormControl(undefined, [Validators.required]),
       pass: new FormControl(undefined, [Validators.required]),
@@ -82,9 +82,30 @@ export class AdminPanelComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.greencrossServices.get('getUserForm').subscribe(
+      (data) => {
+        console.log(data);
+        // this.createTable(data);
+      },
+      (err) => {
+        console.log(err);
+      },
+      () => {}
+    );
     this.searchText.valueChanges.subscribe(value => {
       this.filterData(value);
     });
+  }
+
+  createTable(data:any){
+    const newDataArray: any[] = data.map((item:any) => ({
+      id: item._id,
+      companyName: item.user.companyName,
+      contactName: item.user.firstName + ' ' + item.user.lastName,
+      email: item.user.email, 
+      checked: true
+    }));
+    this.data = newDataArray;
   }
   handleIconClick(itemId: number) {
     // Aquí puedes implementar la lógica para manejar el clic en el icono

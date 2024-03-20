@@ -7,6 +7,7 @@ import { Router } from "@angular/router";
 import { finalize, Observable, take } from "rxjs";
 import { ApiService } from "@shared/services/api.service";
 import { UserLogin } from '@shared/models/userLogin';
+import { GreencrossService } from '@shared/services/greencross.service';
 
 interface IForm extends UserLogin {
   //acceptTerms: boolean;
@@ -54,7 +55,7 @@ export class LoginComponent implements OnInit {
   ];
   
   isLoading = false;
-  constructor(private appService: AppService, private router: Router, private apiService: ApiService) {
+  constructor(private appService: AppService, private router: Router, private apiService: ApiService, private greencrossServices: GreencrossService) {
     this.form = new TypedFormGroup<IForm>({
       username: new FormControl(undefined, [Validators.required]),
       pass: new FormControl(undefined, [Validators.required]),
@@ -111,6 +112,16 @@ export class LoginComponent implements OnInit {
     this.isLoading = true;
     const userId = this.savedUser?.id;
     const formValue = this.form.value;
+
+   this.greencrossServices.post('loginUser', this.form.value).subscribe(
+    (data) => {
+      console.log(data);
+    },
+    (err) => {
+      console.log(err);
+    },
+    () => {}
+  );
     // ((userId && formValue.email === this.savedUser?.email
     //   ? this.apiService.updateUserData(userId, formValue)
     //   : this.apiService.saveUserData(formValue)) as Observable<any>)

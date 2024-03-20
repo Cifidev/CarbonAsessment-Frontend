@@ -1,14 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { Category } from '@shared/models/category';
-import { ApiService } from '@shared/services/api.service';
-import { QuestionTypeEnum } from '@shared/enums/question-type.enum';
-import { TypedFormArray, TypedFormGroup } from '@shared/utils/typed-form-group';
-import { TestAnswers } from '@shared/models/test-answers';
 import { FormControl } from '@angular/forms';
-import { Answer } from '@shared/models/answer';
-import { AppService } from '@shared/services/app.service';
-import { finalize, take } from 'rxjs';
 import { Router } from '@angular/router';
+import { QuestionTypeEnum } from '@shared/enums/question-type.enum';
+import { Answer } from '@shared/models/answer';
+import { answerInfo } from '@shared/models/answerInfo';
+import { Category } from '@shared/models/category';
+import { FormUpdate } from '@shared/models/formUpdate';
+import { QuestionInfo } from '@shared/models/questionInfo';
+import { TestAnswers } from '@shared/models/test-answers';
+import { ApiService } from '@shared/services/api.service';
+import { AppService } from '@shared/services/app.service';
+import { GreencrossService } from '@shared/services/greencross.service';
+import { TypedFormArray, TypedFormGroup } from '@shared/utils/typed-form-group';
+import { finalize, take } from 'rxjs';
 
 @Component({
   selector: 'app-test',
@@ -33,10 +37,11 @@ export class TestComponent implements OnInit {
   questionTypes = QuestionTypeEnum;
   isLoading = true;
   form?: TypedFormGroup<TestAnswers>;
-
+  formUpdate: FormUpdate = new FormUpdate();
   constructor(
     private apiService: ApiService,
     private appService: AppService,
+    private greencrossServices: GreencrossService,
     private router: Router
   ) {}
 
@@ -85,7 +90,6 @@ export class TestComponent implements OnInit {
     } else {
       this.read = false;
     }
-    
   }
 
   selectAnswer(value: number, questionIndex: number) {
@@ -165,6 +169,21 @@ export class TestComponent implements OnInit {
     });
     //this.loadReadingMode();
     //Integración: aquí podremos enviar this.categories a back con respuestas correctas.
+    const userI = localStorage.getItem('GreenCross_user');
+    if (userI) {
+      this.formUpdate.userinfo = JSON.parse(userI);
+    }
+    this.formUpdate.answerInfo.questions = this.categories;
+   
+    this.greencrossServices.post('setFormResult', this.formUpdate).subscribe(
+      (data) => {
+        console.log(data);
+      },
+      (err) => {
+        console.log(err);
+      },
+      () => {}
+    );
     this.apiService
       .submitAnswers(this.form.value)
       .pipe(finalize(() => (this.isLoading = false)))

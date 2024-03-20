@@ -6,7 +6,7 @@ export const environment = {
   firebase: {
     databaseUrl: 'https://getreadyforai-default-rtdb.europe-west1.firebasedatabase.app/'
   },
-  urlback: '',
+  urlback: 'localhost:3000/api/',
   production: false
 };
 

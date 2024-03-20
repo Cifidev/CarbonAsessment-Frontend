@@ -18,6 +18,9 @@ export class GreencrossService {
 	endpoints: Endpoints = {
 		testDb: '...',
 		login: '...',
+		getUserForm: 'user/getUserForm',
+		setFormResult: 'setFormResults',
+		getUserTest: 'getUserTest'
 		// other Properties
 	  };
 	
@@ -26,11 +29,19 @@ export class GreencrossService {
 	}
 
 	get(service: string): Observable<any> {
-		return this.http.get(environment.urlback + this.endpoints[service]).pipe(
-		  map((response: any) => { // Añade la anotación de tipo para 'response'
-			return response;
-		  })
-		);
+		const httpHeaders = new HttpHeaders({
+			'Content-Type': 'application/json',
+			'Access-Control-Allow-Origin': 'http://localhost:4200', // Especifica el origen permitido
+			'Access-Control-Allow-Methods': 'GET', // Método HTTP permitido (GET en este caso)
+			'Access-Control-Allow-Headers': 'Content-Type, Authorization', // Encabezados personalizados permitidos
+			'Access-Control-Allow-Credentials': 'true' // Permitir cookies
+		  });
+		
+		  return this.http.get(environment.urlback + this.endpoints[service], { headers: httpHeaders }).pipe(
+			map((response: any) => {
+			  return response;
+			})
+		  );
 	  }
 	  
 	  getParam(service: string, body: any): Observable<any> {
@@ -68,7 +79,11 @@ export class GreencrossService {
 	  }
 	post(service: string, body: any): Observable<any> {
 		let headers = new HttpHeaders({
-			'Content-Type': 'application/json'
+			'Content-Type': 'application/json',
+			'Access-Control-Allow-Origin': 'http://localhost:4200', // Especifica el origen permitido
+			'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE', // Métodos HTTP permitidos
+			'Access-Control-Allow-Headers': 'Content-Type, Authorization', // Encabezados personalizados permitidos
+			'Access-Control-Allow-Credentials': 'true' // Permitir cookies
 		});
 		return this.http
 			.post(environment.urlback + this.endpoints[service], body, {
