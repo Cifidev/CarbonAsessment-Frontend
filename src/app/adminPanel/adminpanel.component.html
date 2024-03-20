@@ -1,14 +1,14 @@
 <div class="landing-wrapper">
-  <div class="container-fluid container-lg marginT5EM">
+  <div class=" marginT5EM">
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-lg-5">
         <h1 class="pe-2">Green Cross Administration Panel</h1>
       </div>
     </div>
   </div>
-  <div class="container-fluid container-lg">
+  <div class="">
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-lg-5">
         <ng-container>
           <button (click)="showResults()" class="btn btn-outline-primary my-4">
             Search Results
@@ -18,9 +18,9 @@
     </div>
   </div>
   <ng-container *ngIf="isResultInfoVisible">
-    <div class="container-fluid container-lg">
+    <div class="">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-5">
           <input
             type="text"
             [formControl]="searchText"
@@ -31,7 +31,7 @@
       </div>
       <ng-container *ngIf="showResultTable">
         <div class="row">
-          <div class="col-lg-6 tableSearch">
+          <div class="col-lg-5 tableSearch">
             <table class="">
               <thead>
                 <tr>
