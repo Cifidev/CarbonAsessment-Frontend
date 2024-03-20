@@ -4,6 +4,7 @@ import {
   filter,
   forkJoin,
   Observable,
+  of,
   shareReplay,
   switchMap,
   take,
@@ -23,7 +24,7 @@ import { DataService } from '../../data.service';
 })
 
 export class ApiService {
-  private testData$?: Observable<Category[]>;
+  private testData$?: Observable<Category[]> | undefined;
   firebaseUrl = environment.firebase.databaseUrl;
 
   constructor(private http: HttpClient, private appService: AppService, private dataService: DataService) {
@@ -49,9 +50,22 @@ export class ApiService {
         .get<Category[]>('assets/data/test-data.json')
         .pipe(shareReplay());
     }
+
     return this.testData$;
   }
-
+  getfullTestData(): Observable<Category[]> {
+    if (!this.testData$) {
+      const fulltestString = localStorage.getItem("fullTest");
+      const fulltest = fulltestString ? JSON.parse(fulltestString) : null;
+      if (fulltest) {
+        this.testData$ = of(fulltest); // Convierte fulltest en un observable usando of() de RxJS
+      } else {
+        // Si no hay datos en el almacenamiento local, devuelve un observable vacío
+        this.testData$ = of([]);
+      }
+    }
+    return this.testData$;
+  }
   getResources(): Observable<Resource[]> {
     return this.http.get<Resource[]>('assets/data/resources.json');
   }

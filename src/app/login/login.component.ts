@@ -121,7 +121,7 @@ export class LoginComponent implements OnInit {
       console.log(err);
     },
     () => {}
-  );
+  ); 
     // ((userId && formValue.email === this.savedUser?.email
     //   ? this.apiService.updateUserData(userId, formValue)
     //   : this.apiService.saveUserData(formValue)) as Observable<any>)

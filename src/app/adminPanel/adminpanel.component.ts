@@ -43,6 +43,7 @@ enum InputTypesEnum {
 })
 export class AdminPanelComponent implements OnInit {
   searchText: FormControl = new FormControl();
+  fullData: any[];
   data: any[] = [
     { id: 1, companyName: 'Empresa A', contactName: 'Juan', email: 'juan@empresaA.com', checked: true},
     { id: 2, companyName: 'Empresa B', contactName: 'Maria', email: 'maria@empresaB.com', checked: false },
@@ -85,6 +86,7 @@ export class AdminPanelComponent implements OnInit {
     this.greencrossServices.get('getUserForm').subscribe(
       (data) => {
         console.log(data);
+        this.fullData = data;
         this.createTable(data);
       },
       (err) => {
@@ -122,11 +124,26 @@ export class AdminPanelComponent implements OnInit {
 
   handleIconClick(itemId: string) {
     // Make the API request to your backend with the itemId as a parameter
+    let user;
+    user = this.fullData.filter(item => item.user.id == itemId);
+    // const userId = user.id || undefined;
+    // const formValue = this.form.value;
+    // ((userId && formValue.email === this.savedUser?.email
+    //   ? this.apiService.updateUserData(userId, formValue)
+    //   : this.apiService.saveUserData(formValue)) as Observable<any>)
+    //   .pipe(finalize(() => this.isLoading = false))
+    //   .subscribe(value => {
+    //     this.appService.setUserInfo({ id: userId || value.name, ...formValue });
+    //     this.router.navigateByUrl('/test');
+    //   })
+
+
+
     this.greencrossServices.getParam("getUserTest",itemId).subscribe(
       (data) => {
         console.log(data);
-        localStorage.setItem("fullTest",data.questions);
-        this.router.navigateByUrl('/viewTest');
+        localStorage.setItem("fullTest",JSON.stringify(data.questions));
+      
         // Process the response data as needed
       },
       (err) => {
@@ -135,6 +152,7 @@ export class AdminPanelComponent implements OnInit {
       },
       () => {
         // Perform any cleanup or finalization tasks if needed
+        this.router.navigateByUrl('/viewTest');
       }
     );
     }
