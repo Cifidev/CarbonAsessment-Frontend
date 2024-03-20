@@ -15,6 +15,7 @@ export class LandingComponent implements OnInit {
   }
 
   showUserInfo() {
+    localStorage.clear();
     this.isUserInfoVisible = true;
   }
 }
