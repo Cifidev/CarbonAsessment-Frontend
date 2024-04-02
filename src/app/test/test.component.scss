@@ -10,8 +10,8 @@
     padding: 40px 0;
   }
   @include media-breakpoint-up(lg) {
-    margin: 65px 0;
-    padding: 65px 0;
+    margin: 5px 0;
+    padding: 45px 0;
   }
 }
 
@@ -50,6 +50,7 @@
     }
     + .step {
       margin-inline-start: 1.5rem;
+      flex-grow: 1;
     }
   }
   @include media-breakpoint-down(lg) {
@@ -81,7 +82,7 @@
 
 .question {
   + .question {
-    margin-top: 150px;
+    margin-top: 5px;
   }
 
   &__number {
@@ -94,7 +95,7 @@
 }
 
 .my-50 {
-  margin: 50px 0;
+  margin: 5px 0;
 }
 
 .answers {

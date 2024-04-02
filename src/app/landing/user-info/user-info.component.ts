@@ -6,6 +6,7 @@ import { AppService } from "@shared/services/app.service";
 import { Router } from "@angular/router";
 import { finalize, Observable, take } from "rxjs";
 import { ApiService } from "@shared/services/api.service";
+import { TranslateService } from '@ngx-translate/core';
 
 interface IForm extends User {
   acceptTerms: boolean;
@@ -43,62 +44,63 @@ enum InputTypesEnum {
 export class UserInfoComponent implements OnInit {
   savedUser?: User;
   form: TypedFormGroup<IForm>;
-  inputs: IInput[] = [
-    { label: 'First name', formControlName: 'firstName', colClass: 'col-md-6' },
-    { label: 'Last name', formControlName: 'lastName', colClass: 'col-md-6', inputClass: 'border-start-md-0' },
-    { label: 'Work email', formControlName: 'email' },
-    {
-      label: 'Title', formControlName: 'title', type: InputTypesEnum.Select, options: [
-        'Data Scientist',
-        'Software Developer',
-        'Engineer',
-        'Student or Faculty',
-        'Cxo or Manager',
-        'Other',
-      ].map(x => ({
-        label: x,
-        value: x
-      }))
-    },
-    { label: 'Your title', formControlName: 'otherTitle', showIf: { control: 'title', value: 'Other' } },
-    { label: 'Company name', formControlName: 'companyName' },
-    {
-      label: 'Industry', formControlName: 'industry', type: InputTypesEnum.Select, options: [
-        'Entertainment',
-        'Consulting',
-        'Technology',
-        'Health',
-        'Finance',
-        'Manufacturing',
-        'Public',
-        'Retail',
-        'Transport',
-        'Other',
-      ].map(x => ({
-        label: x,
-        value: x
-      }))
-    },
-    { label: 'Your industry', formControlName: 'otherIndustry', showIf: { control: 'industry', value: 'Other' } },
-    {
-      label: 'Company size', formControlName: 'companySize', type: InputTypesEnum.Select, options: [
-        '1-49',
-        '50-249',
-        '250-499',
-        '500-999',
-        '1000-4999',
-        '5000-9999',
-        '10000+',
-      ].map(x => ({
-        label: x,
-        value: x
-      }))
-    },
-  ];
+  inputs: IInput[];
   inputTypes = InputTypesEnum;
   isLoading = false;
 
-  constructor(private appService: AppService, private router: Router, private apiService: ApiService) {
+  constructor(translate: TranslateService,private appService: AppService, private router: Router, private apiService: ApiService) {
+    this.inputs = [
+      { label: translate.instant('USER.FIRSTNAME'), formControlName: 'firstName', colClass: 'col-md-6' },
+      { label: translate.instant('USER.LASTNAME'), formControlName: 'lastName', colClass: 'col-md-6', inputClass: 'border-start-md-0' },
+      { label: translate.instant('USER.WORKEMAIL'), formControlName: 'email' },
+      {
+        label: translate.instant('USER.TITLE2'), formControlName: 'title', type: InputTypesEnum.Select, options: [
+          translate.instant('USER.DATA'),
+          translate.instant('USER.SOFTWARED'),
+          translate.instant('USER.ENGINEER'),
+          translate.instant('USER.STUDENT') ,
+          translate.instant('USER.CEO'),
+          translate.instant('USER.OTHER') ,
+        ].map(x => ({
+          label: x,
+          value: x
+        }))
+      },
+      { label: translate.instant('USER.YOUR'), formControlName: 'otherTitle', showIf: { control: 'title', value: 'Other' } },
+      { label: translate.instant('USER.COMPANY'), formControlName: 'companyName' },
+      {
+        label: translate.instant('USER.INDUSTRY'), formControlName: 'industry', type: InputTypesEnum.Select, options: [
+          translate.instant('USER.ENTER') ,
+          translate.instant('USER.CONSULTING'),
+          translate.instant('USER.TECH'),
+          translate.instant('USER.HEALTH') ,
+          translate.instant('USER.FINANCE'),
+          translate.instant('USER.MANUFACTURING'),
+          translate.instant('USER.PUBLIC') ,
+          translate.instant('USER.RETAIL') ,
+          translate.instant('USER.TRANSPORT'),
+          translate.instant('USER.OTHER')
+        ].map(x => ({
+          label: x,
+          value: x
+        }))
+      },
+      { label:translate.instant('USER.YOURI'), formControlName: 'otherIndustry', showIf: { control: 'industry', value: 'Other' } },
+      {
+        label: translate.instant('USER.COMPANYSIZE'), formControlName: 'companySize', type: InputTypesEnum.Select, options: [
+          '1-49',
+          '50-249',
+          '250-499',
+          '500-999',
+          '1000-4999',
+          '5000-9999',
+          '10000+',
+        ].map(x => ({
+          label: x,
+          value: x
+        }))
+      },
+    ];
     this.form = new TypedFormGroup<IForm>({
       firstName: new FormControl(undefined, [Validators.required]),
       lastName: new FormControl(undefined, [Validators.required]),

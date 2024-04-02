@@ -8,6 +8,7 @@ import { finalize, Observable, take } from "rxjs";
 import { ApiService } from "@shared/services/api.service";
 import { UserLogin } from '@shared/models/userLogin';
 import { GreencrossService } from '@shared/services/greencross.service';
+import { TranslateService } from '@ngx-translate/core';
 
 interface IForm extends UserLogin {
   //acceptTerms: boolean;
@@ -49,13 +50,14 @@ export class LoginComponent implements OnInit {
   savedUser?: User;
   form: TypedFormGroup<IForm>;
   inputTypes = InputTypesEnum;
-  inputs: IInput[] = [
-    { label: 'User', formControlName: 'username', icon: 'bi bi-person', tipe: 'text'},
-    { label: 'Pass', formControlName: 'pass', icon: 'bi bi-lock', tipe: 'password'},
-  ];
+  inputs: IInput[];
   
   isLoading = false;
-  constructor(private appService: AppService, private router: Router, private apiService: ApiService, private greencrossServices: GreencrossService) {
+  constructor(translate: TranslateService, private appService: AppService, private router: Router, private apiService: ApiService, private greencrossServices: GreencrossService) {
+    this.inputs = [
+      { label: translate.instant('LOGIN.USER'), formControlName: 'username', icon: 'bi bi-person', tipe: 'text'},
+      { label: translate.instant('LOGIN.PASS'), formControlName: 'pass', icon: 'bi bi-lock', tipe: 'password'},
+    ];
     this.form = new TypedFormGroup<IForm>({
       username: new FormControl(undefined, [Validators.required]),
       pass: new FormControl(undefined, [Validators.required]),

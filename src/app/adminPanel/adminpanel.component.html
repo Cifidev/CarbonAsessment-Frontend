@@ -2,7 +2,7 @@
   <div class=" marginT5EM">
     <div class="row">
       <div class="col-lg-5">
-        <h1 class="pe-2">Green Cross Administration Panel</h1>
+        <h1 class="pe-2">{{'ADMINP.TITLE' | translate}}</h1>
       </div>
     </div>
   </div>
@@ -11,7 +11,7 @@
       <div class="col-lg-5">
         <ng-container>
           <button (click)="showResults()" class="btn btn-outline-primary my-4">
-            Search Results
+            {{'ADMINP.SEARCH' | translate}}
           </button>
         </ng-container>
       </div>
@@ -24,7 +24,7 @@
           <input
             type="text"
             [formControl]="searchText"
-            placeholder="Search"
+            placeholder="{{'ADMINP.SEARCH2' | translate }}"
             class="inputSearch"
           />
         </div>
@@ -35,12 +35,12 @@
             <table class="">
               <thead>
                 <tr>
-                  <th>ID</th>
-                  <th>Name</th>
-                  <th>Name contant</th>
-                  <th>Email</th>
-                  <th>View</th>
-                  <th>Checked</th>
+                  <th> {{'ADMINP.ID' | translate}}</th>
+                  <th> {{'ADMINP.NAME' | translate}}</th>
+                  <th> {{'ADMINP.CONTACT' | translate}}</th>
+                  <th> {{'ADMINP.EMAIL' | translate}}</th>
+                  <th> {{'ADMINP.VIEW' | translate}}</th>
+                  <th> {{'ADMINP.CHECKED' | translate}}</th>
                   <!-- Columna para acciones -->
                 </tr>
               </thead>

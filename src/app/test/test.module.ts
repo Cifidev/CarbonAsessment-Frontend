@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { TranslateModule } from '@ngx-translate/core';
 import { TestRoutingModule } from './test-routing.module';
 import { TestComponent } from './test.component';
 import { ReactiveFormsModule } from "@angular/forms";
@@ -13,7 +13,8 @@ import { ReactiveFormsModule } from "@angular/forms";
   imports: [
     CommonModule,
     TestRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule, 
+    TranslateModule
   ]
 })
 export class TestModule {

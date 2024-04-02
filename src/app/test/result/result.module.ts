@@ -5,6 +5,7 @@ import { ResultRoutingModule } from './result-routing.module';
 import { ResultComponent } from './result.component';
 import { ResultSectionComponent } from './result-section/result-section.component';
 import { ResourcesComponent } from './resources/resources.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ResourcesComponent } from './resources/resources.component';
   ],
   imports: [
     CommonModule,
-    ResultRoutingModule
+    ResultRoutingModule, 
+    TranslateModule
   ]
 })
 export class ResultModule { }

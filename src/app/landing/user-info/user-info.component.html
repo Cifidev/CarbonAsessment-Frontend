@@ -1,11 +1,11 @@
-<h1 class="mb-4">Please fill the form below to continue</h1>
+<h1 class="mb-4">{{'USER.TITLE' | translate}}</h1>
 <form [formGroup]="form">
   <div class="row g-0">
     <div *ngFor="let input of inputs" [class]="input.colClass" class="col-12">
       <div *ngIf="showInput(input)" class="form-floating mb-3">
         <ng-container [ngSwitch]="input.type">
           <select *ngSwitchCase="inputTypes.Select" [class]="getInputClass(input)" [formControlName]="input.formControlName" [id]="input.formControlName" class="form-select">
-            <option disabled [value]="null">Select {{input.label}}</option>
+            <option disabled [value]="null">{{'USER.SELECT' | translate}} {{input.label}}</option>
             <option *ngFor="let option of input.options" [value]="option.value">{{option.label}}</option>
           </select>
           <input *ngSwitchDefault [class]="getInputClass(input)" [formControlName]="input.formControlName" [id]="input.formControlName" [placeholder]="input.label"
@@ -19,15 +19,15 @@
     <input class="form-check-input" formControlName="acceptTerms" id="acceptTerms" type="checkbox"
            [class.is-invalid]="form.controls.acceptTerms.touched && form.controls.acceptTerms.invalid">
     <label class="form-check-label" for="acceptTerms">
-      By sending this form, you agree to us getting in contact with you via the email address provided.
+      {{'USER.LABELCHECK' | translate}}
       <!-- Read our <a href="assets/data/privacy-notice.pdf" target="_blank" rel="noopener noreferrer">Privacy Policy</a> to learn more on how we handle your data. -->
     </label>
   </div>
   <button (click)="submit()" [disabled]="isLoading" class="btn btn-outline-primary my-4">
-    Start the test
+    {{'USER.BUTTON' | translate}}
     <ng-container *ngIf="isLoading">
       <span aria-hidden='true' class='spinner-border spinner-border-sm' role='status'></span>
-      <span class='visually-hidden'>Loading...</span>
+      <span class='visually-hidden'>{{'OTHER.LOAD' | translate}}</span>
     </ng-container>
   </button>
 </form>

@@ -5,6 +5,7 @@ import { LandingRoutingModule } from './landing-routing.module';
 import { LandingComponent } from './landing.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { ReactiveFormsModule } from "@angular/forms";
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ReactiveFormsModule } from "@angular/forms";
   imports: [
     CommonModule,
     LandingRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TranslateModule
   ]
 })
 export class LandingModule {

@@ -1,0 +1,73 @@
+{
+  "ADMINP": {
+    "TITLE": "Green Cross Administration Panel",
+    "SEARCH": "Search Results",
+    "SEARCH2": "Search",
+    "ID": "ID",
+    "NAME": "Name",
+    "CONTACT": "Name contant",
+    "EMAIL": "Email",
+    "VIEW": "View",
+    "CHECKED": "Checked"
+  },
+  "LANDING": {
+    "TITLE": "Begin our eco-awareness assessment to discover your environmental impact, and let us help you improve it",
+    "BUTTON": "Take the test"
+  },
+  "USER": {
+    "TITLE": "Please fill the form below to continue",
+    "BUTTON": "Start the test",
+    "SELECT": "Select",
+    "LABELCHECK": "By sending this form, you agree to us getting in contact with you via the email address provided.",
+    "FIRSTNAME": "First name",
+    "LASTNAME": "Last name",
+    "WORKEMAIL": "Work email",
+    "TITLE2": "Title",
+
+    "DATA": "Data Scientist",
+    "SOFTWARED": "Software Developer",
+    "ENGINEER": "Engineer",
+    "STUDENT": "Student or Faculty",
+    "CEO": "CEO or Manager",
+    "OTHER": "Other",
+    "YOUR": "Your title",
+    "COMPANY": "Company name",
+    "INDUSTRY": "Industry",
+    "ENTER": "Entertainment",
+    "CONSULTING": "Consulting",
+    "TECH": "Technology",
+    "HEALTH": "Health",
+    "FINANCE": "Finance",
+    "MANUFACTURING": "Manufacturing",
+    "PUBLIC": "Public",
+    "RETAIL": "Retail",
+    "TRANSPORT": "Transport",
+    "YOURI": "Your industry",
+    "COMPANYSIZE": "Company size"
+
+  },
+  "LOGIN": {
+    "USER": "User",
+    "PASS": "Pass",
+    "LOGIN": "Log in"
+  },
+  
+  "RESULT": {
+    "GOBACK": "Go back to homepage",
+    "YOURREPO": "Your report",
+    "LABEL1": "Having completed the Pre-assessment Checklist, you've primed your project or organizational planning with CPSI considerations. This step illuminates your current sustainability standing and identifies areas for growth, enhancing your project's objectives and overall sustainability efforts",
+    "LABEL2": "What's next:",
+    "LABEL3": "By navigating through six category tabs and assessing 67 credits, you've evaluated your project's alignment with sustainable practices. Each credit's intent, metric, and assessment questions provided guidance, forming a detailed sustainability profile. Remember, unanswered questions default to 'no', stressing the importance of thorough engagement.",
+    "LABEL4": "Regarding your score, remember it's a starting point, offering an estimate rather than a final verdict. Use the insights gained to guide your next steps, whether that's deepening current commitments or broadening your approach.",
+    "LABEL5": "For further guidance and to enhance your sustainability journey, join our community at joinus@green-cross.org.uk. Your proactive steps today pave the way for a more sustainable tomorrow."
+
+
+  },
+    
+  "OTHER": {
+    "LOADING": "Loading..."
+  },
+  "DETAIL": {
+    "SUBMIT": "Submit"
+  }
+}

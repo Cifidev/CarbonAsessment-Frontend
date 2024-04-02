@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AdminPanelRoutingModule } from './adminpanel-routing.module';
 import { AdminPanelComponent } from './adminpanel.component';
-
+import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   declarations: [
     AdminPanelComponent,
@@ -11,7 +11,8 @@ import { AdminPanelComponent } from './adminpanel.component';
   imports: [
     CommonModule,
     AdminPanelRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TranslateModule
   ]
 })
 export class AdminPanelModule { }

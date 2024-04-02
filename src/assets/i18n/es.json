@@ -1,0 +1,68 @@
+{
+  "ADMINP": {
+    "TITLE": "Panel de Administración Green Cross",
+    "SEARCH": "Buscar resultados",
+    "SEARCH2": "Buscar",
+    "ID": "ID",
+    "NAME": "Nombre",
+    "CONTACT": "Nombre contacto",
+    "EMAIL": "Email",
+    "VIEW": "Ver",
+    "CHECKED": "Verificado"
+  },
+  "LANDING": {
+    "TITLE": "Comienza nuestra evaluación de concienciación ecológica para descubrir tu impacto ambiental y déjanos ayudarte a mejorarlo.",
+    "BUTTON": "Empezar el Test"
+  },
+  "USER": {
+    "TITLE": "Por favor, complete el siguiente formulario para continuar",
+    "BUTTON": "Comenzar test",
+    "SELECT": "Seleccionar",
+    "LABELCHECK": "Al enviar este formulario, acepta que nos comuniquemos con usted a través de la dirección de correo electrónico proporcionada.",
+    "FIRSTNAME": "Nombre",
+    "LASTNAME": "Apellido",
+    "WORKEMAIL": "Correo electrónico del trabajo",
+    "TITLE2": "Titular",
+    "DATA": "Cientifico de datos",
+    "SOFTWARED": "Desarrollador de Software",
+    "ENGINEER": "Ingeniero",
+    "STUDENT": "Estudiante",
+    "CEO": "CEO o Manager",
+    "OTHER": "Otro",
+    "YOUR": "Su puesto",
+    "COMPANY": "Nombre compañia",
+    "INDUSTRY": "Industria",
+    "ENTER": "Entretenimiento", 
+    "CONSULTING": "Consultoria",
+    "TECH": "Tecnologia",
+    "HEALTH": "Salud",
+    "FINANCE": "Finanzas",
+    "MANUFACTURING": "Fabricacion",
+    "PUBLIC": "Publico",
+    "RETAIL": "Minorista",
+    "TRANSPORT": "Transporte",
+    "YOURI": "Su Industria",
+    "COMPANYSIZE": "Tamaño de la empresa"
+  },
+  "LOGIN": {
+    "USER": "Usuario",
+    "PASS": "Contraseña",
+    "LOGIN": "Ingresar"
+  },
+  "RESULT": {
+    "GOBACK": "Volver a la página de inicio",
+    "YOURREPO": "Tu informe",
+    "LABEL1": "Después de completar la Lista de verificación previa a la evaluación, ha preparado su proyecto o planificación organizacional con consideraciones CPSI. Este paso ilumina su situación actual de sostenibilidad e identifica áreas de crecimiento, mejorando los objetivos de su proyecto y los esfuerzos generales de sostenibilidad",
+    "LABEL2": "Qué sigue:",
+    "LABEL3": "Al navegar a través de seis pestañas de categorías y evaluar 67 créditos, evaluó la alineación de su proyecto con las prácticas sustentables. La intención, métrica y preguntas de evaluación de cada crédito brindaron orientación, formando un perfil de sustentabilidad detallado. Recuerde, las preguntas sin respuesta son predeterminadas a no, destacando la importancia de un compromiso exhaustivo.",
+    "LABEL4": "Con respecto a tu puntuación, recuerda que es un punto de partida, que ofrece una estimación en lugar de un veredicto final. Utiliza los conocimientos adquiridos para guiar tus próximos pasos, ya sea profundizar los compromisos actuales o ampliar tu enfoque.",
+    "LABEL5": "Para obtener más orientación y mejorar su viaje hacia la sostenibilidad, únase a nuestra comunidad en joinus@green-cross.org.uk. Sus pasos proactivos de hoy allanan el camino para un mañana más sostenible"
+
+  },
+  "OTHER": {
+    "LOADING": "Cargando..."
+  },
+  "DETAIL": {
+    "SUBMIT": "Enviar"
+  }
+}
