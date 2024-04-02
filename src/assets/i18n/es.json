@@ -18,7 +18,7 @@
     "TITLE": "Por favor, complete el siguiente formulario para continuar",
     "BUTTON": "Comenzar test",
     "SELECT": "Seleccionar",
-    "LABELCHECK": "Al enviar este formulario, acepta que nos comuniquemos con usted a través de la dirección de correo electrónico proporcionada.",
+    "LABELCHECK": "Al enviar este formulario, acepta que nos comuniquemos con usted a través de la dirección de correo electrónico proporcionada.Este formulario te tomará aproximadamente 45 minutos en completarse, podrás salir en cualquier momento y retomarlo.",
     "FIRSTNAME": "Nombre",
     "LASTNAME": "Apellido",
     "WORKEMAIL": "Correo electrónico del trabajo",
@@ -56,8 +56,8 @@
     "LABEL2": "Qué sigue:",
     "LABEL3": "Al navegar a través de seis pestañas de categorías y evaluar 67 créditos, evaluó la alineación de su proyecto con las prácticas sustentables. La intención, métrica y preguntas de evaluación de cada crédito brindaron orientación, formando un perfil de sustentabilidad detallado. Recuerde, las preguntas sin respuesta son predeterminadas a no, destacando la importancia de un compromiso exhaustivo.",
     "LABEL4": "Con respecto a tu puntuación, recuerda que es un punto de partida, que ofrece una estimación en lugar de un veredicto final. Utiliza los conocimientos adquiridos para guiar tus próximos pasos, ya sea profundizar los compromisos actuales o ampliar tu enfoque.",
-    "LABEL5": "Para obtener más orientación y mejorar su viaje hacia la sostenibilidad, únase a nuestra comunidad en joinus@green-cross.org.uk. Sus pasos proactivos de hoy allanan el camino para un mañana más sostenible"
-
+    "LABEL5": "Para obtener más orientación y mejorar su viaje hacia la sostenibilidad, únase a nuestra comunidad en joinus@green-cross.org.uk. Sus pasos proactivos de hoy allanan el camino para un mañana más sostenible",
+    "LABEL6": "Un grupo de especialistas analizará su informe y se comunicará con usted en breve. Ha completado con éxito la Lista de verificación previa a la evaluación, que evalúa la sostenibilidad de su proyecto en seis categorías y 67 créditos, que describe su estado actual de sostenibilidad y áreas potenciales. para mejorar. Recuerde, la puntuación que ha recibido es sólo un punto de partida. Para obtener más ayuda, no dude en unirse a nuestra comunidad en joinus@green-cross.org.uk"
   },
   "OTHER": {
     "LOADING": "Cargando..."

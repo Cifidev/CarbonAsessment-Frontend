@@ -19,9 +19,7 @@
     <input class="form-check-input" formControlName="acceptTerms" id="acceptTerms" type="checkbox"
            [class.is-invalid]="form.controls.acceptTerms.touched && form.controls.acceptTerms.invalid">
     <label class="form-check-label" for="acceptTerms">
-      By sending this form, you agree to us getting in contact with you via the email address provided.
-      This form will take approximately 45 minutes to fill out, you'll be able to leave at any moment and resume it.
-    </label>
+      {{'USER.LABELCHECK' | translate}}</label>
   </div>
   <button (click)="submit()" [disabled]="isLoading" class="btn btn-outline-primary my-4">
     {{'USER.BUTTON' | translate}}

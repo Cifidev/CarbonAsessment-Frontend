@@ -18,7 +18,7 @@
     "TITLE": "Please fill the form below to continue",
     "BUTTON": "Start the test",
     "SELECT": "Select",
-    "LABELCHECK": "By sending this form, you agree to us getting in contact with you via the email address provided.",
+    "LABELCHECK": "By sending this form, you agree to us getting in contact with you via the email address provided. This form will take approximately 45 minutes to fill out, you'll be able to leave at any moment and resume it. ",
     "FIRSTNAME": "First name",
     "LASTNAME": "Last name",
     "WORKEMAIL": "Work email",
@@ -59,8 +59,8 @@
     "LABEL2": "What's next:",
     "LABEL3": "By navigating through six category tabs and assessing 67 credits, you've evaluated your project's alignment with sustainable practices. Each credit's intent, metric, and assessment questions provided guidance, forming a detailed sustainability profile. Remember, unanswered questions default to 'no', stressing the importance of thorough engagement.",
     "LABEL4": "Regarding your score, remember it's a starting point, offering an estimate rather than a final verdict. Use the insights gained to guide your next steps, whether that's deepening current commitments or broadening your approach.",
-    "LABEL5": "For further guidance and to enhance your sustainability journey, join our community at joinus@green-cross.org.uk. Your proactive steps today pave the way for a more sustainable tomorrow."
-
+    "LABEL5": "For further guidance and to enhance your sustainability journey, join our community at joinus@green-cross.org.uk. Your proactive steps today pave the way for a more sustainable tomorrow.",
+    "LABEL6": "A group of specialists will be analyzing your report and contacting you shortly. You've successfully completed the Pre-assessment Checklist, evaluating your project's sustainability across six categories and 67 credits, which outlines your current sustainability status and potential areas for improvement. Remember, the score you've received is just a starting point. For further assistance, feel free to join our community at joinus@green-cross.org.uk."
 
   },
     
