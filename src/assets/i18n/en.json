@@ -63,9 +63,14 @@
     "LABEL6": "A group of specialists will be analyzing your report and contacting you shortly. You've successfully completed the Pre-assessment Checklist, evaluating your project's sustainability across six categories and 67 credits, which outlines your current sustainability status and potential areas for improvement. Remember, the score you've received is just a starting point. For further assistance, feel free to join our community at joinus@green-cross.org.uk."
 
   },
+  "SECTION":{
+    "ACTIONABLE":"Puntos procesables que usted debe tomar"
+  },
     
   "OTHER": {
-    "LOADING": "Loading..."
+    "LOADING": "Loading...",
+    "GOBACK": "Go back to",
+    "DOWNLOAD":"Downloadable resources"
   },
   "DETAIL": {
     "SUBMIT": "Submit"

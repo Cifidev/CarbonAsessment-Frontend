@@ -38,14 +38,14 @@
           [disabled]="isLoading"
           class="btn btn-outline-primary my-4"
         >
-        {{'USER.LOGIN' | translate}}
+        {{'LOGIN.LOGIN' | translate}}
           <ng-container *ngIf="isLoading">
             <span
               aria-hidden="true"
               class="spinner-border spinner-border-sm"
               role="status"
             ></span>
-            <span class="visually-hidden">Loading...</span>
+            <span class="visually-hidden">{{'OTHER.LOADING' | translate}}</span>
           </ng-container>
         </button>
       </form>

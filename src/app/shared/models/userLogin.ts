@@ -1,4 +1,5 @@
 export interface UserLogin {
   username: string,
-  pass:string
+  password:string,
+  gettoken?: boolean
 }

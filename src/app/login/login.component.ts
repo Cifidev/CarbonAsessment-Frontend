@@ -12,6 +12,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 interface IForm extends UserLogin {
   //acceptTerms: boolean;
+  
 }
 
 interface IOption {
@@ -56,12 +57,12 @@ export class LoginComponent implements OnInit {
   constructor(translate: TranslateService, private appService: AppService, private router: Router, private apiService: ApiService, private greencrossServices: GreencrossService) {
     this.inputs = [
       { label: translate.instant('LOGIN.USER'), formControlName: 'username', icon: 'bi bi-person', tipe: 'text'},
-      { label: translate.instant('LOGIN.PASS'), formControlName: 'pass', icon: 'bi bi-lock', tipe: 'password'},
+      { label: translate.instant('LOGIN.PASS'), formControlName: 'password', icon: 'bi bi-lock', tipe: 'password'},
     ];
     this.form = new TypedFormGroup<IForm>({
       username: new FormControl(undefined, [Validators.required]),
-      pass: new FormControl(undefined, [Validators.required]),
-      
+      password: new FormControl(undefined, [Validators.required]),
+      gettoken: new FormControl(true),
     });
     this.inputs.filter(x => x.showIf).forEach(input => {
       this.form.get(input.showIf!.control)?.valueChanges.subscribe(value => {
@@ -115,7 +116,7 @@ export class LoginComponent implements OnInit {
     const userId = this.savedUser?.id;
     const formValue = this.form.value;
 
-   this.greencrossServices.post('loginUser', this.form.value).subscribe(
+   this.greencrossServices.post('login', this.form.value).subscribe(
     (data) => {
       console.log(data);
     },

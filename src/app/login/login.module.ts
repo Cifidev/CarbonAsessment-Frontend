@@ -5,8 +5,7 @@ import { LoginComponent } from './login.component';
 
 import { ReactiveFormsModule } from "@angular/forms";
 import { LoginRoutingModule } from './login-routing.module';
-import { TranslateService } from '@ngx-translate/core';
-
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,7 @@ import { TranslateService } from '@ngx-translate/core';
     CommonModule,
     LoginRoutingModule,
     ReactiveFormsModule,
-    TranslateService
+    TranslateModule
   ]
 })
 export class LoginModule {

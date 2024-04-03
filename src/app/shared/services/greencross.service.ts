@@ -19,7 +19,7 @@ export class GreencrossService {
 
 	endpoints: Endpoints = {
 		testDb: '...',
-		login: '...',
+		login: 'loginUser',
 		getUserForm: 'getUserForm',
 		setFormResult: 'setFormResults',
 		getUserTest: 'getUserTest'

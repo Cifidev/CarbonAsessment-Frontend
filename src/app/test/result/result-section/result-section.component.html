@@ -7,7 +7,7 @@
     <p class="mb-4" [innerHTML]="result?.description"></p>
 
     <ng-container *ngIf="result?.pointsToTake">
-      <h6>Actionable points for you to take</h6>
+      <h6> {{'SECTION.ACTIONABLE' | translate}}</h6>
       <ul class="text-success fs-5">
         <li *ngFor="let point of result?.pointsToTake"><span class="text-body fs-6">{{point}}</span></li>
       </ul>

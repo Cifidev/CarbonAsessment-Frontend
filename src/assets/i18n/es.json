@@ -59,8 +59,13 @@
     "LABEL5": "Para obtener más orientación y mejorar su viaje hacia la sostenibilidad, únase a nuestra comunidad en joinus@green-cross.org.uk. Sus pasos proactivos de hoy allanan el camino para un mañana más sostenible",
     "LABEL6": "Un grupo de especialistas analizará su informe y se comunicará con usted en breve. Ha completado con éxito la Lista de verificación previa a la evaluación, que evalúa la sostenibilidad de su proyecto en seis categorías y 67 créditos, que describe su estado actual de sostenibilidad y áreas potenciales. para mejorar. Recuerde, la puntuación que ha recibido es sólo un punto de partida. Para obtener más ayuda, no dude en unirse a nuestra comunidad en joinus@green-cross.org.uk"
   },
+  "SECTION":{
+    "ACTIONABLE":"Actionable points for you to take"
+  },
   "OTHER": {
-    "LOADING": "Cargando..."
+    "LOADING": "Cargando...",
+    "GOBACK": "Volver a ",
+    "DOWNLOAD":"Recursos descargables"
   },
   "DETAIL": {
     "SUBMIT": "Enviar"

@@ -59,14 +59,14 @@ export class AdminPanelComponent implements OnInit {
   form: TypedFormGroup<IForm>;
   inputs: IInput[] = [
     { label: 'User', formControlName: 'username', icon: 'bi bi-person' },
-    { label: 'Pass', formControlName: 'pass' },
+    { label: 'Pass', formControlName: 'password' },
   ];
   inputTypes = InputTypesEnum;
   isLoading = false;
   constructor(private appService: AppService, private router: Router, private apiService: ApiService, private greencrossServices: GreencrossService) {
     this.form = new TypedFormGroup<IForm>({
       username: new FormControl(undefined, [Validators.required]),
-      pass: new FormControl(undefined, [Validators.required]),
+      password: new FormControl(undefined, [Validators.required]),
       
     });
     this.inputs.filter(x => x.showIf).forEach(input => {
