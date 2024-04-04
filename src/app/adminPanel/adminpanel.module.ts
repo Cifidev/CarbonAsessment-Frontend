@@ -12,7 +12,8 @@ import { TranslateModule } from '@ngx-translate/core';
     CommonModule,
     AdminPanelRoutingModule,
     ReactiveFormsModule,
-    TranslateModule
+    TranslateModule,
+    
   ]
 })
 export class AdminPanelModule { }

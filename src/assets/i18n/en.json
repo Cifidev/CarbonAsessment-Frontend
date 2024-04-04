@@ -8,7 +8,11 @@
     "CONTACT": "Name contant",
     "EMAIL": "Email",
     "VIEW": "View",
-    "CHECKED": "Checked"
+    "CHECKED": "Checked",
+    "LOGOUT": "Exit",
+    "LANGUAGE": "Change Language",
+    "ENGLISH": "English",
+    "SPANISH": "Spanish"
   },
   "LANDING": {
     "TITLE": "Begin our eco-awareness assessment to discover your environmental impact, and let us help you improve it",
@@ -49,7 +53,8 @@
   "LOGIN": {
     "USER": "User",
     "PASS": "Pass",
-    "LOGIN": "Log in"
+    "LOGIN": "Log in",
+    "REFRESH": "Refresh the screen to see the changes"
   },
   
   "RESULT": {

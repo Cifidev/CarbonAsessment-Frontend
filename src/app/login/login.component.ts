@@ -9,6 +9,7 @@ import { ApiService } from "@shared/services/api.service";
 import { UserLogin } from '@shared/models/userLogin';
 import { GreencrossService } from '@shared/services/greencross.service';
 import { TranslateService } from '@ngx-translate/core';
+import { AuthenticationService } from '@shared/services/authentication.service';
 
 interface IForm extends UserLogin {
   //acceptTerms: boolean;
@@ -52,9 +53,10 @@ export class LoginComponent implements OnInit {
   form: TypedFormGroup<IForm>;
   inputTypes = InputTypesEnum;
   inputs: IInput[];
+  error : string = "";
   
   isLoading = false;
-  constructor(translate: TranslateService, private appService: AppService, private router: Router, private apiService: ApiService, private greencrossServices: GreencrossService) {
+  constructor(translate: TranslateService, private autenticacionService: AuthenticationService, private appService: AppService, private router: Router, private apiService: ApiService, private greencrossServices: GreencrossService) {
     this.inputs = [
       { label: translate.instant('LOGIN.USER'), formControlName: 'username', icon: 'bi bi-person', tipe: 'text'},
       { label: translate.instant('LOGIN.PASS'), formControlName: 'password', icon: 'bi bi-lock', tipe: 'password'},
@@ -83,6 +85,7 @@ export class LoginComponent implements OnInit {
       this.savedUser = value;
       //this.form.patchValue(value || {});
     });
+    this.error = "";
   }
 
   showInput(input: IInput): boolean {
@@ -119,9 +122,24 @@ export class LoginComponent implements OnInit {
    this.greencrossServices.post('login', this.form.value).subscribe(
     (data) => {
       console.log(data);
+      if(data.body){
+        let body = JSON.parse(data.body);
+        this.error = "";
+        if(body.message != undefined){
+          this.error = JSON.parse(data.body).message;
+        }
+        if(body.token != undefined){
+          console.log(body.token);
+          this.autenticacionService.setAutenticate(body.token);
+          this.isLoading = false
+          this.router.navigate(["/adminPanel"]);
+        }
+      }
+      this.isLoading = false
     },
     (err) => {
       console.log(err);
+      this.isLoading = false;
     },
     () => {}
   ); 

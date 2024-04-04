@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { GoogleTagManagerModule } from "angular-google-tag-manager";
 import { GreencrossService } from '@shared/services/greencross.service';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { AuthenticationService } from '@shared/services/authentication.service';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -33,7 +34,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
   ],
   providers: [
-    GreencrossService
+    GreencrossService,AuthenticationService
   ],
   bootstrap: [AppComponent]
 })

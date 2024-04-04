@@ -8,7 +8,11 @@
     "CONTACT": "Nombre contacto",
     "EMAIL": "Email",
     "VIEW": "Ver",
-    "CHECKED": "Verificado"
+    "CHECKED": "Verificado",
+    "LOGOUT": "Salir",
+    "LANGUAGE": "Cambiar idioma",
+    "ENGLISH": "Ingles",
+    "SPANISH": "Español"
   },
   "LANDING": {
     "TITLE": "Comienza nuestra evaluación de concienciación ecológica para descubrir tu impacto ambiental y déjanos ayudarte a mejorarlo.",
@@ -47,7 +51,8 @@
   "LOGIN": {
     "USER": "Usuario",
     "PASS": "Contraseña",
-    "LOGIN": "Ingresar"
+    "LOGIN": "Ingresar",
+    "REFRESH": "Refresque la pantalla para ver los cambios"
   },
   "RESULT": {
     "GOBACK": "Volver a la página de inicio",

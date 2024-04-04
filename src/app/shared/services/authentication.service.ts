@@ -4,7 +4,7 @@ import {
 } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Router } from "@angular/router";
-import "rxjs/add/operator/map";
+import { map } from 'rxjs/operators';
 import { GreencrossService } from "./greencross.service";
 
 @Injectable()
@@ -30,9 +30,13 @@ export class AuthenticationService {
   }
 
   isAutenticated(){
-    return false;
+    let auth = sessionStorage.getItem("authenticated");
+    return auth === "true";
   }
-
+  setAutenticate(token:string){
+    sessionStorage.setItem("authenticated", "true");
+    sessionStorage.setItem("token", token);
+  }
   
 
   // autenticate(): Observable<any> {
@@ -58,4 +62,3 @@ export class AuthenticationService {
 
 
 
-}

@@ -13,6 +13,12 @@
           <button (click)="showResults()" class="btn btn-outline-primary my-4">
             {{'ADMINP.SEARCH' | translate}}
           </button>
+          <button (click)="showLanguage()" class="btn btn-outline-primary my-4">
+            {{'ADMINP.LANGUAGE' | translate}}
+          </button>
+          <button (click)="logout()" class="btn btn-outline-primary my-4">
+            {{'ADMINP.LOGOUT' | translate}}
+          </button>
         </ng-container>
       </div>
     </div>
@@ -73,6 +79,17 @@
           </div>
         </div>
       </ng-container>
+      
+      
     </div>
   </ng-container>
+  <ng-container *ngIf="showLanguages">
+    <button (click)="clickEnglish()" class="btn btn-outline-primary my-4">
+      {{'ADMINP.ENGLISH' | translate}}
+    </button>
+    <button (click)="clickSpanish()" class="btn btn-outline-primary my-4">
+      {{'ADMINP.SPANISH' | translate}}
+    </button>
+  </ng-container>
+  
 </div>

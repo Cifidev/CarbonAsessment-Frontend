@@ -5,10 +5,11 @@ import { User } from "@shared/models/user";
 import { UserLogin } from '@shared/models/userLogin';
 import { ApiService } from "@shared/services/api.service";
 import { AppService } from "@shared/services/app.service";
+import { AuthenticationService } from '@shared/services/authentication.service';
 import { GreencrossService } from '@shared/services/greencross.service';
 import { TypedFormGroup } from "@shared/utils/typed-form-group";
 import { Observable, finalize } from 'rxjs';
-
+import { TranslateService } from '@ngx-translate/core';
 interface IForm extends UserLogin {
   //acceptTerms: boolean;
 }
@@ -55,6 +56,9 @@ export class AdminPanelComponent implements OnInit {
   isResultInfoVisible = false;
   isUserInfoVisible = false;
   showResultTable =false;
+  showLanguages = false;
+  titleLanguages : string;
+  
   savedUser?: User;
   form: TypedFormGroup<IForm>;
   inputs: IInput[] = [
@@ -63,12 +67,13 @@ export class AdminPanelComponent implements OnInit {
   ];
   inputTypes = InputTypesEnum;
   isLoading = false;
-  constructor(private appService: AppService, private router: Router, private apiService: ApiService, private greencrossServices: GreencrossService) {
+  constructor(public translate: TranslateService, private autenticationService: AuthenticationService, private appService: AppService, private router: Router, private apiService: ApiService, private greencrossServices: GreencrossService) {
     this.form = new TypedFormGroup<IForm>({
       username: new FormControl(undefined, [Validators.required]),
       password: new FormControl(undefined, [Validators.required]),
       
     });
+    this.titleLanguages = translate.instant('LOGIN.REFRESH');
     this.inputs.filter(x => x.showIf).forEach(input => {
       this.form.get(input.showIf!.control)?.valueChanges.subscribe(value => {
         const control = this.form.get(input.formControlName);
@@ -84,6 +89,7 @@ export class AdminPanelComponent implements OnInit {
   }
 
   ngOnInit() {
+ 
     this.greencrossServices.get('getUserForm').subscribe(
       (data) => {
         console.log(data);
@@ -99,7 +105,21 @@ export class AdminPanelComponent implements OnInit {
       this.filterData(value);
     });
   }
+  clickEnglish(){
+      this.translate.use('en');
+  }
 
+  clickSpanish(){
+    this.translate.use('es');
+  }
+  showLanguage(){
+    this.showLanguages = true;
+    this.showResultTable = false;
+    this.isResultInfoVisible = false;
+  }
+  logout(){
+    this.autenticationService.logout();
+  }
   createTable(data:any){
     const newDataArray: any[] = data.map((item:any) => ({
       id: item.user.id,
@@ -211,5 +231,7 @@ export class AdminPanelComponent implements OnInit {
   }
   showResults() {
     this.isResultInfoVisible = !this.isResultInfoVisible;
+    this.showLanguages = false;
+    
   }
 }

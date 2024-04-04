@@ -10,8 +10,6 @@
           >
             <div *ngIf="showInput(input)" class="form-floating mb-3">
               <ng-container [ngSwitch]="input.type">
-                
-                 
                 <input
                   *ngSwitchDefault
                   [class]="getInputClass(input)"
@@ -21,7 +19,6 @@
                   class="form-control"
                   [type]="input.tipe"
                 />
-                
               </ng-container>
               <label [for]="input.formControlName" class="form-label">{{
                 input.label
@@ -29,25 +26,26 @@
             </div>
           </div>
         </div>
-        <div class="form-check">
-       
-          
-        </div>
+        <div class="form-check"></div>
+        
         <button
           (click)="submit()"
           [disabled]="isLoading"
           class="btn btn-outline-primary my-4"
         >
-        {{'LOGIN.LOGIN' | translate}}
+          {{ "LOGIN.LOGIN" | translate }}
           <ng-container *ngIf="isLoading">
             <span
               aria-hidden="true"
               class="spinner-border spinner-border-sm"
               role="status"
             ></span>
-            <span class="visually-hidden">{{'OTHER.LOADING' | translate}}</span>
+            <span class="visually-hidden">{{
+              "OTHER.LOADING" | translate
+            }}</span>
           </ng-container>
         </button>
+        <br><label class="form-label">{{ error }}</label> 
       </form>
     </div>
   </div>
