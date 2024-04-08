@@ -1,17 +1,33 @@
 <div class="landing-wrapper">
   <div class="container-fluid container-lg">
+    <div>
+      <ng-container>
+        <button (click)="clickEnglish()" class="btn btn-outline-primary my-4 langEN">
+          {{'ADMINP.ENGLISH' | translate}}
+        </button>
+        <button (click)="clickSpanish()" class="btn btn-outline-primary my-4 langES">
+          {{'ADMINP.SPANISH' | translate}}
+        </button>
+      </ng-container>
+    </div>
     <div class="landing-data d-flex vh-100">
       <div class="row">
         <div class="col-lg-6">
           <ng-container *ngIf="!isUserInfoVisible; else userInfoTmp">
-            <h1 class="pe-3">  {{'LANDING.TITLE' | translate}}</h1>
-            <button (click)="showUserInfo()" class="btn btn-outline-primary my-4"> {{'LANDING.BUTTON' | translate}}</button>
+            <h1 class="pe-3"> {{'LANDING.TITLE' | translate}}</h1>
+            <button (click)="showUserInfo()" class="btn btn-outline-primary my-4"> {{'LANDING.BUTTON' |
+              translate}}</button>
+
           </ng-container>
         </div>
         <div class="col-lg-6 p-0 d-flex flex-column d-lg-none">
           <img alt="bg" class="landing-bg mt-auto" src="assets/images/forest.jpg">
         </div>
       </div>
+      <!-- <button (click)="showLanguage()" class="btn btn-outline-primary my-4">
+        {{'ADMINP.LANGUAGE' | translate}}
+      </button> -->
+
     </div>
   </div>
 </div>

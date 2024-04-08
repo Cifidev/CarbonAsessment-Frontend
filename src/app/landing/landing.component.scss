@@ -44,3 +44,20 @@
     }
   }
 }
+
+.langES:hover {
+  background-image: url('../../assets/images/spain.png'); /* Background image on hover */
+  background-color: transparent; /* Make background color transparent to show the image */
+  color: black; /* Change text color for better visibility */
+  background-size: contain; /* Ensure the background covers the button */
+  background-position: center; /* Center the background image */
+}
+
+
+.langEN:hover {
+  background-image: url('../../assets/images/uk.webp'); /* Background image on hover */
+  background-color: transparent; /* Make background color transparent to show the image */
+  color: black; /* Change text color for better visibility */
+  background-size: cover; /* Ensure the background covers the button */
+  background-position: center; /* Center the background image */
+}
