@@ -1,14 +1,14 @@
 <div class="landing-wrapper">
   <div class=" marginT5EM">
     <div class="row">
-      <div class="col-lg-5">
+      <div class="col-lg-7">
         <h1 class="pe-2">{{'ADMINP.TITLE' | translate}}</h1>
       </div>
     </div>
   </div>
   <div class="">
     <div class="row">
-      <div class="col-lg-5">
+      <div class="col-lg-7">
         <ng-container>
           <button (click)="showResults()" class="btn btn-outline-primary my-4">
             {{'ADMINP.SEARCH' | translate}}
@@ -26,7 +26,7 @@
   <ng-container *ngIf="isResultInfoVisible">
     <div class="">
       <div class="row">
-        <div class="col-lg-5">
+        <div class="col-lg-7">
           <input
             type="text"
             [formControl]="searchText"
@@ -35,18 +35,18 @@
           />
         </div>
       </div>
-      <ng-container *ngIf="showResultTable">
+      <ng-container>
         <div class="row">
-          <div class="col-lg-5 tableSearch">
+          <div class="col-lg-7 tableSearch">
             <table class="">
               <thead>
                 <tr>
-                  <th> {{'ADMINP.ID' | translate}}</th>
-                  <th> {{'ADMINP.NAME' | translate}}</th>
-                  <th> {{'ADMINP.CONTACT' | translate}}</th>
-                  <th> {{'ADMINP.EMAIL' | translate}}</th>
+                  <th (click)="sortTable('id')"> {{'ADMINP.ID' | translate}}</th>
+                  <th (click)="sortTable('companyName')"> {{'ADMINP.NAME' | translate}}</th>
+                  <th (click)="sortTable('contactName')"> {{'ADMINP.CONTACT' | translate}}</th>
+                  <th (click)="sortTable('email')"> {{'ADMINP.EMAIL' | translate}}</th>
                   <th> {{'ADMINP.VIEW' | translate}}</th>
-                  <th> {{'ADMINP.CHECKED' | translate}}</th>
+                  <th (click)="sortTable('checked')"> {{'ADMINP.CHECKED' | translate}}</th>
                   <!-- Columna para acciones -->
                 </tr>
               </thead>

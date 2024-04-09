@@ -9,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   constructor(translate: TranslateService,private gtmService: GoogleTagManagerService, private router: Router) {
-    translate.setDefaultLang('es');
+    translate.setDefaultLang('en');
     this.router.events.forEach(item => {
       if (item instanceof NavigationEnd) {
         const gtmTag = {

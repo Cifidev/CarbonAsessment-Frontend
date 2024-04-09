@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators } from "@angular/forms";
-import { Router } from "@angular/router";
-import { User } from "@shared/models/user";
+import { FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { User } from '@shared/models/user';
 import { UserLogin } from '@shared/models/userLogin';
-import { ApiService } from "@shared/services/api.service";
-import { AppService } from "@shared/services/app.service";
+import { ApiService } from '@shared/services/api.service';
+import { AppService } from '@shared/services/app.service';
 import { AuthenticationService } from '@shared/services/authentication.service';
 import { GreencrossService } from '@shared/services/greencross.service';
-import { TypedFormGroup } from "@shared/utils/typed-form-group";
+import { TypedFormGroup } from '@shared/utils/typed-form-group';
 import { Observable, finalize } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
 interface IForm extends UserLogin {
@@ -29,36 +29,54 @@ interface IInput {
   showIf?: {
     control: IInput['formControlName'];
     value: IOption['value'];
-  }
+  };
   icon?: string;
 }
 
 enum InputTypesEnum {
   Select,
   Text,
-  TextArea
+  TextArea,
 }
 @Component({
   selector: 'app-adminPanel',
   templateUrl: './adminpanel.component.html',
-  styleUrls: ['./adminpanel.component.scss']
+  styleUrls: ['./adminpanel.component.scss'],
 })
 export class AdminPanelComponent implements OnInit {
   searchText: FormControl = new FormControl();
   fullData: any[];
   data: any[] = [
-    { id: 1, companyName: 'Empresa A', contactName: 'Juan', email: 'juan@empresaA.com', checked: true},
-    { id: 2, companyName: 'Empresa B', contactName: 'Maria', email: 'maria@empresaB.com', checked: false },
-    { id: 3, companyName: 'Empresa C', contactName: 'Pedro', email: 'pedro@empresaC.com', checked: true }
+    {
+      id: 1,
+      companyName: 'Empresa A',
+      contactName: 'Juan',
+      email: 'juan@empresaA.com',
+      checked: true,
+    },
+    {
+      id: 2,
+      companyName: 'Empresa B',
+      contactName: 'Maria',
+      email: 'maria@empresaB.com',
+      checked: false,
+    },
+    {
+      id: 3,
+      companyName: 'Empresa C',
+      contactName: 'Pedro',
+      email: 'pedro@empresaC.com',
+      checked: true,
+    },
     // Aquí irían más datos si los tuvieras
   ];
   filteredData: any[];
   isResultInfoVisible = false;
   isUserInfoVisible = false;
-  showResultTable =false;
+  showResultTable = false;
   showLanguages = false;
-  titleLanguages : string;
-  
+  titleLanguages: string;
+
   savedUser?: User;
   form: TypedFormGroup<IForm>;
   inputs: IInput[] = [
@@ -67,70 +85,98 @@ export class AdminPanelComponent implements OnInit {
   ];
   inputTypes = InputTypesEnum;
   isLoading = false;
-  constructor(public translate: TranslateService, private autenticationService: AuthenticationService, private appService: AppService, private router: Router, private apiService: ApiService, private greencrossServices: GreencrossService) {
+  sortDirection: string = 'asc';
+  sortBy: string = 'id';
+
+  constructor(
+    public translate: TranslateService,
+    private autenticationService: AuthenticationService,
+    private appService: AppService,
+    private router: Router,
+    private apiService: ApiService,
+    private greencrossServices: GreencrossService
+  ) {
     this.form = new TypedFormGroup<IForm>({
       username: new FormControl(undefined, [Validators.required]),
       password: new FormControl(undefined, [Validators.required]),
-      
     });
     this.titleLanguages = translate.instant('LOGIN.REFRESH');
-    this.inputs.filter(x => x.showIf).forEach(input => {
-      this.form.get(input.showIf!.control)?.valueChanges.subscribe(value => {
-        const control = this.form.get(input.formControlName);
-        if (value === input.showIf!.value) {
-          control?.addValidators(Validators.required);
-        } else {
-          control?.removeValidators(Validators.required);
-        }
-        control?.setValue(undefined);
-        control?.updateValueAndValidity();
-      })
-    })
+    this.inputs
+      .filter((x) => x.showIf)
+      .forEach((input) => {
+        this.form
+          .get(input.showIf!.control)
+          ?.valueChanges.subscribe((value) => {
+            const control = this.form.get(input.formControlName);
+            if (value === input.showIf!.value) {
+              control?.addValidators(Validators.required);
+            } else {
+              control?.removeValidators(Validators.required);
+            }
+            control?.setValue(undefined);
+            control?.updateValueAndValidity();
+          });
+      });
   }
 
   ngOnInit() {
- 
     this.greencrossServices.get('getUserForm').subscribe(
       (data) => {
         console.log(data);
         this.fullData = data;
+   
         this.createTable(data);
       },
       (err) => {
         console.log(err);
       },
-      () => {}
+      () => {
+        this.searchText.valueChanges.subscribe((value) => {
+          this.filterData(value);
+        });
+        this.filteredData = this.data.slice();
+      }
     );
-    this.searchText.valueChanges.subscribe(value => {
-      this.filterData(value);
-    });
   }
-  clickEnglish(){
-      this.translate.use('en');
+  clickEnglish() {
+    this.translate.use('en');
   }
 
-  clickSpanish(){
+  clickSpanish() {
     this.translate.use('es');
   }
-  showLanguage(){
+  showLanguage() {
     this.showLanguages = true;
-    this.showResultTable = false;
+    this.showResultTable = true;
     this.isResultInfoVisible = false;
   }
-  logout(){
+  logout() {
     this.autenticationService.logout();
   }
-  createTable(data:any){
-    const newDataArray: any[] = data.map((item:any) => ({
+  createTable(data: any) {
+    const newDataArray: any[] = data.map((item: any) => ({
       id: item.user.id,
       companyName: item.user.companyName,
       contactName: item.user.firstName + ' ' + item.user.lastName,
-      email: item.user.email, 
-      checked: true
+      email: item.user.email,
+      checked: true,
     }));
     this.data = newDataArray;
+    this.filteredData = newDataArray;
   }
-  
+  sortTable(property: string) {
+    this.sortDirection = (property === this.sortBy) ? (this.sortDirection === 'asc' ? 'desc' : 'asc') : 'asc';
+    this.sortBy = property;
+
+    this.filteredData.sort((a, b) => {
+      if (a[property] < b[property]) {
+        return this.sortDirection === 'asc' ? -1 : 1;
+      } else if (a[property] > b[property]) {
+        return this.sortDirection === 'asc' ? 1 : -1;
+      }
+      return 0;
+    });
+  }
   // handleIconClick(itemId: number) {
   //   // Aquí puedes implementar la lógica para manejar el clic en el icono
   //   console.log('Se hizo clic en el icono del elemento con ID:', itemId);
@@ -146,20 +192,22 @@ export class AdminPanelComponent implements OnInit {
   handleIconClick(itemId: string) {
     // Make the API request to your backend with the itemId as a parameter
     let user;
-    user = this.fullData.filter(item => item.user.id == itemId);
+    user = this.fullData.filter((item) => item.user.id == itemId);
     const userId = user[0].user.id || undefined;
     const formValue = user[0].user;
-    ((userId && formValue.email === this.savedUser?.email
-      ? this.apiService.updateUserData(userId, formValue)
-      : this.apiService.saveUserData(formValue)) as Observable<any>)
-      .pipe(finalize(() => this.isLoading = false))
-      .subscribe(value => {
+    (
+      (userId && formValue.email === this.savedUser?.email
+        ? this.apiService.updateUserData(userId, formValue)
+        : this.apiService.saveUserData(formValue)) as Observable<any>
+    )
+      .pipe(finalize(() => (this.isLoading = false)))
+      .subscribe((value) => {
         this.appService.setUserInfo({ id: userId || value.name, ...formValue });
-        this.greencrossServices.getParam("getUserTest",itemId).subscribe(
+        this.greencrossServices.getParam('getUserTest', itemId).subscribe(
           (data) => {
             console.log(data);
-            localStorage.setItem("fullTest",JSON.stringify(data.questions));
-          
+            localStorage.setItem('fullTest', JSON.stringify(data.questions));
+
             // Process the response data as needed
           },
           (err) => {
@@ -171,16 +219,16 @@ export class AdminPanelComponent implements OnInit {
             this.router.navigateByUrl('/viewTest');
           }
         );
-      })
-    }
-  
+      });
+  }
+
   filterData(value: string) {
-    if(this.searchText.value != ''){
-      this.showResultTable = true;
-    }else{
-      this.showResultTable = false;
-    }
-    this.filteredData = this.data.filter(item =>
+    // if(this.searchText.value != ''){
+    //   this.showResultTable = true;
+    // }else{
+    //   this.showResultTable = false;
+    // }
+    this.filteredData = this.data.filter((item) =>
       Object.values(item).some((val: any) =>
         val.toString().toLowerCase().includes(value.toLowerCase())
       )
@@ -232,6 +280,5 @@ export class AdminPanelComponent implements OnInit {
   showResults() {
     this.isResultInfoVisible = !this.isResultInfoVisible;
     this.showLanguages = false;
-    
   }
 }
