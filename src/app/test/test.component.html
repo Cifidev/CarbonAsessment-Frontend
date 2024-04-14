@@ -128,7 +128,7 @@
                   [value]="i + 1"
                   formControlName="Bool"
                   type="radio"
-                  (click)="selectAnswer(i + 1, qi)"
+                  (click)="selectAnswer(i + 1, qi, question.subsection)"
                 />
                 <label
                   [for]="'q_' + qi + 'answer_' + i"

@@ -39,6 +39,8 @@ export class TestComponent implements OnInit {
   isLoading = true;
   form?: TypedFormGroup<TestAnswers>;
   formUpdate: FormUpdate = new FormUpdate();
+  answeredQuestions: any = {}; // Track answered questions per subsection
+
   constructor(
     private apiService: ApiService,
     private appService: AppService,
@@ -93,7 +95,7 @@ export class TestComponent implements OnInit {
     );
   }
 
-  selectAnswer(value: number, questionIndex: number) {
+  selectAnswer(value: number, questionIndex: number, subsection: string) {
     const control = (
       (this.form?.controls.answers as TypedFormArray<Answer[]>).controls[
         this.activeStepIdx
@@ -103,8 +105,31 @@ export class TestComponent implements OnInit {
       .get('Bool');
     if (control) {
       control.setValue(value);
+
+      if (value === 2) { // If the answer is "No"
+        // Set subsequent questions in the same subsection to "No"
+        const questions = this.categories![this.activeStepIdx].questions;
+        for (let i = questionIndex + 1; i < questions.length; i++) {
+          if (questions[i].subsection === subsection) {
+            const nextControl = (
+              (this.form?.controls.answers as TypedFormArray<Answer[]>).controls[
+                this.activeStepIdx
+              ] as TypedFormArray<Answer>
+            )
+              .at(i)
+              .get('Bool');
+            if (nextControl) {
+              nextControl.setValue(2); // Set subsequent questions to "No"
+            }
+          } else {
+            break; // Exit loop when reaching questions in a different subsection
+          }
+        }
+      }
     }
   }
+
+
 
   getTestData(): void {
     this.isLoading = true;

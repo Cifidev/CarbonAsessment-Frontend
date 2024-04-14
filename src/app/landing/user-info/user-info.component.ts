@@ -48,19 +48,14 @@ export class UserInfoComponent implements OnInit {
   inputTypes = InputTypesEnum;
   isLoading = false;
 
-  constructor(translate: TranslateService,private appService: AppService, private router: Router, private apiService: ApiService) {
+  constructor(translate: TranslateService, private appService: AppService, private router: Router, private apiService: ApiService) {
     this.inputs = [
       { label: translate.instant('USER.FIRSTNAME'), formControlName: 'firstName', colClass: 'col-md-6' },
       { label: translate.instant('USER.LASTNAME'), formControlName: 'lastName', colClass: 'col-md-6', inputClass: 'border-start-md-0' },
       { label: translate.instant('USER.WORKEMAIL'), formControlName: 'email' },
       {
         label: translate.instant('USER.TITLE2'), formControlName: 'title', type: InputTypesEnum.Select, options: [
-          translate.instant('USER.DATA'),
-          translate.instant('USER.SOFTWARED'),
-          translate.instant('USER.ENGINEER'),
-          translate.instant('USER.STUDENT') ,
-          translate.instant('USER.CEO'),
-          translate.instant('USER.OTHER') ,
+          translate.instant('USER.MANAGER_MKT'), translate.instant('USER.OFFICER_SUSTAIN'), translate.instant('USER.DIRECTOR_PR'), translate.instant('USER.MANAGER_CSR'), translate.instant('USER.MANAGER_EC'), translate.instant('USER.MANAGER_SC'), translate.instant('USER.DIRECTOR_SD'), translate.instant('USER.SPECIALIST_ECS'), translate.instant('USER.ANALYST_SUSTAIN'), translate.instant('USER.DIRECTOR_CR'),
         ].map(x => ({
           label: x,
           value: x
@@ -70,14 +65,14 @@ export class UserInfoComponent implements OnInit {
       { label: translate.instant('USER.COMPANY'), formControlName: 'companyName' },
       {
         label: translate.instant('USER.INDUSTRY'), formControlName: 'industry', type: InputTypesEnum.Select, options: [
-          translate.instant('USER.ENTER') ,
+          translate.instant('USER.ENTER'),
           translate.instant('USER.CONSULTING'),
           translate.instant('USER.TECH'),
-          translate.instant('USER.HEALTH') ,
+          translate.instant('USER.HEALTH'),
           translate.instant('USER.FINANCE'),
           translate.instant('USER.MANUFACTURING'),
-          translate.instant('USER.PUBLIC') ,
-          translate.instant('USER.RETAIL') ,
+          translate.instant('USER.PUBLIC'),
+          translate.instant('USER.RETAIL'),
           translate.instant('USER.TRANSPORT'),
           translate.instant('USER.OTHER')
         ].map(x => ({
@@ -85,7 +80,7 @@ export class UserInfoComponent implements OnInit {
           value: x
         }))
       },
-      { label:translate.instant('USER.YOURI'), formControlName: 'otherIndustry', showIf: { control: 'industry', value: 'Other' } },
+      { label: translate.instant('USER.YOURI'), formControlName: 'otherIndustry', showIf: { control: 'industry', value: 'Other' } },
       {
         label: translate.instant('USER.COMPANYSIZE'), formControlName: 'companySize', type: InputTypesEnum.Select, options: [
           '1-49',
@@ -171,6 +166,7 @@ export class UserInfoComponent implements OnInit {
       .subscribe(value => {
         this.appService.setUserInfo({ id: userId || value.name, ...formValue });
         this.router.navigateByUrl('/test');
+        localStorage.removeItem('fullTest');
       })
   }
 }

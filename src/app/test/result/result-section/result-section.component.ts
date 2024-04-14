@@ -22,6 +22,7 @@ export class ResultSectionComponent implements OnInit {
   score = 0;
   result?: Result;
   private categoriesScores: number[] = [];
+  read: boolean;
 
   constructor(private apiService: ApiService, private appService: AppService) {
   }
@@ -43,6 +44,11 @@ export class ResultSectionComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    if (localStorage.getItem('fullTest') != undefined) {
+      this.read = true;
+    } else {
+      this.read = false;
+    }
     forkJoin([
       this.apiService.getTestData(),
       this.appService.answers$.pipe(filter(Boolean), take(1))
