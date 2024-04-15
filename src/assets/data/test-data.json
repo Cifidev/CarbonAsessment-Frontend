@@ -3,7 +3,7 @@
     "title": "Quality of Life",
     "questions": [
       {
-        "question": "Improve Community Quality of Life",
+        "question": "Is this credit applicable?",
         "questionType": 3,
         "agree": null,
         "subsection": "Wellbeing",
@@ -13,24 +13,25 @@
         "subsectionDescription": "Applicability: It is likely that all organisations and/or projects have the ability to align organisational and/or project objectives with community needs and goals, identified through active engagement, in order to achieve broad community satisfaction. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
       },
       {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "subsection": "Wellbeing"
+
+      },
+      {
         "question": "Your company Ecology Awareness roadmap has clearly defined time bounds.",
         "questionType": 3,
         "agree": null,
         "subsection": "Wellbeing",
-        "subsectionTitle": "Improve communit xy Quality of Life",
-        "subsectionIntent": "Intent: Improve the net quality of life of all communities affected by the organisation and/or project and mitigate negative impacts to communities.",
-        "subsectionMetric": "Metric: Meascures taken to assess community needs and improve quality of life while minimizing negative impacts.",
-        "subsectionDescription": "Applicability: It is likely that all organisations and/or projects have the ability to align organisational and/or project objectives with community needs and goals, identified through active engagement, in order to achieve broad community satisfaction. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
+   "subsectionDescription": "Applicability: It is likely that all organisations and/or projects have the ability to align organisational and/or project objectives with community needs and goals, identified through active engagement, in order to achieve broad community satisfaction. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
 
       },
       {
         "question": "What companies are top of mind in the area of Ecology Awareness strategy consulting?",
         "questionType": 3,
         "subsection": "Wellbeing",
-        "subsectionTitle": "Improve community Mobility and Access",
-        "subsectionIntent": "Intent: Plan the organisation and/or the project as part of a connected network that supports all transportation modes for the efficient movement of people, goods, and services.",
-        "subsectionMetric": "Metric: Measures taken to assess community needs and improve quality of life while minimizing negative impacts.",
-        "subsectionDescription": "Applicability: It is likely that all organisations and/or projects have the ability to align organisational and/or project objectives with community needs and goals, identified through active engagement, in order to achieve broad community satisfaction. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
+       "subsectionDescription": "Applicability: It is likely that all organisations and/or projects have the ability to align organisational and/or project objectives with community needs and goals, identified through active engagement, in order to achieve broad community satisfaction. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
 
       },
       {

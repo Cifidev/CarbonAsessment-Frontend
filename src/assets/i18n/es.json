@@ -28,12 +28,30 @@
     "LASTNAME": "Apellido",
     "WORKEMAIL": "Correo electrónico del trabajo",
     "TITLE2": "Titular",
-    "DATA": "Cientifico de datos",
-    "SOFTWARED": "Desarrollador de Software",
-    "ENGINEER": "Ingeniero",
-    "STUDENT": "Estudiante",
-    "CEO": "CEO o Manager",
-    "OTHER": "Otro",
+   
+      "MANAGER_MKT": "Jefe de Marketing",
+      "OFFICER_SUSTAIN": "Oficial Principal de Sostenibilidad",
+      "DIRECTOR_PR": "Director de Relaciones Públicas",
+      "MANAGER_CSR": "Gerente de Responsabilidad Social Corporativa",
+      "MANAGER_EC": "Jefe de Cumplimiento Ambiental",
+      "MANAGER_SC": "Gerente de Cadena de Suministro",
+      "DIRECTOR_SD": "Director de Desarrollo Sostenible",
+      "SPECIALIST_ECS": "Especialista en Cumplimiento Ambiental",
+      "MANAGER_CC": "Gerente de Comunicaciones Corporativas",
+      "MANAGER_PDM": "Gerente de Desarrollo de Productos",
+      "ANALYST_SUSTAIN": "Analista de Sostenibilidad",
+      "DIRECTOR_CR": "Director de Responsabilidad Corporativa",
+      "COORDINATOR_GI": "Coordinador de Iniciativas Verdes",
+      "MANAGER_REPM": "Gerente de Proyectos de Energía Renovable",
+      "CONSULTANT_SUSTAIN": "Consultor de Sostenibilidad",
+      "MANAGER_EHSM": "Gerente de Salud y Seguridad Ambiental",
+      "ARCHITECT_GB": "Arquitecto de Edificios Verdes",
+      "MANAGER_COMMREL": "Gerente de Relaciones Comunitarias",
+      "SCIENTIST_ENV": "Científico Ambiental",
+      "DIRECTOR_ENV_AFF": "Director de Asuntos Ambientales",
+  
+  
+    
     "YOUR": "Su puesto",
     "COMPANY": "Nombre compañia",
     "INDUSTRY": "Industria",
@@ -66,7 +84,9 @@
     "LABEL6": "Un grupo de especialistas analizará su informe y se comunicará con usted en breve. Ha completado con éxito la Lista de verificación previa a la evaluación, que evalúa la sostenibilidad de su proyecto en seis categorías y 67 créditos, que describe su estado actual de sostenibilidad y áreas potenciales. para mejorar. Recuerde, la puntuación que ha recibido es sólo un punto de partida. Para obtener más ayuda, no dude en unirse a nuestra comunidad en joinus@green-cross.org.uk"
   },
   "SECTION":{
-    "ACTIONABLE":"Actionable points for you to take"
+    "ACTIONABLE":"Acciones disponibles: ",
+    "DOWNLOAD":"Descargar Reporte",
+    "VERIFIED":"Marcar como verificado por G+ UK"
   },
   "OTHER": {
     "LOADING": "Cargando...",

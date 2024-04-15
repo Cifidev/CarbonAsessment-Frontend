@@ -23,18 +23,33 @@
     "TITLE": "Please fill the form below to continue",
     "BUTTON": "Start the test",
     "SELECT": "Select",
-    "LABELCHECK": "By sending this form, you agree to us getting in contact with you via the email address provided. This form will take approximately 45 minutes to fill out, you'll be able to leave at any moment and resume it. ",
+    "LABELCHECK": "By sending this form, you agree to us getting in contact with you via the email address provided. This form will take approximately 45 minutes to fill out, you'll be able to leave at any moment and resume it just by accessing this site again. ",
     "FIRSTNAME": "First name",
     "LASTNAME": "Last name",
     "WORKEMAIL": "Work email",
     "TITLE2": "Title",
+    
+    "MANAGER_MKT": "Marketing Manager",
+    "OFFICER_SUSTAIN": "Chief Sustainability Officer",
+    "DIRECTOR_PR": "Public Relations Director",
+    "MANAGER_CSR": "Corporate Social Responsibility Manager",
+    "MANAGER_EC": "Head of Environmental Compliance",
+    "MANAGER_SC": "Supply Chain Manager",
+    "DIRECTOR_SD": "Director of Sustainable Development",
+    "SPECIALIST_ECS": "Environmental Compliance Specialist",
+    "MANAGER_CC": "Corporate Communications Manager",
+    "MANAGER_PDM": "Product Development Manager",
+    "ANALYST_SUSTAIN": "Sustainability Analyst",
+    "DIRECTOR_CR": "Director of Corporate Responsibility",
+    "COORDINATOR_GI": "Green Initiatives Coordinator",
+    "MANAGER_REPM": "Renewable Energy Project Manager",
+    "CONSULTANT_SUSTAIN": "Sustainability Consultant",
+    "MANAGER_EHSM": "Environmental Health and Safety Manager",
+    "ARCHITECT_GB": "Green Building Architect",
+    "MANAGER_COMMREL": "Community Relations Manager",
+    "SCIENTIST_ENV": "Environmental Scientist",
+    "DIRECTOR_ENV_AFF": "Director of Environmental Affairs",
 
-    "DATA": "Data Scientist",
-    "SOFTWARED": "Software Developer",
-    "ENGINEER": "Engineer",
-    "STUDENT": "Student or Faculty",
-    "CEO": "CEO or Manager",
-    "OTHER": "Other",
     "YOUR": "Your title",
     "COMPANY": "Company name",
     "INDUSTRY": "Industry",
@@ -70,7 +85,9 @@
 
   },
   "SECTION":{
-    "ACTIONABLE":"Puntos procesables que usted debe tomar"
+    "ACTIONABLE":"Available Actions: ",
+    "DOWNLOAD":"Download Report",
+    "VERIFIED":"Mark as verified by G+ UK"
   },
     
   "OTHER": {

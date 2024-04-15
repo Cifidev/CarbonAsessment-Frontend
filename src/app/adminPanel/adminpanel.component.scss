@@ -23,13 +23,38 @@
 }
 .tableSearch{
  
-  background-color: #c4c4c469;
+  background-color: #defcf9;
   border-radius: 20px;
+  table thead th {
+    padding: 5px 5px;
+    background-color: #06B258;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    
+  }
+
+  
   table{   
     width: 100%; 
     padding: 20px;
     tbody tr td span{
       cursor: pointer;
+    }
+    tbody tr:nth-child(odd){
+      background: #defcf9;
+    }
+    tbody tr:nth-child(even){
+      background: rgba(27, 27, 29, 0.1);
+    }
+    
+    
+    tbody td:first-child {
+      border-left: none;
+    }
+    
+    tbody tr:last-child td {
+      border-bottom: none;
     }
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { User } from '@shared/models/user';
@@ -10,6 +10,9 @@ import { GreencrossService } from '@shared/services/greencross.service';
 import { TypedFormGroup } from '@shared/utils/typed-form-group';
 import { Observable, finalize } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf'; 
+
 interface IForm extends UserLogin {
   //acceptTerms: boolean;
 }
@@ -43,7 +46,7 @@ enum InputTypesEnum {
   templateUrl: './adminpanel.component.html',
   styleUrls: ['./adminpanel.component.scss'],
 })
-export class AdminPanelComponent implements OnInit {
+export class AdminPanelComponent implements OnInit, AfterViewInit {
   searchText: FormControl = new FormControl();
   fullData: any[];
   data: any[] = [
@@ -124,7 +127,7 @@ export class AdminPanelComponent implements OnInit {
       (data) => {
         console.log(data);
         this.fullData = data;
-   
+
         this.createTable(data);
       },
       (err) => {
@@ -137,6 +140,28 @@ export class AdminPanelComponent implements OnInit {
         this.filteredData = this.data.slice();
       }
     );
+  }
+  ngAfterViewInit() {
+    // this.clickPrint();
+  }
+  clickPrint() {
+    const data = document.getElementById('contentToConvert');
+    if (!data) {
+      console.error('Element not found.');
+      return;
+    }
+    html2canvas(data).then((canvas) => {
+      // Generar una imagen desde el canvas
+      const imgWidth = 320;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      const contentDataURL = canvas.toDataURL('image/png');
+
+      // Crear un objeto PDF
+      const pdf = new jsPDF('l', 'mm', 'a4'); // Tamaño de página A4
+      const position = 0;
+      pdf.addImage(contentDataURL, 'PNG', 0, position, imgWidth, imgHeight);
+      pdf.save('screen.pdf'); // Guardar el PDF
+    });
   }
   clickEnglish() {
     this.translate.use('en');
@@ -154,18 +179,39 @@ export class AdminPanelComponent implements OnInit {
     this.autenticationService.logout();
   }
   createTable(data: any) {
-    const newDataArray: any[] = data.map((item: any) => ({
-      id: item.user.id,
-      companyName: item.user.companyName,
-      contactName: item.user.firstName + ' ' + item.user.lastName,
-      email: item.user.email,
-      checked: true,
-    }));
+    const newDataArray: any[] = data.map((item: any) => {
+      // Crear un objeto Date a partir de la cadena de fecha
+      const createDate = new Date(item.createdDate);
+  
+      // Formatear la fecha según el formato deseado (por ejemplo, "DD/MM/AAAA HH:MM:SS")
+      const formattedDate = createDate.toLocaleDateString('en-US', { 
+        year: 'numeric',
+        month: 'short',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    });
+      return {
+          id: item.user.id,
+          companyName: item.user.companyName,
+          contactName: item.user.firstName + ' ' + item.user.lastName,
+          email: item.user.email,
+          date: item.createdDate != undefined ? formattedDate : " - ",
+          checked: item.review == true ? true : false,
+      };
+  });
+    
     this.data = newDataArray;
     this.filteredData = newDataArray;
   }
   sortTable(property: string) {
-    this.sortDirection = (property === this.sortBy) ? (this.sortDirection === 'asc' ? 'desc' : 'asc') : 'asc';
+    this.sortDirection =
+      property === this.sortBy
+        ? this.sortDirection === 'asc'
+          ? 'desc'
+          : 'asc'
+        : 'asc';
     this.sortBy = property;
 
     this.filteredData.sort((a, b) => {

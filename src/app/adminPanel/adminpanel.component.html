@@ -1,4 +1,4 @@
-<div class="landing-wrapper">
+<div id="contentToConvert" class="landing-wrapper">
   <div class=" marginT5EM">
     <div class="row">
       <div class="col-lg-7">
@@ -16,6 +16,7 @@
           <button (click)="showLanguage()" class="btn btn-outline-primary my-4">
             {{'ADMINP.LANGUAGE' | translate}}
           </button>
+          
           <button (click)="logout()" class="btn btn-outline-primary my-4">
             {{'ADMINP.LOGOUT' | translate}}
           </button>
@@ -45,6 +46,7 @@
                   <th (click)="sortTable('companyName')"> {{'ADMINP.NAME' | translate}}</th>
                   <th (click)="sortTable('contactName')"> {{'ADMINP.CONTACT' | translate}}</th>
                   <th (click)="sortTable('email')"> {{'ADMINP.EMAIL' | translate}}</th>
+                  <th (click)="sortTable('date')"> {{'ADMINP.DATE' | translate}}</th>
                   <th> {{'ADMINP.VIEW' | translate}}</th>
                   <th (click)="sortTable('checked')"> {{'ADMINP.CHECKED' | translate}}</th>
                   <!-- Columna para acciones -->
@@ -56,6 +58,7 @@
                   <td>{{ item.companyName }}</td>
                   <td>{{ item.contactName }}</td>
                   <td>{{ item.email }}</td>
+                  <td>{{ item.date }}</td>
                   <td>
                     <span
                       class="icon bi bi-arrow-right-circle"

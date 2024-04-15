@@ -5,31 +5,21 @@
       {{'RESULT.GOBACK' | translate}}
     </a>
   </header>
-<!-- 
-  <section id="result">
-    <app-result-section></app-result-section>
-  </section> -->
 
-  <section id="report" class="my-5">
+  <section *ngIf="read" id="result">
+    <app-result-section></app-result-section>
+  </section>
+
+  <section *ngIf="!read"  id="report" class="my-5">
     <h1 class="mh mb-4"> {{'RESULT.YOURREPO' | translate}}</h1>
     <p> {{'RESULT.LABEL6' | translate}}</p>
 </section>
 
-  <div class="my-5">
-    <!-- <p>
-      <a class="btn btn-outline-primary" href="https://www.bigmarker.com/peltarion/Discussions-on-maturity-in-enterprises?show_live_page=true" target="_blank" rel="noopener noreferrer">
-        Register for webinar
-      </a> 
-    </p>
-    <p>  
-      <a class="btn btn-outline-primary" href="https://www.youtube.com/playlist?list=PLAJcauuc5T9eoHlOVtbY_QTswpVqhOlFv" target="_blank" rel="noopener noreferrer">
-        How to solve enterprise ecology awareness
-      </a>
-    </p>
-    <img src="assets/images/resources/enterpriseai.jpg"> -->
+  <div *ngIf="read" class="my-5">
+   
   </div>
 
-  <section id="resources">
+  <section *ngIf="!read" id="resources">
     <app-resources></app-resources>
   </section>
 
