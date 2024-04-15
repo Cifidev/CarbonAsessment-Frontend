@@ -94,7 +94,7 @@ export class TestComponent implements OnInit {
       this.appService.setAnswers(value)
     );
   }
-
+  
   selectAnswer(value: number, questionIndex: number, subsection: string) {
     const control = (
       (this.form?.controls.answers as TypedFormArray<Answer[]>).controls[

@@ -22,7 +22,8 @@ export class GreencrossService {
 		login: 'loginUser',
 		getUserForm: 'getUserForm',
 		setFormResult: 'setFormResults',
-		getUserTest: 'getUserTest'
+		getUserTest: 'getUserTest',
+		updateReview: 'updateReviewStatus'
 		// other Properties
 	};
 

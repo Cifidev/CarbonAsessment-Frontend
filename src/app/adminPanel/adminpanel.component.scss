@@ -23,18 +23,27 @@
 }
 .tableSearch{
  
-  background-color: #defcf9;
-  border-radius: 20px;
+  background-color: transparent;
   table thead th {
     padding: 5px 5px;
     background-color: #06B258;
     color: #FFFFFF;
     font-size: 14px;
     font-weight: bold;
-    
-  }
-
   
+  }
+  table thead tr {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  table thead th:first-child {
+    border-radius: 20px 0px 0px 0px; 
+  }
+  
+  table thead th:last-child {
+    border-radius: 0px 20px 0px 0px; 
+  }
   table{   
     width: 100%; 
     padding: 20px;

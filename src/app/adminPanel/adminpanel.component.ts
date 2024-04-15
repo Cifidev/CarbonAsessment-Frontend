@@ -235,7 +235,7 @@ export class AdminPanelComponent implements OnInit, AfterViewInit {
 
   // }
 
-  handleIconClick(itemId: string) {
+  handleIconClick(itemId: string, checked:boolean) {
     // Make the API request to your backend with the itemId as a parameter
     let user;
     user = this.fullData.filter((item) => item.user.id == itemId);
@@ -249,15 +249,18 @@ export class AdminPanelComponent implements OnInit, AfterViewInit {
       .pipe(finalize(() => (this.isLoading = false)))
       .subscribe((value) => {
         this.appService.setUserInfo({ id: userId || value.name, ...formValue });
+        localStorage.setItem('checked', JSON.stringify(checked));
         this.greencrossServices.getParam('getUserTest', itemId).subscribe(
           (data) => {
             console.log(data);
             localStorage.setItem('fullTest', JSON.stringify(data.questions));
+            localStorage.setItem('idTest', JSON.stringify(data.id));
 
             // Process the response data as needed
           },
           (err) => {
             console.log(err);
+            localStorage.removeItem('checked');
             // Handle any errors if the request fails
           },
           () => {

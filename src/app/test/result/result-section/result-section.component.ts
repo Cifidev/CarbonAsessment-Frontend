@@ -7,7 +7,9 @@ import { AppService } from "@shared/services/app.service";
 import { filter, forkJoin, take } from "rxjs";
 import { TestAnswers } from "@shared/models/test-answers";
 import { Result } from "@shared/models/result";
-
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf'; 
+import { GreencrossService } from '@shared/services/greencross.service';
 interface ExtendedCategory extends Category {
   score: number;
 }
@@ -23,8 +25,9 @@ export class ResultSectionComponent implements OnInit {
   result?: Result;
   private categoriesScores: number[] = [];
   read: boolean;
+  checked:boolean;
 
-  constructor(private apiService: ApiService, private appService: AppService) {
+  constructor(private apiService: ApiService, private appService: AppService,private greencrossServices: GreencrossService) {
   }
 
   private static getScoreColor(score: number): string {
@@ -49,12 +52,69 @@ export class ResultSectionComponent implements OnInit {
     } else {
       this.read = false;
     }
+    if (localStorage.getItem('checked') != undefined) {
+      let checked: string = '';
+      const checkedTest = localStorage.getItem('checked');
+      if (typeof checkedTest === 'string') {
+        checked = JSON.parse(checkedTest);
+      }
+      if(checked){
+        this.checked =true;
+      }else{
+        this.checked =false;
+      }
+      
+    } else {
+      this.checked = false;
+    }
     forkJoin([
       this.apiService.getTestData(),
       this.appService.answers$.pipe(filter(Boolean), take(1))
     ]).subscribe(([categories, answers]) => this.calculateResult(categories, answers))
   }
+  clickChecked(){
+    let userId: string = '';
+    const storedIdTest = localStorage.getItem('idTest');
+    if (typeof storedIdTest === 'string') {
+      userId = JSON.parse(storedIdTest);
+    }
+    if (userId !== '') {
+      const payload = { userId: userId};
+      this.greencrossServices.post('updateReview', payload).subscribe(
+        (data) => {
+          console.log(data);
+          localStorage.setItem('checked', JSON.stringify(true));
+          this.checked=true;
+        },
+        (err) => {
+          console.log(err);
+        },
+        () => {}
+      ); 
+    } else {
+      // Manejar el caso cuando 'idTest' no está presente en localStorage
+    }
+    
+  }
+  clickPrint() {
+    const data = document.getElementById('contentToConvert');
+    if (!data) {
+      console.error('Element not found.');
+      return;
+    }
+    html2canvas(data).then((canvas) => {
+      // Generar una imagen desde el canvas
+      const imgWidth = 150;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      const contentDataURL = canvas.toDataURL('image/png');
 
+      // Crear un objeto PDF
+      const pdf = new jsPDF('p', 'mm', 'a4'); // Tamaño de página A4
+      const position = 0;
+      pdf.addImage(contentDataURL, 'PNG', 0, position, imgWidth, imgHeight);
+      pdf.save('screen.pdf'); // Guardar el PDF
+    });
+  }
   // private calculateResult(categories: Category[], testAnswers: TestAnswers): void {
   //   const categoriesTotals = categories.map(category => category.questions.filter(question => question.questionType === QuestionTypeEnum.Agree).length * 5);
   //   this.total = categories.length * 50;
