@@ -1,7 +1,7 @@
 <div class="landing-wrapper">
   <div class="container-fluid container-lg">
     <div>
-      <ng-container>
+      <ng-container *ngIf="!isUserInfoVisible">
         <button (click)="clickEnglish()" class="btn btn-outline-primary my-4 langEN">
           {{'ADMINP.ENGLISH' | translate}}
         </button>
