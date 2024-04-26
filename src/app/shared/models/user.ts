@@ -6,7 +6,10 @@ export interface User {
   title: string;
   otherTitle?: string;
   companyName: string;
+  country: string;
+  state: string;
   industry: string;
+  sector: string;
   otherIndustry?: string;
   companySize: string;
 }
