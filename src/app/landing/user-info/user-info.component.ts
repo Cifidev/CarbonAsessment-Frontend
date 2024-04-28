@@ -49,6 +49,7 @@ export class UserInfoComponent implements OnInit {
   inputs: IInput[];
   inputTypes = InputTypesEnum;
   isLoading = false;
+  disclaimerPage = false;
   sectorOptions: { [key: string]: string } = {
     'USER.ENERGY': 'ENERGY',
     'USER.ARCHITECT': 'ARCHITECT',
@@ -365,12 +366,23 @@ export class UserInfoComponent implements OnInit {
     console.log("INDUSTRY", industryOptions);
   }
 
-  submit() {
+  disclaimer() {
     if (this.isLoading || this.form.invalid) {
       this.form.markAllAsTouched();
       this.form.markAsDirty();
       return;
     }
+    this.disclaimerPage = true;
+      
+  }
+
+  submit() {
+    if (this.isLoading || this.form.invalid) {
+      this.form.markAllAsTouched();
+      this.form.markAsDirty();
+      return;
+    }    
+    this.disclaimerPage = false;
     this.isLoading = true;
     const userId = this.savedUser?.id;
     const formValue = this.form.value;

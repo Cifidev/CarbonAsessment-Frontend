@@ -17,7 +17,14 @@
   },
   "LANDING": {
     "TITLE": "The Sustainability Assessment is a digital tool that helps you discover valuable information about the current level of sustainability of their projects and entities. Nowadays, more organisations are seeking to understand the current sustainability practices, which is crucial to amplifying their impact and driving positive change.",
-    "BUTTON": "Start your Sustainable Assessment"
+    "BUTTON": "Start your Sustainable Assessment",
+    "DISCTITLE":"EVALUATING THE PROJECT'S SUSTAINABILITY MEASURES.",
+    "DISCCONTENT":"The Sustainability Assessment is a tool that does not require training.",
+    "PURPOSE":"PURPOSE:",
+    "PURPOSECONTENT":"The purpose of the Sustainability Assessment is to help organisations teams quickly identify whether they are addressing the full range of sustainability criteria in their projects. The success of this Sustainable Assessment hinges on clearly defining the boundary/scope of analysis upfront. This includes specifying the physical locations, dimensions, and types of infrastructure to be assessed. Maintaining consistency in these parameters throughout the checklist is crucial.      The assessment presents the sustainability criteria as yes/no questions. When few of the assessment questions are addressed, they may have the opportunity for improvement by revisiting their project objectives and expanding their sustainability considerations to address more criteria. Conversely, when they address many of the assessment criteria, they demonstrate that their approach is sufficiently broad.",
+    "PROCEDURE":"PROCEDURE:",
+    "PROCEDURECONTENT":"For the purposes of this Sustainable Assessment, a Project will be considered to be any infrastructure, regardless of whether it is in the design, construction, or completed stages. There are six tabs, one for each of the  categories: Social Impact, Governance, Life-cycle Resources, Environment, Risk and Resilience, and Castling. Each category tab lists the credits, -sustainability criteria- and assessment questions. There are a total of 67 credits. Each credit contains an intent, metric, and assessment questions. The intent describes the purpose of the credit and how it contributes to sustainability. The metric explains how the organisation and/or project team can be successful in meeting the intent of the credit. Users are first asked to identify whether a credit is applicable or not by selecting 'yes' or 'no'. The points associated with credits deemed not applicable by selecting 'no' are set to zero. For those credits deemed to be applicable by selecting 'yes', users are to address the subsequent assessment questions. The assessment questions determine if the organisation and/or project meet the intent for that credit. The questions require users to select 'yes' or 'no' from a drop down menu. Some questions will also require a user to select an additional response from a drop down list below the specific question - these questions have the prompt 'Select from one of the following'. Questions left unaddressed are assumed to be answered as 'no'.  "
+  
   },
   "USER": {
     "TITLE": "Please fill the organisation information to continue",
@@ -132,13 +139,13 @@
   
   "RESULT": {
     "GOBACK": "Go back to homepage",
-    "YOURREPO": "Your report",
+    "YOURREPO": "You've succesfully completed the Sustainability Assessment!",
     "LABEL1": "Having completed the Pre-assessment Checklist, you've primed your project or organizational planning with CPSI considerations. This step illuminates your current sustainability standing and identifies areas for growth, enhancing your project's objectives and overall sustainability efforts",
     "LABEL2": "What's next:",
     "LABEL3": "By navigating through six category tabs and assessing 67 credits, you've evaluated your project's alignment with sustainable practices. Each credit's intent, metric, and assessment questions provided guidance, forming a detailed sustainability profile. Remember, unanswered questions default to 'no', stressing the importance of thorough engagement.",
     "LABEL4": "Regarding your score, remember it's a starting point, offering an estimate rather than a final verdict. Use the insights gained to guide your next steps, whether that's deepening current commitments or broadening your approach.",
     "LABEL5": "For further guidance and to enhance your sustainability journey, join our community at joinus@green-cross.org.uk. Your proactive steps today pave the way for a more sustainable tomorrow.",
-    "LABEL6": "A group of specialists will be analyzing your report and contacting you shortly. You've successfully completed the Pre-assessment Checklist, evaluating your project's sustainability across six categories and 67 credits, which outlines your current sustainability status and potential areas for improvement. Remember, the score you've received is just a starting point. For further assistance, feel free to join our community at joinus@green-cross.org.uk."
+    "LABEL6": "A group of specialists will be analyzing your submission and contacting you shortly.If you have any questions, please feel free to contact us by email: joinus@green-cross.org.uk"
 
   },
   "SECTION":{
@@ -150,7 +157,7 @@
   "OTHER": {
     "LOADING": "Loading...",
     "GOBACK": "Go back to",
-    "DOWNLOAD":"Downloadable resources"
+    "DOWNLOAD":"Although this evaluation is free, it takes time and resources to analyse. To keep up the good work and stay ahead of the curve, support our work"
   },
   "DETAIL": {
     "SUBMIT": "Submit"

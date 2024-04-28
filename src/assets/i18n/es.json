@@ -17,7 +17,14 @@
   },
   "LANDING": {
     "TITLE": "La Evaluación de Sostenibilidad es una herramienta digital que le ayuda a descubrir información valiosa sobre el nivel actual de sostenibilidad de sus proyectos y entidades. Hoy en día, más organizaciones buscan comprender las prácticas actuales de sostenibilidad, lo cual es crucial para amplificar su impacto e impulsar un cambio positivo.",
-    "BUTTON": "Comienza tu Evaluación Sostenible"
+    "BUTTON": "Comienza tu Evaluación Sostenible",
+    "DISCTITLE":"EVALUACIÓN DE LAS MEDIDAS DE SOSTENIBILIDAD DEL PROYECTO.",
+    "DISCCONTENT":"La Evaluación de Sostenibilidad es una herramienta que no requiere formación.",
+    "PURPOSE":"PROPOSITO:",
+    "PURPOSECONTENT":"El propósito de la Evaluación de Sostenibilidad es ayudar a los equipos de las organizaciones a identificar rápidamente si están abordando toda la gama de criterios de sostenibilidad en sus proyectos. El éxito de esta Evaluación de Sostenibilidad depende de definir claramente los límites/alcance del análisis. en la delantera. Esto incluye especificar las ubicaciones físicas, las dimensiones y los tipos de infraestructura que se evaluarán. Mantener la coherencia en estos parámetros en toda la lista de verificación es crucial.  La evaluación presenta los criterios de sostenibilidad como preguntas de sí/no. Cuando se abordan pocas de las preguntas de la evaluación, es posible que tengan la oportunidad de mejorar revisando los objetivos de su proyecto y ampliando sus consideraciones de sostenibilidad para abordar más criterios. Por el contrario, cuando abordan muchos de los criterios de evaluación, demuestran que su enfoque es suficientemente amplio.",
+    "PROCEDURE":"PROCEDIMIENTO:",
+    "PROCEDURECONTENT":"Para efectos de esta Evaluación Sostenible, se considerará Proyecto cualquier infraestructura, independientemente de si se encuentra en etapa de diseño, construcción o finalización. Existen seis pestañas, una para cada una de las categorías: Impacto Social, Gobernanza, Recursos del Ciclo de Vida, Medio Ambiente, Riesgo y Resiliencia, y Enroque. Cada pestaña de categoría enumera los créditos, -criterios de sostenibilidad- y preguntas de evaluación. Hay un total de 67 créditos. Cada crédito contiene una intención, una métrica y preguntas de evaluación. La intención describe el propósito del crédito y cómo contribuye a la sostenibilidad. La métrica explica cómo la organización y/o el equipo del proyecto pueden tener éxito en cumplir la intención del crédito. Primero se pide a los usuarios que identifiquen si un crédito es aplicable o no seleccionando \"sí\" o \"no\". '. Los puntos asociados con los créditos que se consideran no aplicables al seleccionar \"no\" se ponen a cero. Para aquellos créditos que se consideren aplicables al seleccionar 'sí', el usuario deberá abordar las preguntas de evaluación posteriores. Las preguntas de evaluación determinan si la organización y/o el proyecto cumplen con la intención de ese crédito. Las preguntas requieren que los usuarios seleccionen \"sí\" o \"no\" en un menú desplegable. Algunas preguntas también requerirán que el usuario seleccione una respuesta adicional de una lista desplegable debajo de la pregunta específica; estas preguntas tienen el mensaje \"Seleccione entre una de las siguientes\". Se supone que las preguntas que no se responden se responden con un \"no\"."
+  
   },
   "USER": {
     "TITLE": "Por favor, complete la información de su organización para continuar",
@@ -131,13 +138,13 @@
   },
   "RESULT": {
     "GOBACK": "Volver a la página de inicio",
-    "YOURREPO": "Tu informe",
+    "YOURREPO": "¡Has completado con éxito la Evaluación de Sostenibilidad!",
     "LABEL1": "Después de completar la Lista de verificación previa a la evaluación, ha preparado su proyecto o planificación organizacional con consideraciones CPSI. Este paso ilumina su situación actual de sostenibilidad e identifica áreas de crecimiento, mejorando los objetivos de su proyecto y los esfuerzos generales de sostenibilidad",
     "LABEL2": "Qué sigue:",
     "LABEL3": "Al navegar a través de seis pestañas de categorías y evaluar 67 créditos, evaluó la alineación de su proyecto con las prácticas sustentables. La intención, métrica y preguntas de evaluación de cada crédito brindaron orientación, formando un perfil de sustentabilidad detallado. Recuerde, las preguntas sin respuesta son predeterminadas a no, destacando la importancia de un compromiso exhaustivo.",
     "LABEL4": "Con respecto a tu puntuación, recuerda que es un punto de partida, que ofrece una estimación en lugar de un veredicto final. Utiliza los conocimientos adquiridos para guiar tus próximos pasos, ya sea profundizar los compromisos actuales o ampliar tu enfoque.",
     "LABEL5": "Para obtener más orientación y mejorar su viaje hacia la sostenibilidad, únase a nuestra comunidad en joinus@green-cross.org.uk. Sus pasos proactivos de hoy allanan el camino para un mañana más sostenible",
-    "LABEL6": "Un grupo de especialistas analizará su informe y se comunicará con usted en breve. Ha completado con éxito la Lista de verificación previa a la evaluación, que evalúa la sostenibilidad de su proyecto en seis categorías y 67 créditos, que describe su estado actual de sostenibilidad y áreas potenciales. para mejorar. Recuerde, la puntuación que ha recibido es sólo un punto de partida. Para obtener más ayuda, no dude en unirse a nuestra comunidad en joinus@green-cross.org.uk"
+    "LABEL6": "Un grupo de especialistas analizará su envío y se comunicará con usted en breve. Si tiene alguna pregunta, no dude en contactarnos por correo electrónico: joinus@green-cross.org.uk"
   },
   "SECTION":{
     "ACTIONABLE":"Acciones disponibles: ",
@@ -147,7 +154,7 @@
   "OTHER": {
     "LOADING": "Cargando...",
     "GOBACK": "Volver a ",
-    "DOWNLOAD":"Recursos descargables"
+    "DOWNLOAD":"Aunque esta evaluación es gratuita, su análisis requiere tiempo y recursos. Para continuar con el buen trabajo y estar a la vanguardia, apoye nuestro trabajo"
   },
   "DETAIL": {
     "SUBMIT": "Enviar"

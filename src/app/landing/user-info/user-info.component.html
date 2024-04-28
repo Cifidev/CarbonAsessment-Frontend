@@ -1,5 +1,5 @@
-<h1 class="mb-4">{{'USER.TITLE' | translate}}</h1>
-<form [formGroup]="form">
+<h1 *ngIf="!disclaimerPage" class="mb-4">{{'USER.TITLE' | translate}}</h1>
+<form *ngIf="!disclaimerPage" [formGroup]="form">
   <div class="row g-0">
     <div *ngFor="let input of inputs" [class]="input.colClass" class="col-12">
       <div class="disclaimer-check" *ngIf="input.disclaimer">
@@ -28,7 +28,7 @@
     <label class="form-check-label" for="acceptTerms">
       {{'USER.LABELCHECK' | translate}}</label>
   </div>
-  <button (click)="submit()" [disabled]="isLoading" class="btn btn-outline-primary my-4">
+  <button (click)="disclaimer()" [disabled]="isLoading" class="btn btn-outline-primary my-4">
     {{'USER.BUTTON' | translate}}
     <ng-container *ngIf="isLoading">
       <span aria-hidden='true' class='spinner-border spinner-border-sm' role='status'></span>
@@ -36,3 +36,23 @@
     </ng-container>
   </button>
 </form>
+<div *ngIf="disclaimerPage">
+  <h2>{{'LANDING.DISCTITLE' | translate}}</h2>
+<p>{{'LANDING.DISCCONTENT' | translate}}
+</p>
+
+  <h2>{{'LANDING.PURPOSE' | translate}}</h2>
+  <p>{{'LANDING.PURPOSECONTENT' | translate}}</p>
+
+  <h2>{{'LANDING.PROCEDURE' | translate}}
+  </h2>
+  <p>{{'LANDING.PROCEDURECONTENT' | translate}}</p>
+
+  <button (click)="submit()" [disabled]="isLoading" class="btn btn-outline-primary my-4">
+    {{'USER.BUTTON' | translate}}
+    <ng-container *ngIf="isLoading">
+      <span aria-hidden='true' class='spinner-border spinner-border-sm' role='status'></span>
+      <span class='visually-hidden'>{{'OTHER.LOAD' | translate}}</span>
+    </ng-container>
+  </button>
+</div>
