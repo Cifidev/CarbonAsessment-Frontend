@@ -74,7 +74,7 @@ export class AdminPanelComponent implements OnInit, AfterViewInit {
     // Aquí irían más datos si los tuvieras
   ];
   filteredData: any[];
-  isResultInfoVisible = false;
+  isResultInfoVisible = true;
   isUserInfoVisible = false;
   showResultTable = false;
   showLanguages = false;

@@ -7,7 +7,7 @@
         <label class="form-check-label">{{input.disclaimer}}</label>
       </div>
       <div *ngIf="showInput(input)" class="form-floating mb-3">
-       
+
         <ng-container [ngSwitch]="input.type">
           <select *ngSwitchCase="inputTypes.Select" [class]="getInputClass(input)"
             [formControlName]="input.formControlName" [id]="input.formControlName" class="form-select"
@@ -36,16 +36,16 @@
     </ng-container>
   </button>
 </form>
-<div *ngIf="disclaimerPage">
-  <h2>{{'LANDING.DISCTITLE' | translate}}</h2>
-<p>{{'LANDING.DISCCONTENT' | translate}}
-</p>
+<div class="disclaimerText" *ngIf="disclaimerPage">
+  <h4>{{'LANDING.DISCTITLE' | translate}}</h4>
+  <p>{{'LANDING.DISCCONTENT' | translate}}
+  </p>
 
-  <h2>{{'LANDING.PURPOSE' | translate}}</h2>
+  <h4>{{'LANDING.PURPOSE' | translate}}</h4>
   <p>{{'LANDING.PURPOSECONTENT' | translate}}</p>
 
-  <h2>{{'LANDING.PROCEDURE' | translate}}
-  </h2>
+  <h4>{{'LANDING.PROCEDURE' | translate}}
+  </h4>
   <p>{{'LANDING.PROCEDURECONTENT' | translate}}</p>
 
   <button (click)="submit()" [disabled]="isLoading" class="btn btn-outline-primary my-4">

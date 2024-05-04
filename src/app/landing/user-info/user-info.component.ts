@@ -159,7 +159,7 @@ export class UserInfoComponent implements OnInit {
       { label: this.translate.instant('USER.WORKEMAIL'), formControlName: 'email' },
       {
         label: this.translate.instant('USER.TITLE2'), formControlName: 'title', type: InputTypesEnum.Select, options: [
-          this.translate.instant('USER.MANAGER_MKT'), this.translate.instant('USER.OFFICER_SUSTAIN'), this.translate.instant('USER.DIRECTOR_PR'), this.translate.instant('USER.MANAGER_CSR'), this.translate.instant('USER.MANAGER_EC'), this.translate.instant('USER.MANAGER_SC'), this.translate.instant('USER.DIRECTOR_SD'), this.translate.instant('USER.SPECIALIST_ECS'), this.translate.instant('USER.ANALYST_SUSTAIN'), this.translate.instant('USER.DIRECTOR_CR'),
+          this.translate.instant('USER.MANAGER_MKT'), this.translate.instant('USER.OFFICER_SUSTAIN'), this.translate.instant('USER.DIRECTOR_PR'), this.translate.instant('USER.MANAGER_CSR'), this.translate.instant('USER.MANAGER_EC'),
         ].map(x => ({
           label: x,
           value: x

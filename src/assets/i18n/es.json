@@ -92,26 +92,12 @@
     "LANDSCAPE": "Paisajismo",
     "INFORMATION": "Informacion",
 
-      "MANAGER_MKT": "Empleado/Fundador",
-      "OFFICER_SUSTAIN": "Oficial Principal de Sostenibilidad",
-      "DIRECTOR_PR": "Director de Relaciones Públicas",
-      "MANAGER_CSR": "Investigador",
-      "MANAGER_EC": "Jefe de Cumplimiento Ambiental",
-      "MANAGER_SC": "Gerente de Cadena de Suministro",
-      "DIRECTOR_SD": "Director de Desarrollo Sostenible",
-      "SPECIALIST_ECS": "Especialista en Cumplimiento Ambiental",
-      "MANAGER_CC": "Gerente de Comunicaciones Corporativas",
-      "MANAGER_PDM": "Gerente de Desarrollo de Productos",
-      "ANALYST_SUSTAIN": "Analista de Sostenibilidad",
-      "DIRECTOR_CR": "Director de Responsabilidad Corporativa",
-      "COORDINATOR_GI": "Coordinador de Iniciativas Verdes",
-      "MANAGER_REPM": "Gerente de Proyectos de Energía Renovable",
-      "CONSULTANT_SUSTAIN": "Consultor de Sostenibilidad",
-      "MANAGER_EHSM": "Gerente de Salud y Seguridad Ambiental",
-      "ARCHITECT_GB": "Arquitecto de Edificios Verdes",
-      "MANAGER_COMMREL": "Gerente de Relaciones Comunitarias",
-      "SCIENTIST_ENV": "Científico Ambiental",
-      "DIRECTOR_ENV_AFF": "Director de Asuntos Ambientales",
+    "MANAGER_MKT": "Fundador",
+    "OFFICER_SUSTAIN": "Empleado senior",
+    "DIRECTOR_PR": "Empleado",
+    "MANAGER_CSR": "Investigador",
+    "MANAGER_EC": "Other",
+      
   
   
     
