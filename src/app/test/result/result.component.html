@@ -1,6 +1,10 @@
 <div class="container">
   <header class="py-5 bg-white position-sticky sticky-top">
-    <a class="d-flex align-items-center" routerLink="/">
+    <a *ngIf="read" class="d-flex align-items-center" routerLink="/adminPanel">
+      <img alt="back" class="back-icon me-2" src="assets/icons/chevron-left.svg">
+      {{'RESULT.GOBACK' | translate}}
+    </a>
+    <a *ngIf="!read" class="d-flex align-items-center" routerLink="/">
       <img alt="back" class="back-icon me-2" src="assets/icons/chevron-left.svg">
       {{'RESULT.GOBACK' | translate}}
     </a>

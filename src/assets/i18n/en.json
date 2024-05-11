@@ -131,8 +131,9 @@
     "LABEL3": "By navigating through six category tabs and assessing 67 credits, you've evaluated your project's alignment with sustainable practices. Each credit's intent, metric, and assessment questions provided guidance, forming a detailed sustainability profile. Remember, unanswered questions default to 'no', stressing the importance of thorough engagement.",
     "LABEL4": "Regarding your score, remember it's a starting point, offering an estimate rather than a final verdict. Use the insights gained to guide your next steps, whether that's deepening current commitments or broadening your approach.",
     "LABEL5": "For further guidance and to enhance your sustainability journey, join our community at joinus@green-cross.org.uk. Your proactive steps today pave the way for a more sustainable tomorrow.",
-    "LABEL6": "A group of specialists will be analyzing your submission and contacting you shortly.If you have any questions, please feel free to contact us by email: joinus@green-cross.org.uk"
-
+    "LABEL6": "A group of specialists will be analyzing your submission and contacting you shortly.If you have any questions, please feel free to contact us by email: joinus@green-cross.org.uk",
+    "GSCORE": "Assesment results: ",
+    "USERINFO": "User Information: "
   },
   "SECTION":{
     "ACTIONABLE":"Available Actions: ",

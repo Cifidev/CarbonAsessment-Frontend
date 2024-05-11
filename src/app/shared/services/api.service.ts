@@ -18,6 +18,7 @@ import { User } from '@shared/models/user';
 import { FirebaseResponse } from '@shared/models/firebase-response';
 import { AppService } from '@shared/services/app.service';
 import { DataService } from '../../data.service';
+import { DatePipe } from '@angular/common';
 
 @Injectable({
   providedIn: 'root',
@@ -27,7 +28,7 @@ export class ApiService {
   private testData$?: Observable<Category[]> | undefined;
   firebaseUrl = environment.firebase.databaseUrl;
 
-  constructor(private http: HttpClient, private appService: AppService, private dataService: DataService) {
+  constructor(private datePipe: DatePipe, private http: HttpClient, private appService: AppService, private dataService: DataService) {
   }
 
   sendData(): void {
@@ -127,9 +128,9 @@ export class ApiService {
       )
     );
   }
+
   submitAnswers({ answers }: TestAnswers): Observable<FirebaseResponse> {
     // Function to submit test answers to the server
-    console.log('HELLOOO  ');
     // Log a message indicating that the function has been called
 
     return forkJoin([
@@ -169,5 +170,8 @@ export class ApiService {
     );
     // End of switchMap operator
   }
+
+
   // End of function
+
 }

@@ -20,16 +20,26 @@ interface ExtendedCategory extends Category {
   styleUrls: ['./result-section.component.scss']
 })
 export class ResultSectionComponent implements OnInit {
+  
+  userInfo:any = "";
   total = 0;
   score = 0;
   result?: Result;
   private categoriesScores: number[] = [];
   read: boolean;
   checked:boolean;
+  categoryResults: {
+    name: string; // Assuming each category has a 'name' field
+    score: number;
+  }[];
 
   constructor(private apiService: ApiService, private appService: AppService,private greencrossServices: GreencrossService) {
+    const user = localStorage.getItem('GreenCross_user');
+    if (user) {
+      this.userInfo = (JSON.parse(user));
+    }
   }
-
+  
   private static getScoreColor(score: number): string {
     if (score >= 100) {
       return '#22AF49';
@@ -115,61 +125,87 @@ export class ResultSectionComponent implements OnInit {
       pdf.save('screen.pdf'); // Guardar el PDF
     });
   }
-  // private calculateResult(categories: Category[], testAnswers: TestAnswers): void {
-  //   const categoriesTotals = categories.map(category => category.questions.filter(question => question.questionType === QuestionTypeEnum.Agree).length * 5);
-  //   this.total = categories.length * 50;
-  //   const categoriesScores = testAnswers.answers
-  //     .map((category, ci) =>
-  //       Math.round(category.reduce((catAcc, answer, i) => {
-  //         const question = categories![ci].questions[i];
-  //         const score = answer.score || 0;
-  //         catAcc += score ? Math.abs(score - (question.agree ? 0 : 6)) : 0;
-  //         return catAcc;
-  //       }, 0) * 50 / categoriesTotals[ci])
-  //     );
-  //   this.categoriesScores = categoriesScores;
-  //   this.score = categoriesScores.reduce((acc, categoriesScore) => {
-  //     acc += categoriesScore;
-  //     return acc;
-  //   }, 0);
-  //   this.getResultObject();
-  //   this.buildChart(categories.map((category, i) => ({ ...category, score: categoriesScores[i] })));
-  // }
 
   private calculateResult(categories: Category[], testAnswers: TestAnswers): void {
     console.log("Calculating result");
-    const categoriesTotals = categories.map(category =>
-      category.questions.filter(question => question.questionType === QuestionTypeEnum.Agree).length * 5
-    );
-    this.total = categories.reduce((total, category) => total + category.questions.length * 500, 0);
 
-    const categoriesScores = testAnswers.answers.map((category, ci) => {
-      let categoryScore = 0;
-      category.forEach((answer, i) => {
-        const question = categories[ci].questions.find((_, index) => index === i);
-        if (question) {
-          const boolValue = answer.Bool === 1;
-          categoryScore += boolValue ? 5 : 0; // Assuming each true value adds 5 to the score
-        }
-      });
-      return Math.round((categoryScore) * 50);
+    // Calculate the maximum possible score per category
+    const categoryMaxScores = categories.map(category => category.questions.length * 5); // Each "Yes" worth 5 points
+
+    const totalMaxScore = categoryMaxScores.reduce((total, maxScore) => total + maxScore, 0);
+
+    // Calculate scores for each category and pair them with category names
+    const categoryResults = testAnswers.answers.map((categoryAnswers, ci) => {
+        let categoryScore = 0;
+        categoryAnswers.forEach((answer, i) => {
+            const question = categories[ci].questions[i];
+            if (question && question.questionType === 3) { // Assuming '3' indicates a 'Yes/No' type question
+                const boolValue = answer.Bool == 1;
+                categoryScore += boolValue ? 5 : 0;
+            }
+        });
+        // Normalize the score to a percentage of the max possible score for this category
+        const scorePercentage = Math.round((categoryScore / categoryMaxScores[ci]) * 100);
+        return {
+            name: categories[ci].title, // Assuming each category has a 'name' field
+            score: scorePercentage
+        };
     });
 
-    this.categoriesScores = categoriesScores;
+    this.categoryResults = categoryResults; // This will be used in the HTML for displaying results
 
-    this.score = categoriesScores.reduce((acc, categoryScore) => acc + categoryScore, 0);
+    // Calculate the total score as a weighted average of the individual category percentages
+    const totalScore = categoryResults.reduce((acc, result, index) => acc + result.score * (categoryMaxScores[index] / totalMaxScore), 0);
+
+    this.score = Math.round(totalScore);
 
     this.getResultObject();
-    this.buildChart(categories.map((category, i) => ({ ...category, score: categoriesScores[i] })));
-  }
+    this.buildChart(categoryResults);
+}
 
+  // private calculateResult(categories: Category[], testAnswers: TestAnswers): void {
+  //   console.log("Calculating result");
+  
+  //   // First, calculate the total number of points possible per category and in total.
+  //   const categoryMaxScores = categories.map(category =>
+  //     category.questions.length * 5 // Assuming each "Yes" is worth 5 points.
+  //   );
+  
+  //   const totalMaxScore = categoryMaxScores.reduce((total, maxScore) => total + maxScore, 0);
+  
+  //   // Then, calculate the scores for each category.
+  //   const categoriesScores = testAnswers.answers.map((categoryAnswers, ci) => {
+  //     let categoryScore = 0;
+  //     categoryAnswers.forEach((answer, i) => {
+  //       const question = categories[ci].questions[i];
+  //       if (question && question.questionType === 3) {
+  //         const boolValue = answer.Bool == 1;
+  //         categoryScore += boolValue ? 5 : 0; // Add score for each "Yes"
+  //       }
+  //     });
+  //     // Normalize the score to be a percentage of the maximum possible score for the category.
+  //     return Math.round((categoryScore / categoryMaxScores[ci]) * 100);
+  //   });
+  
+  //   this.categoriesScores = categoriesScores;
+  
+  //   // Calculate the total score as a percentage of the total maximum score.
+  //   const totalScore = categoriesScores.reduce((acc, categoryScore, index) => acc + categoryScore * (categoryMaxScores[index] / totalMaxScore), 0);
+  
+  //   this.score = Math.round(totalScore);
+  
+  //   // Other function calls remain as they were.
+  //   this.getResultObject();
+  //   this.buildChart(categories.map((category, i) => ({ ...category, score: categoriesScores[i] })));
+  // }
+  
 
-  private buildChart(categories: ExtendedCategory[]): void {
+  private buildChart(categories: any[]): void {
     const ctx = document.getElementById('myChart') as ChartItem;
     new Chart(ctx, {
       type: 'radar',
       data: {
-        labels: categories.map(x => x.title),
+        labels: categories.map(x => x.name),
         datasets: [{
           data: categories.map(x => x.score/10),
           fill: true,
@@ -196,9 +232,9 @@ export class ResultSectionComponent implements OnInit {
         scales: {
           r: {
             min: 0,
-            max: 100,
+            max: 10,
             ticks: {
-              stepSize: 10,
+              stepSize: 2,
               color: 'black',
               font: {
                 size: 8

@@ -7,6 +7,7 @@ import { Router } from "@angular/router";
 import { finalize, Observable, take } from "rxjs";
 import { ApiService } from "@shared/services/api.service";
 import { TranslateService } from '@ngx-translate/core';
+import { formatDate } from '@angular/common';
 
 interface IForm extends User {
   acceptTerms: boolean;
@@ -136,10 +137,11 @@ export class UserInfoComponent implements OnInit {
       sector: new FormControl(undefined, [Validators.required]),
       otherIndustry: new FormControl(),
       companySize: new FormControl(undefined, [Validators.required]),
-      acceptTerms: new FormControl(false, [Validators.requiredTrue])
+      acceptTerms: new FormControl(false, [Validators.requiredTrue]),
+
     });
     this.inputs.filter(x => x.showIf).forEach(input => {
-      this.form.get(input.showIf!.control)?.valueChanges.subscribe(value => {
+      this.form.get(input.showIf!.control)?.valueChanges.subscribe(value => { 
         const control = this.form.get(input.formControlName);
         if (value === input.showIf!.value) {
           control?.addValidators(Validators.required);
@@ -376,6 +378,27 @@ export class UserInfoComponent implements OnInit {
       
   }
 
+  // submit() {
+  //   if (this.isLoading || this.form.invalid) {
+  //     this.form.markAllAsTouched();
+  //     this.form.markAsDirty();
+  //     return;
+  //   }    
+  //   this.disclaimerPage = false;
+  //   this.isLoading = true;
+  //   const userId = this.savedUser?.id;
+  //   const formValue = this.form.value;
+  //   ((userId && formValue.email === this.savedUser?.email
+  //     ? this.apiService.updateUserData(userId, formValue)
+  //     : this.apiService.saveUserData(formValue)) as Observable<any>)
+  //     .pipe(finalize(() => this.isLoading = false))
+  //     .subscribe(value => {
+  //       this.appService.setUserInfo({ id: userId || value.name, ...formValue });
+  //       this.router.navigateByUrl('/test');
+  //       localStorage.removeItem('fullTest');
+  //     })
+  // }
+
   submit() {
     if (this.isLoading || this.form.invalid) {
       this.form.markAllAsTouched();
@@ -384,16 +407,35 @@ export class UserInfoComponent implements OnInit {
     }    
     this.disclaimerPage = false;
     this.isLoading = true;
-    const userId = this.savedUser?.id;
+  
+    // Generate a new userId or use the existing one
     const formValue = this.form.value;
-    ((userId && formValue.email === this.savedUser?.email
-      ? this.apiService.updateUserData(userId, formValue)
-      : this.apiService.saveUserData(formValue)) as Observable<any>)
+    const date = formatDate(new Date(), 'ddMMyy', 'en-US');
+    const countryPrefix = formValue.country.substring(0, 3).toUpperCase();
+    const sectorPrefix = formValue.sector.substring(0, 3).toUpperCase();
+    const randomSuffix = '_' + this.generateRandomAlphaNum(5);
+    const newUserId = `${countryPrefix}${date}${sectorPrefix}${randomSuffix}`;
+  
+    // Determine if updating or saving new user data
+    const userId = this.savedUser?.id && formValue.email === this.savedUser?.email ? this.savedUser.id : newUserId;
+  
+    ((this.savedUser?.id && formValue.email === this.savedUser?.email
+      ? this.apiService.updateUserData(userId, { ...formValue, id: userId })
+      : this.apiService.saveUserData({ ...formValue, id: userId })) as Observable<any>)
       .pipe(finalize(() => this.isLoading = false))
       .subscribe(value => {
-        this.appService.setUserInfo({ id: userId || value.name, ...formValue });
+        this.appService.setUserInfo({ id: userId, ...formValue });
         this.router.navigateByUrl('/test');
         localStorage.removeItem('fullTest');
       })
+  }
+  
+  private generateRandomAlphaNum(length: number): string {
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result = '';
+    for (let i = 0; i < length; i++) {
+      result += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return result;
   }
 }
