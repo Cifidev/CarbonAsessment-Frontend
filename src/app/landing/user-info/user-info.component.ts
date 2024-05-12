@@ -120,7 +120,7 @@ export class UserInfoComponent implements OnInit {
     'USER.DATACENTERS': 'Data Centers',
     'USER.SENSORS': 'Sensors'
   }
-
+ 
 
   constructor(private translate: TranslateService, private appService: AppService, private router: Router, private apiService: ApiService) {
   this.setInputsArray();
@@ -138,7 +138,8 @@ export class UserInfoComponent implements OnInit {
       otherIndustry: new FormControl(),
       companySize: new FormControl(undefined, [Validators.required]),
       acceptTerms: new FormControl(false, [Validators.requiredTrue]),
-
+      projectName: new FormControl(undefined, [Validators.required]),
+      projectPhase: new FormControl(false, [Validators.required]),
     });
     this.inputs.filter(x => x.showIf).forEach(input => {
       this.form.get(input.showIf!.control)?.valueChanges.subscribe(value => { 
@@ -169,6 +170,14 @@ export class UserInfoComponent implements OnInit {
       },
       { label: this.translate.instant('USER.YOUR'), formControlName: 'otherTitle', showIf: { control: 'title', value: 'Other' } },
       { label: this.translate.instant('USER.COMPANY'), formControlName: 'companyName' },
+      { label: this.translate.instant('USER.PROJECTNAME'), formControlName: 'projectName' },
+      { label: this.translate.instant('USER.PROJECTPHASE'), formControlName: 'projectPhase', type: InputTypesEnum.Select, options: [
+        this.translate.instant('USER.PLANNING'), this.translate.instant('USER.DESIGN'), this.translate.instant('USER.CONSTRUCTION'), this.translate.instant('USER.OPERATIONS'), this.translate.instant('USER.MAINTENANCE'),
+      ].map(x => ({
+        label: x,
+        value: x
+      }))
+    },
       {
         label: this.translate.instant('USER.SECTOR'), formControlName: 'sector', type: InputTypesEnum.Select, options: Object.entries(this.sectorOptions).map(([label, value]) => ({
           label: this.translate.instant(label),

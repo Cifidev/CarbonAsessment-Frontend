@@ -122,7 +122,8 @@ export class ResultSectionComponent implements OnInit {
       const pdf = new jsPDF('p', 'mm', 'a4'); // Tamaño de página A4
       const position = 0;
       pdf.addImage(contentDataURL, 'PNG', 0, position, imgWidth, imgHeight);
-      pdf.save('screen.pdf'); // Guardar el PDF
+      let name = this.userInfo.id;
+      pdf.save(name+'.pdf'); // Guardar el PDF
     });
   }
 

@@ -48,6 +48,15 @@
     "LANDSCAPE": "Landscape",
     "INFORMATION": "Information",
 
+    
+    "PLANNING": "Planning",
+    "DESIGN": "Design",
+    "CONSTRUCTION": "Construction",
+    "OPERATIONS": "Operations",
+    "MAINTENANCE": "Maintenance",
+    "PROJECTNAME": "Project name and description",
+    "PROJECTPHASE": "Project phase",
+
     "GEOTHERMAL": "Geothermal",
   "HYDROELECTRIC": "Hydroelectric",
   "HYDROGEN": "Hydrogen",

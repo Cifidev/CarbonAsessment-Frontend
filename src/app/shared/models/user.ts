@@ -12,4 +12,6 @@ export interface User {
   sector: string;
   otherIndustry?: string;
   companySize: string;
+  projectName: string;
+      projectPhase:  string;
 }

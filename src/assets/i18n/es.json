@@ -92,6 +92,15 @@
     "LANDSCAPE": "Paisajismo",
     "INFORMATION": "Informacion",
 
+    
+    "PLANNING": "Planing",
+    "DESIGN": "Diseño",
+    "CONSTRUCTION": "Construcción",
+    "OPERATIONS": "Operaciones",
+    "MAINTENANCE": "Mantenimiento",
+    "PROJECTNAME": "Información",
+    "PROJECTPHASE": "Fase del proyecto",
+
     "MANAGER_MKT": "Fundador",
     "OFFICER_SUSTAIN": "Empleado senior",
     "DIRECTOR_PR": "Empleado",

@@ -1,4 +1,4 @@
-<div class="row">
+<div id="contentToConvert" class="row">
   
   <div class="col-md-6">
       <ng-container>
@@ -12,7 +12,7 @@
 
 <!-- Assuming your Angular component has the selector 'app-user-info' -->
 <div *ngIf="userInfo">
-  <h4> {{'RESULT.USERINFO' | translate}}</h4>
+  <h4> {{'RESULT.USERINFO' | translate}} {{ userInfo.id}}</h4>
   <ul>
     <li><strong>{{'USER.FIRSTNAME' | translate}}:</strong> {{ userInfo.firstName }}</li>
     <li><strong>{{'USER.LASTNAME' | translate}}:</strong> {{ userInfo.lastName }}</li>
@@ -21,6 +21,8 @@
     <li><strong>{{'USER.COMPANYSIZE' | translate}}:</strong> {{ userInfo.companySize }}</li>
     <li><strong>{{'USER.INDUSTRY' | translate}}:</strong> {{ userInfo.industry }}</li>
     <li><strong>{{'USER.TITLE2' | translate}}:</strong> {{ userInfo.title }}</li>
+    <li><strong>{{'USER.PROJECTNAME' | translate}}:</strong> {{ userInfo.projectName }}</li>
+    <li><strong>{{'USER.PROJECTPHASE' | translate}}:</strong> {{ userInfo.projectPhase }}</li>
   </ul>
 </div>
 
@@ -37,7 +39,7 @@
       </ul>
     </ng-container>
   </div>
-  <div   id="contentToConvert" class="col-md-6" >
+  <div    class="col-md-6" >
     <canvas id="myChart" width="100%"></canvas>
   </div>
 </div>
