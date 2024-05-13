@@ -170,14 +170,7 @@ export class UserInfoComponent implements OnInit {
       },
       { label: this.translate.instant('USER.YOUR'), formControlName: 'otherTitle', showIf: { control: 'title', value: 'Other' } },
       { label: this.translate.instant('USER.COMPANY'), formControlName: 'companyName' },
-      { label: this.translate.instant('USER.PROJECTNAME'), formControlName: 'projectName' },
-      { label: this.translate.instant('USER.PROJECTPHASE'), formControlName: 'projectPhase', type: InputTypesEnum.Select, options: [
-        this.translate.instant('USER.PLANNING'), this.translate.instant('USER.DESIGN'), this.translate.instant('USER.CONSTRUCTION'), this.translate.instant('USER.OPERATIONS'), this.translate.instant('USER.MAINTENANCE'),
-      ].map(x => ({
-        label: x,
-        value: x
-      }))
-    },
+      
       {
         label: this.translate.instant('USER.SECTOR'), formControlName: 'sector', type: InputTypesEnum.Select, options: Object.entries(this.sectorOptions).map(([label, value]) => ({
           label: this.translate.instant(label),
@@ -304,6 +297,14 @@ export class UserInfoComponent implements OnInit {
           value: x
         }))
       },
+      { label: this.translate.instant('USER.PROJECTNAME'), formControlName: 'projectName' },
+      { label: this.translate.instant('USER.PROJECTPHASE'), formControlName: 'projectPhase', type: InputTypesEnum.Select, options: [
+        this.translate.instant('USER.PLANNING'), this.translate.instant('USER.DESIGN'), this.translate.instant('USER.CONSTRUCTION'), this.translate.instant('USER.OPERATIONS'), this.translate.instant('USER.MAINTENANCE'),
+      ].map(x => ({
+        label: x,
+        value: x
+      }))
+    },
     ];
   }
   ngOnInit(): void {
