@@ -6,43 +6,627 @@
         "question": "Is this credit applicable?",
         "questionType": 3,
         "agree": null,
-        "subsection": "Wellbeing",
+        "section": "Wellbeing",
+        "subsection": "Improve Community Quality of Life",
         "subsectionTitle": "Improve community Quality of Life",
         "subsectionIntent": "Intent: Improve the net quality of life of all communities affected by the organisation and/or project and mitigate negative impacts to communities.",
         "subsectionMetric": "Metric: Measures taken to assess community needs and improve quality of life while minimizing negative impacts.",
         "subsectionDescription": "Applicability: It is likely that all organisations and/or projects have the ability to align organisational and/or project objectives with community needs and goals, identified through active engagement, in order to achieve broad community satisfaction. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
+      },
+      {
+        "question": "Has the organisation's and/or project's team identified and taken into account community needs, goals, and issues?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Improve Community Quality of Life"
+      },
+      {
+        "question": "Does the organisation and/or the project meet or support the needs and goals of the host and/or affected communities?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Improve Community Quality of Life"
+      },
+      {
+        "question": "Has the organisation's and/or project's team assessed the social impacts it will have on the host and affected communities’ quality of life?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Improve Community Quality of Life"
+      },
+      {
+        "question": "Have the affected communities been meaningfully engaged in identifying how the organisation and/or project meets community needs and/or goals?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Improve Community Quality of Life"
+      },
+      {
+        "question": "Has the organisation's and/or project's team addressed negative social impacts?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Improve Community Quality of Life"
+      },
+      {
+        "question": "Are the affected communities satisfied that the organisation and/or project addresses their needs and goals as well as mitigates negative impacts?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Improve Community Quality of Life"
+      },
+      {
+        "question": "Does the organisation and/or the project proactively address long-term social, economic, or environmental changes that impact quality of life?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Improve Community Quality of Life"
       },
       {
         "question": "Is this credit applicable?",
         "questionType": 3,
         "agree": null,
-        "subsection": "Wellbeing"
-
+        "section": "Wellbeing",
+        "subsection": "Enhance Public Health and Safety",
+        "subsectionTitle": "Enhance Public Health and Safety",
+        "subsectionIntent": "Intent: Protect and enhance community health and safety during operation.",
+        "subsectionMetric": "Metric: Measures taken to increase safety and provide health benefits on the site of the organisation and/or project, surrounding sites, and the broader community in a just and equitable manner.",
+        "subsectionDescription": "Applicability: It is likely that all organisations and/or projects, large and small, have the ability to positively impact health and/or safety in some way. Safety actions can be relative to the scale of the organisation and/or project, from repainting a crosswalk to preventing major chemical spills. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
       },
       {
-        "question": "Your company Ecology Awareness roadmap has clearly defined time bounds.",
+        "question": "Does the organisation and/or the project meet all health and safety regulations and laws for operations?",
         "questionType": 3,
         "agree": null,
-        "subsection": "Wellbeing",
-   "subsectionDescription": "Applicability: It is likely that all organisations and/or projects have the ability to align organisational and/or project objectives with community needs and goals, identified through active engagement, in order to achieve broad community satisfaction. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
-
+        "section": "Wellbeing",
+        "subsection": "Enhance Public Health and Safety"
       },
       {
-        "question": "What companies are top of mind in the area of Ecology Awareness strategy consulting?",
+        "question": "Has the organisation and/or the project exceeded minimum legal health and safety requirements as established by regulations and laws?",
         "questionType": 3,
-        "subsection": "Wellbeing",
-       "subsectionDescription": "Applicability: It is likely that all organisations and/or projects have the ability to align organisational and/or project objectives with community needs and goals, identified through active engagement, in order to achieve broad community satisfaction. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
-
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Enhance Public Health and Safety"
       },
       {
-        "question": "Which of your peers / competitors do you think have come the furthest in their Ecology Awareness strategy?",
+        "question": "Does the organisation and/or the project include health and safety improvements for the immediate surroundings?",
         "questionType": 3,
-        "subsection": "Mobility",
-        "subsectionTitle": "Improve community Quality of Life",
-        "subsectionIntent": "Intent: Improve the net quality of life of all communities affected by the organisation and/or project and mitigate negative impacts to communities.",
-        "subsectionMetric": "Metric: Measures taken to assess community needs and improve quality of life while minimizing negative impacts.",
-        "subsectionDescription": "Applicability: It is likely that all organisations and/or projects have the ability to align organisational and/or project objectives with community needs and goals, identified through active engagement, in order to achieve broad community satisfaction. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
-
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Enhance Public Health and Safety"
+      },
+      {
+        "question": "Does the organisation and/or the project include health and safety improvements for the broader host or affected communities?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Enhance Public Health and Safety"
+      },
+      {
+        "question": "Can the organisation's and/or project's team demonstrate that health and safety risks and impacts are not disproportionately borne by one community over another?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Enhance Public Health and Safety"
+      },
+      {
+        "question": "Will the organisation and/or project provide critical infrastructure services to communities experiencing, or at risk of experiencing, imminent negative health and/or personal safety impacts?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Enhance Public Health and Safety"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Improve Construction Safety",
+        "subsectionTitle": "Improve Construction Safety",
+        "subsectionIntent": "Intent: Enhance public and worker safety during construction.",
+        "subsectionMetric": "Metric: Commitments and measures to monitor safety, provide feedback mechanisms, train personnel, establish security plans, and make health programs available.",
+        "subsectionDescription": "Applicability: all organisations and/or Organisations and/or projects that include construction have the ability to positively impact construction safety. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
+      },
+      {
+        "question": "Have the owner of the organisation and/or project and contractor (GC/CM) made strong commitments to monitoring and improving health and safety?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Improve Construction Safety"
+      },
+      {
+        "question": "Does the organisation and/or the project include reliable feedback mechanisms to identify risks, conduct hazard analyses, and communicate hazards to personnel?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Improve Construction Safety"
+      },
+      {
+        "question": "Does the organisation and/or the project include safety or security training requirements for personnel?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Improve Construction Safety"
+      },
+      {
+        "question": "Does the organisation and/or the project include health and/or well-being programs?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Improve Construction Safety"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Noise and Vibration",
+        "subsectionTitle": "Minimize Noise and Vibration",
+        "subsectionIntent": "Intent: Minimize noise and vibrations during operations to maintain and improve community livability.",
+        "subsectionMetric": "Metric: The extent that operational noise and vibration is assessed and mitigated, and target levels achieved.",
+        "subsectionDescription": "Applicability: Consideration is given to whether the organisation and/or the project will have any operational noise. Noises generated by activities induced by the organisation and/or the project, such as cars on roads, pedestrians in parks, and trucks accessing facilities, are applicable to this credit. Organisations and/or projects that do not include any operational noise may apply to have this credit deemed not applicable with supporting documentation."
+      },
+      {
+        "question": "Has the organisation's and/or project's team assessed the potential for operational noise impacts on the surrounding community and/or environment?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Noise and Vibration"
+      },
+      {
+        "question": "Has the organisation and/or the project mitigated noise generated as a result of the organisation and/or project?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Noise and Vibration"
+      },
+      {
+        "question": "Does the organisation and/or the project set or adopt target noise levels?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Noise and Vibration"
+      },
+      {
+        "question": "Has the organisation's and/or project's team engaged impacted stakeholders on issues of noise and vibration impacts, mitigation strategies, and target levels?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Noise and Vibration"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Light Pollution",
+        "subsectionTitle": "Minimize Light Pollution",
+        "subsectionIntent": "Intent: Reduce backlight, uplight, and glare without jeopardizing safety during operations.",
+        "subsectionMetric": "Metric: Lighting meets backlight, uplight, and glare requirements for lighting zones.",
+        "subsectionDescription": "Applicability: This credit is not applicable if organisations and/or projects do not include any exterior lighting. Certain types of projects may be required to use lighting that is incompatible with the credit requirements. This is not considered an acceptable reason for designating the credit as not applicable. Organisations and/or projects that are unable to demonstrate achievement in this credit are encouraged to pursue higher performance in other credits."
+      },
+      {
+        "question": "Has the organisation's and/or project's team conducted an assessment of lighting needs and impacts for the project?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Light Pollution"
+      },
+      {
+        "question": "Has the organisation and/or the project implemented strategies to reduce light pollution?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Light Pollution"
+      },
+      {
+        "question": "Has the organisation and/or the project developed a lighting plan establishing lighting zones?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Light Pollution"
+      },
+      {
+        "question": "Will luminaires prevent light emission above 90 degrees?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Light Pollution"
+      },
+      {
+        "question": "Do all lights in the organisation and/or project meet backlight, uplight, and glare (BUG) requirements for their respective lighting zones?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Light Pollution"
+      },
+      {
+        "question": "Does the organisation and/or the project involve the removal or retrofitting of existing lighting so as to significantly reduce overall existing lighting?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Light Pollution"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Construction Impacts",
+        "subsectionTitle": "Minimize Construction Impacts",
+        "subsectionIntent": "Intent: Minimize or eliminate the temporary inconveniences associated with construction.",
+        "subsectionMetric": "Metric: Extent of issues addressed through construction management plans.",
+        "subsectionDescription": "Applicability: Consideration is given to whether the organisation and/or the project includes construction activities with the potential to impact the quality of life of individuals. Organisations and/or projects that do not include construction impacts (e.g. an internal refurbishment of a private facility or extremely remote site) may apply to have this credit deemed not applicable with supporting documentation."
+      },
+      {
+        "question": "Has the organisation and/or the project implemented a construction management plan or policies to address construction impacts?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Construction Impacts"
+      },
+      {
+        "question": "Does the construction management plan mitigate noise and/or vibrations?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Construction Impacts"
+      },
+      {
+        "question": "Does the construction management plan address safety and wayfinding for pedestrians and vehicles during construction?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Construction Impacts"
+      },
+      {
+        "question": "Does the construction management plan maintain access to public space and amenities during construction?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Construction Impacts"
+      },
+      {
+        "question": "Does the construction management plan address distracting or intrusive lighting during construction?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Construction Impacts"
+      },
+      {
+        "question": "Does the construction management plan or policies include robust feedback mechanisms and performance monitoring and reporting for construction impacts?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Wellbeing",
+        "subsection": "Minimize Construction Impacts"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "section": "Mobility",
+        "subsection": "Improve Community Mobility and Access",
+        "subsectionTitle": "Improve Community Mobility and Access",
+        "subsectionIntent": "Intent: Plan the organisation and/or the project as part of a connected network that supports all transportation modes for the efficient movement of people, goods, and services.",
+        "subsectionMetric": "Metric: The extent to which the organisation and/or project broadens mode choices, reduces commute times, reduces vehicle distance traveled,",
+        "subsectionDescription": "Applicability: Consideration is given to whether the organisation and/or the project has any potential to impact mobility. Non-transportation Organisations and/or projects that do not include any mobility impacts (positive or negative), and can demonstrate no potential for positively impacting mobility, may apply to have this credit deemed not applicable with supporting documentation. This credit is inherently applicable to all transportation infrastructure projects."
+      },
+      {
+        "question": "Is the organisation and/or the project consistent with local transportation plans?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Mobility",
+        "subsection": "Improve Community Mobility and Access"
+      },
+      {
+        "question": "Has the organisation's and/or project's team obtained input from the community and key stakeholders regarding issues of mobility and access?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Mobility",
+        "subsection": "Improve Community Mobility and Access"
+      },
+      {
+        "question": "Does the organisation and/or the project include strategies to increase capacity, manage congestion, reduce vehicle distance traveled, or lower accident rates?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Mobility",
+        "subsection": "Improve Community Mobility and Access"
+      },
+      {
+        "question": "Has the organisation's and/or project's team worked with the community to expand mobility and access options and/or incorporate complete streets policies?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Mobility",
+        "subsection": "Improve Community Mobility and Access"
+      },
+      {
+        "question": "Has the organisation's and/or project's team considered the long-term mobility and access needs of the community?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Mobility",
+        "subsection": "Improve Community Mobility and Access"
+      },
+      {
+        "question": "Does the organisation and/or the project create new or restore previous connections between communities?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Mobility",
+        "subsection": "Improve Community Mobility and Access"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "section": "Mobility",
+        "subsection": "Encourage Sustainable Transportation",
+        "subsectionTitle": "Encourage Sustainable Transportation",
+        "subsectionIntent": "Intent: Expand accessibility to sustainable transportation choices including active, shared, and/or mass transportation.",
+        "subsectionMetric": "Metric: The extent to which active, shared, or mass transportation options are accessible, encouraged, and supported as part of a larger integrated transportation network.",
+        "subsectionDescription": "Applicability: Consideration is given to whether the organisation and/or the project includes transportation infrastructure, or includes the frequent dependence on transportation for access to the organisation and/or project. This credit is applicable to all transportation infrastructure. Organisations and/or projects that do not include transportation infrastructure and are not accessible, unmanned, or have very small maintenance crews, may apply to have this credit deemed not applicable with supporting documentation."
+      },
+      {
+        "question": "Does the organisation and/or the project provide convenient access to active, shared, or mass transportation options?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Mobility",
+        "subsection": "Encourage Sustainable Transportation"
+      },
+      {
+        "question": "Is the organisation and/or the project configured and designed in such a way to encourage active, shared, and/or mass transportation options?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Mobility",
+        "subsection": "Encourage Sustainable Transportation"
+      },
+      {
+        "question": "Does the organisation and/or the project include programs and facilities that support the use of active transportation and transit?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Mobility",
+        "subsection": "Encourage Sustainable Transportation"
+      },
+      {
+        "question": "Does the organisation and/or the project contribute to a larger integrated active, shared, or mass transportation strategy for the community or region?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Mobility",
+        "subsection": "Encourage Sustainable Transportation"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "section": "Mobility",
+        "subsection": "Improve Access and Wayfinding",
+        "subsectionTitle": "Improve Access and Wayfinding",
+        "subsectionIntent": "Intent: Design the organisation and/or project to provide safe and appropriate access in and/or around it in a way that integrates the organisation and/or project with the surrounding community.",
+        "subsectionMetric": "Metric: Incorporating and providing clear access, safety, and wayfinding measures to accommodate emergency services and regular vehicular or pedestrian traffic.",
+        "subsectionDescription": "Applicability: Consideration is given to the potential for impacting community access on or around the site of the organisation and/or project. Infrastructure that is inherently inaccessible (e.g., underground) or extremely remote (e.g., inaccessible by public roads) may apply to have this credit deemed not applicable with supporting documentation. Default restrictions on public access are not considered acceptable justification for marking the credit not applicable. This credit is automatically applicable to any organisation and/or project in proximity to populated areas or other development, adjacent to sensitive sites, or involving regular incoming or outgoing traffic."
+      },
+      {
+        "question": "Has the organisation and/or the project addressed access, safety, and wayfinding for incident management including evacuation and emergency personnel?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Mobility",
+        "subsection": "Encourage Sustainable Transportation"
+      },
+      {
+        "question": "Does the organisation and/or the project utilize access, safety, and signage to protect or minimize impacts on the surroundings?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Mobility",
+        "subsection": "Encourage Sustainable Transportation"
+      },
+      {
+        "question": "Does the organisation and/or the project provide safe public access points for the benefit of the community?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Mobility",
+        "subsection": "Encourage Sustainable Transportation"
+      },
+      {
+        "question": "Does the organisation and/or the project have a positive and transformative impact on community neighborhood access, safety, and/or wayfinding?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Mobility",
+        "subsection": "Encourage Sustainable Transportation"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "section": "Community",
+        "subsection": "Advance Equity and Social Justice",
+        "subsectionTitle": "Advance Equity and Social Justice",
+        "subsectionIntent": "Intent: Ensure that equity and social justice are fundamental considerations  the organisation and/or project processes and decision making.",
+        "subsectionMetric": "Metric: Degree to which equity and social justice are included in stakeholder engagement, project team commitments, and decision making.",
+        "subsectionDescription": "Applicability: This credit can be designated as not applicable for Organisations and/or projects that do not impact the surrounding community. For example, the installation or refurbishment of systems internal to a facility that do not impact the quality or level of service provided by the infrastructure."
+      },
+      {
+        "question": "Does the stakeholder engagement process take into account the historic context of equity and social justice within affected communities?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Advance Equity and Social Justice"
+      },
+      {
+        "question": "Has the organisation's and/or project's team assessed the social impacts it will have on the host and affected communities?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Advance Equity and Social Justice"
+      },
+      {
+        "question": "Have key members of the organisation's and/or project's team made commitments to equity and social justice within their organisations?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Advance Equity and Social Justice"
+      },
+      {
+        "question": "Has the organisation's and/or project's team assessed the social impacts it will have on the host and affected communities?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Advance Equity and Social Justice"
+      },
+      {
+        "question": "Has the organisation and/or the project addressed social impacts related to equity and social justice?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Advance Equity and Social Justice"
+      },
+      {
+        "question": "Will the impacts and benefits of the organisation and/or project be distributed equitably throughout affected communities?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Advance Equity and Social Justice"
+      },
+      {
+        "question": "Has the organisation's and/or project's team empowered communities to engage in the development process?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Advance Equity and Social Justice"
+      },
+      {
+        "question": "Does the organisation and/or the project positively address or correct an existing or historic injustice or imbalance?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Advance Equity and Social Justice"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "section": "Community",
+        "subsection": "Preserve Historic and Cultural Resources",
+        "subsectionTitle": "Preserve Historic and Cultural Resources",
+        "subsectionIntent": "Intent: Preserve or restore significant historical and cultural sites and related resources.",
+        "subsectionMetric": "Metric: Steps taken to identify, preserve, or restore cultural resources.",
+        "subsectionDescription": "Applicability: organisation or project teams that are unable to identify any historic or cultural resources relevant to the organisation and/ or. project may apply to have this credit deemed not applicable with supporting documentation. Supporting documentation should demonstrate how stakeholder engagement activities, cultural resource studies, or equivalent, were implemented in an effort to identify possible historic or cultural resources. This credit is applicable to all infrastructure Organisations and/or projects that impact a historic or cultural resource identified in state/provincial, national, or international registries, or identified through stakeholder engagement. This credit is also applicable, and no points achieved, for Organisations and/or projects that cannot demonstrate a serious effort was made to identify potential historic or cultural resources."
+      },
+      {
+        "question": "Has the organisation's and/or project's team worked with the community and required regulatory and resource agencies to identify historic and cultural resources?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Preserve Historic and Cultural Resources"
+      },
+      {
+        "question": "Has the organisation's and/or project's team developed strategies to document, protect, or enhance historic and cultural resources to the organisation and/or project?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Preserve Historic and Cultural Resources"
+      },
+      {
+        "question": "Does the identification of historic/cultural resources extend beyond registries to identify important parts of the community culture?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Preserve Historic and Cultural Resources"
+      },
+      {
+        "question": "Has the organisation's and/or project's team worked with stakeholders to develop a sensitive design and approach?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Preserve Historic and Cultural Resources"
+      },
+      {
+        "question": "Does the organisation and/or the project avoid all historic/cultural resources or fully preserve/protect their character-defining features?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Preserve Historic and Cultural Resources"
+      },
+      {
+        "question": "Does the organisation and/or the project enhance or restore threatened or degraded historic/cultural resources in the community, or add a resource to a protected registry?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Preserve Historic and Cultural Resources"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "section": "Community",
+        "subsection": "Enhance Views and Local Character",
+        "subsectionTitle": "Enhance Views and Local Character",
+        "subsectionIntent": "Intent: Preserve or enhance the physical, natural, and/or community character of the site of the organisation and/or project and its surroundings.",
+        "subsectionMetric": "Metric: Steps taken to assess valued community resources, implement preservation measures, and determine overall satisfaction.",
+        "subsectionDescription": "Applicability: Organisations and/or projects that have no public visibility or impact on views, such as underground utilities or the refurbishment of equipment within an existing facility, may submit to have this credit deemed not applicable with supporting documentation. Reviewers are unlikely to accept arguments that a publicly visible organisation and/or project has no impact on views or local character."
+      },
+      {
+        "question": "Has the organisation's and/or project's team made a reasonable determination of community values and concerns regarding protection and enhancement of views and local character?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Enhance Views and Local Character"
+      },
+      {
+        "question": "Has the organisation's and/or project's team implemented specific strategies to preserve or enhance views and local character?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Enhance Views and Local Character"
+      },
+      {
+        "question": "Has the organisation's and/or project's team developed or adopted existing guidelines to preserve views and local character?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Enhance Views and Local Character"
+      },
+      {
+        "question": "Does the organisation and/or the project include a construction management plan to protect important natural or man-made features?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Enhance Views and Local Character"
+      },
+      {
+        "question": "Does the community support actions taken to preserve or enhance views and local character?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Enhance Views and Local Character"
+      },
+      {
+        "question": "Will the organisation and/or project result in the restoration or enhancement of views or local character?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Enhance Views and Local Character"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "section": "Community",
+        "subsection": "Enhance Public Space and Amenities",
+        "subsectionTitle": "Enhance Public Space and Amenities",
+        "subsectionIntent": "Intent: Improve amenities and publicly accessible spaces to enhance community livability.",
+        "subsectionMetric": "Metric: Plans and commitments to preserve, conserve, enhance, and/or restore the defining elements of the amenity.",
+        "subsectionDescription": "Applicability: This credit is applicable to organisations and/or projects that are publicly accessible or that impact, adjoin, or otherwise connect to existing public spaces or amenities. This represents the large majority of infrastructure projects. Designating this credit as not applicable can be difficult. Organisations and/or projects that by their nature preclude the possibility of addressing public space or amenities may submit to have this credit deemed not applicable with supporting documentation (e.g., mechanical system refurbishments, offshore wind farms, etc.). Not addressing the potential for public space or amenities is not sufficient alone to designate this credit not applicable. Infrastructure projects, especially those traditionally viewed as inaccessible, are encouraged to consider how they can benefit their surrounding community through the enhancement or provision of public space and amenities."
+      },
+      {
+        "question": "Has the organisation's and/or project's team assessed and mitigated impacts to existing public space and/or amenities?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Enhance Public Space and Amenities"
+      },
+      {
+        "question": "Does the stakeholder engagement process specifically address issues of public space and amenities?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Enhance Public Space and Amenities"
+      },
+      {
+        "question": "Are public stakeholders satisfied with the organisation and/or project plans involving public space and amenities?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Community",
+        "subsection": "Enhance Public Space and Amenities"
       }
     ]
   },
@@ -50,50 +634,709 @@
     "title": "Leadership",
     "questions": [
       {
-        "question": "Your company recruits Ecology Awareness talent primarily through recruiting agencies.",
+        "question": "Is this credit applicable?",
         "questionType": 3,
         "agree": false,
-        "subsection": "Community Engagement",
-        "subsectionTitle": "Community Engagement and Participation",
-        "subsectionIntent": "Intent: Actively engage with local communities to ensure their participation and involvement in decision-making processes related to the organization or project.",
-        "subsectionMetric": "Metric: Measures taken to assess community participation and engagement in decision-making processes.",
-        "subsectionDescription": "Applicability: Community engagement is essential for the success of any project or organization, as it fosters trust, transparency, and inclusivity."
+        "section": "Collaboration",
+        "subsection": "Provide Effective Leadership and Commitment",
+        "subsectionTitle": "Provide Effective Leadership and Commitment",
+        "subsectionIntent": "Intent: Provide effective leadership and commitment to achieve organisation and/or project sustainability goals.",
+        "subsectionMetric": "Metric: The degree to which the organisation and/or project owner and  team have made general, and project-specific, sustainability commitments and instituted sustainability management policies.",
+        "subsectionDescription": "Applicability: It is likely that all organisations and/or projects can benefit from effective leadership and strong commitments to sustainability. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
       },
       {
-        "question": "New Ecology Awareness talents have an onboarding process to become effective quickly.",
+        "question": "Have the owner of the organisation and/or project and project team made written commitments to address the social, environmental, and economic aspects of the organisation and/or project?",
         "questionType": 3,
         "agree": null,
-        "subsection": "Leadership Support",
-        "subsectionTitle": "Leadership Support and Commitment",
-        "subsectionIntent": "Intent: Obtain commitment and support from organizational leaders to prioritize and champion Ecology Awareness initiatives.",
-        "subsectionMetric": "Metric: Measures taken to demonstrate leadership support and commitment to Ecology Awareness initiatives.",
-        "subsectionDescription": "Applicability: Strong leadership support is crucial for the success and sustainability of Ecology Awareness initiatives within an organization."
+        "section": "Collaboration",
+        "subsection": "Provide Effective Leadership and Commitment"
+      },
+      {
+        "question": "Is the organisation and/or the project supported by a sustainability management policy commensurate with the scope, scale, and complexity of the organisation and/or project?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Provide Effective Leadership and Commitment"
+      },
+      {
+        "question": "Has the organisation's and/or project's team periodically revisited project sustainability commitments throughout project delivery?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Provide Effective Leadership and Commitment"
+      },
+      {
+        "question": "Have key members of the organisation's and/or project's team made organisational commitments to sustainability?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Provide Effective Leadership and Commitment"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Foster Collaboration and Teamwork",
+        "subsectionTitle": "Foster Collaboration and Teamwork",
+        "subsectionIntent": "Intent: Enhance organisation and/or project sustainability through interdisciplinary collaboration and teamwork.",
+        "subsectionMetric": "Metric: The breadth and inclusivity of interdisciplinary and collaborative meetings and the resulting sustainability performance enhancements.",
+        "subsectionDescription": "Applicability: It is likely that all organisations and/or projects can benefit from better collaboration and teamwork in pursuit of more sustainable organisations and/or projects. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
+      },
+      {
+        "question": "Was an interdisciplinary collaborative kickoff meeting held early in the organisations and/or project to define sustainability goals?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Foster Collaboration and Teamwork"
+      },
+      {
+        "question": "Has organisation and/or project sustainability performance been enhanced as a result of the interdisciplinary collaboration?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Foster Collaboration and Teamwork"
+      },
+      {
+        "question": "Did the organisation's and/or project's team establish regular interdisciplinary and collaborative meetings to set and achieve sustainability goals?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Foster Collaboration and Teamwork"
+      },
+      {
+        "question": "Does the process include construction, operations, or maintenance stakeholders, for better incorporation of considerations in later phases?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Foster Collaboration and Teamwork"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Provide for Stakeholder Involvement",
+        "subsectionTitle": "Provide for Stakeholder Involvement",
+        "subsectionIntent": "Intent: Early and sustained stakeholder engagement and involvement in the organisation and/or project decision making.",
+        "subsectionMetric": "Metric: Establishment of sound and meaningful programs for stakeholder identification, early and sustained engagement, and involvement in organisation and/or project decision making.",
+        "subsectionDescription": "Applicability: It is likely that all organisations and/or projects can benefit from stakeholder engagement. Although the types and scope of stakeholders may vary depending on the project, it would be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
+      },
+      {
+        "question": "Has the organisation's and/or project's team undertaken a stakeholder mapping exercise to determine stakeholders? Were primary and secondary stakeholders identified through a stakeholder mapping process, and stakeholder concerns and specific objectives for stakeholder engagement defined?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Provide for Stakeholder Involvement"
+      },
+      {
+        "question": "Has the organisation's and/or project's team analyzed, planned, and executed the engagement for key project stakeholders? Is there a proactive stakeholder engagement process  established with clear objectives where: engagement moves beyond education into active dialogue; stakeholder views are monitored, and a two-way line of communication is established to reply to inquiries; and sufficient opportunities are provided for stakeholders to be involved in decision making? ",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Provide for Stakeholder Involvement"
+      },
+      {
+        "question": "Was a lead member of the organisation's and/or project's team directly involved with stakeholder groups to understand their needs?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Provide for Stakeholder Involvement"
+      },
+      {
+        "question": "Has stakeholder engagement feedback been incorporated into project plans, design, and/or decision making? Are specific cases in which public input influenced or validated project outcomes, and potentially conflicting stakeholder views were evaluated and addressed equitably during decision making?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Provide for Stakeholder Involvement"
+      },
+      {
+        "question": "Has the organisation's and/or project's team sought feedback from stakeholders as to their satisfaction with the engagement process and the resulting decisions that were made based on their input?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Provide for Stakeholder Involvement"
+      },
+      {
+        "question": "Has the organisation and/or the project engaged one or more stakeholders as partners?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Provide for Stakeholder Involvement"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Pursue Byproduct Synergies",
+        "subsectionTitle": "Pursue Byproduct Synergies",
+        "subsectionIntent": "Intent: Critically reconsider whether traditional waste streams can be beneficially reused.",
+        "subsectionMetric": "Metric: The extent to which the organisation's and/or project's team works with external groups to find beneficial use of waste, excess resources, or capacity.",
+        "subsectionDescription": "Applicability: It is likely that all organisations and/or Organisations and/or projects that use materials or product waste can benefit from byproduct synergies. It would be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
+      },
+      {
+        "question": "Has the organisation's and/or project's team assessed the availability of either internal or external excess resources or capacity?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Pursue Byproduct Synergies"
+      },
+      {
+        "question": "Has the organisation's and/or project's team identified opportunities for byproduct synergies or reuse?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Pursue Byproduct Synergies"
+      },
+      {
+        "question": "Has the organisation's and/or project's team actively pursued a byproduct synergy or reuse?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Pursue Byproduct Synergies"
+      },
+      {
+        "question": "Is the organisation and/or the project part of a circular economy, whereby the majority of operational byproducts are beneficially repurposed or the majority of operational resources consumed are beneficially repurposed?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Collaboration",
+        "subsection": "Pursue Byproduct Synergies"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Establish a Sustainability Management Plan",
+        "subsectionTitle": "Establish a Sustainability Management Plan",
+        "subsectionIntent": "Intent: Create an organisational and/or project sustainability management plan that can manage the scope, scale, and complexity of an organisation and/or project seeking to improve sustainable performance.",
+        "subsectionMetric": "Metric: Extent of organisational policies, authorities, mechanisms, education, and business processes put in place.",
+        "subsectionDescription": "Applicability: It is likely that all organisations and/or Organisations and/or projects that use materials or product waste can benefit from byproduct synergies. It would be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
+      },
+      {
+        "question": "Are roles and responsibilities for addressing sustainability assigned to key members of the organisation's and/or project's team?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Establish a Sustainability Management Plan"
+      },
+      {
+        "question": "Has a sustainability management plan been developed to assess and prioritize the environmental, economic, and social aspects of the organisation and/or project and set project sustainability goals, objectives, and targets?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Establish a Sustainability Management Plan"
+      },
+      {
+        "question": "Does the organisation and/or the project include a sustainability management plan that contains sufficient processes and management controls to address the sustainability goals, objectives, and targets?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Establish a Sustainability Management Plan"
+      },
+      {
+        "question": "Was the sustainability management plan implemented and periodically revisited?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Establish a Sustainability Management Plan"
+      },
+      {
+        "question": "Is the organisation and/or the project sustainability management plan adaptable, flexible, and resilient enough to manage changes in the environmental, social, or economic conditions of the organisation and/or project over its life?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Establish a Sustainability Management Plan"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for Sustainable Communities",
+        "subsectionTitle": "Plan for Sustainable Communities",
+        "subsectionIntent": "Intent: Incorporate sustainability principles into organisation and/or project selection/identification in order to develop the most sustainable for the community.",
+        "subsectionMetric": "Metric: The degree to which organisation and/or project selection/identification includes sustainability performance assessments and is part of a larger sustainable development plan.",
+        "subsectionDescription": "Applicability: Consideration is given to the scope and scale of the organisation and/or project and whether it has the potential to more broadly impact community sustainability. For example, small organisations and/or projects that involve the retrofitting or refurbishment of components or systems within an existing facility may contribute to improved sustainability performance but may struggle to demonstrate an impact beyond the site of the organisation and/or project. Small organisations and/or projects that do not impact the broader community sustainability, and do not have the potential to impact community sustainability, may apply to have this credit deemed not applicable with supporting documentation."
+      },
+      {
+        "question": "Was sustainability considered during organisation and/or project selection/identification?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for Sustainable Communities"
+      },
+      {
+        "question": "Were alternative analyses conducted on sustainability performance during organisation and/or project identification?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for Sustainable Communities"
+      },
+      {
+        "question": "Was an assessment conducted of the organisation and/or project’s impacts to broader long-term community or regional sustainability?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for Sustainable Communities"
+      },
+      {
+        "question": "Is the organisation and/or the project part of a comprehensive sustainable development plan?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for Sustainable Communities"
+      },
+      {
+        "question": "Does the organisation and/or the project address an inherently unsustainable condition within the community or region?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for Sustainable Communities"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for Long-Term Monitoring and Maintenance",
+        "subsectionTitle": "Plan for Long-Term Monitoring and Maintenance",
+        "subsectionIntent": "Intent: Put in place plans, processes, and personnel sufficient to ensure that long-term sustainable protection, mitigation, and enhancement measures are incorporated into the organisation and/or project.",
+        "subsectionMetric": "Metric: Comprehensiveness of long-term monitoring and maintenance plans, implementation goals, and commitment of resources to fund the activities.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects that include ongoing monitoring and maintenance. In rare cases where organisations and/or projects do not include operation or maintenance activities, organisations and/or projects may apply to have this credit deemed not applicable with supporting documentation."
+      },
+      {
+        "question": "Has the organisation's and/or project's team considered how to reduce ongoing operational impacts?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for Long-Term Monitoring and Maintenance"
+      },
+      {
+        "question": "Is there a clear and comprehensive plan in place for long-term monitoring and maintenance of the organisation and/or project?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for Long-Term Monitoring and Maintenance"
+      },
+      {
+        "question": "Has the monitoring and maintenance plan been communicated with operations and maintenance staff?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for Long-Term Monitoring and Maintenance"
+      },
+      {
+        "question": "Have sufficient resources been allocated for long-term monitoring and maintenance of of the organisation and/or project and appropriate training been conducted?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for Long-Term Monitoring and Maintenance"
+      },
+      {
+        "question": "Is there a plan in place to re-evaluate and modify the maintenance plan based on monitored data?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for Long-Term Monitoring and Maintenance"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for End-of-Life",
+        "subsectionTitle": "Plan for End-of-Life",
+        "subsectionIntent": "Intent: Ensure that the organisation's and/or project's team is informed by an understanding of the full impacts and costs of the organisation and/or project’s end-of-life.",
+        "subsectionMetric": "Metric: The degree to which the organisation's and/or project's team analyzes, and communicates with stakeholders, the end-of-life impacts, cost, and value.",
+        "subsectionDescription": "Applicability: It is likely that all organisations and/or projects can benefit from end-of-life planning. It would be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
+      },
+      {
+        "question": "Has the organisation's and/or project's team developed an end-of-life plan?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for End-of-Life"
+      },
+      {
+        "question": "Has the organisation's and/or project's team evaluated opportunities to extend the useful life or beneficially repurpose the after end-of-life?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for End-of-Life"
+      },
+      {
+        "question": "Has the organisation's and/or project's team assessed potential social, environmental, and economic end-of-life impacts?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for End-of-Life"
+      },
+      {
+        "question": "Has the organisation's and/or project's team evaluated the costs and salvage value of the organisation and/or project’s deconstruction, decommissioning, or replacement?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for End-of-Life"
+      },
+      {
+        "question": "Has the organisation's and/or project's team proactively engaged stakeholders in end-of-life planning?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Planning",
+        "subsection": "Plan for End-of-Life"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Economy",
+        "subsection": "Stimulate Economic Prosperity and Development",
+        "subsectionTitle": "Stimulate Economic Prosperity and Development",
+        "subsectionIntent": "Intent: Support economic prosperity and sustainable development, including job growth, capacity building, productivity, business attractiveness, and livability.",
+        "subsectionMetric": "Metric: The extent of job creation, increased operating capacity, access, quality, and/or improved socioeconomic conditions.",
+        "subsectionDescription": "Applicability: The scope of this credit is broad, covering commercial, industrial, cultural, and recreational aspects of community development. In determining whether this credit is applicable to an organisation and/or a project assessment, it is likely that all organisations and/or projects have the ability to support and stimulate economic prosperity and sustainable development. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
+      },
+      {
+        "question": "Does the organisation and/or the project create a significant number of new jobs during its design, construction, and operation?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Economy",
+        "subsection": "Stimulate Economic Prosperity and Development"
+      },
+      {
+        "question": "Does the organisation and/or the project provide new operating capacity for business, industry, or the public?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Economy",
+        "subsection": "Stimulate Economic Prosperity and Development"
+      },
+      {
+        "question": "Does the organisation and/or the project provide additional access, increase the number of choices, and/or increase the quality of infrastructure services for business, industry, or the public?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Economy",
+        "subsection": "Stimulate Economic Prosperity and Development"
+      },
+      {
+        "question": "Does the organisation and/or the project improve community attractiveness for business, industry, or the public by generally improving the socioeconomic conditions of the community?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Economy",
+        "subsection": "Stimulate Economic Prosperity and Development"
+      },
+      {
+        "question": "Will the organisation and/or project stimulate economic prosperity and further economic development?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Economy",
+        "subsection": "Stimulate Economic Prosperity and Development"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Economy",
+        "subsection": "Develop Local Skills and Capabilities",
+        "subsectionTitle": "Develop Local Skills and Capabilities",
+        "subsectionIntent": "Intent: Expand the knowledge, skills, and capacity of the community workforce to improve their ability to grow and develop.",
+        "subsectionMetric": "Metric: The inclusion of current and future training programs, informed by skill or capability gaps, and targeted to economically depressed or underemployed communities.",
+        "subsectionDescription": "Applicability: For this credit, an alternative compliance path is provided in the Evaluation Criteria and Documentation Guidance for Organisations and/or projects that are too small to include independent training and skill development. It is therefore unlikely that a project could demonstrate no opportunity for education at any point during its planning, design, or construction. When organisational-level training programs are referenced, organisation or project teams must demonstrate a relevance to the organisation and/or project."
+      },
+      {
+        "question": "Will the organisation and/or project include training programs for local skill development?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Economy",
+        "subsection": "Develop Local Skills and Capabilities"
+      },
+      {
+        "question": "Will training, education, or skill development programs continue after organisation  and/or delivery?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Economy",
+        "subsection": "Develop Local Skills and Capabilities"
+      },
+      {
+        "question": "Will training and skill development programs specifically target economically depressed, underemployed, or disadvantaged communities?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Economy",
+        "subsection": "Develop Local Skills and Capabilities"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Economy",
+        "subsection": "Conduct a Life-Cycle Economic Evaluation",
+        "subsectionTitle": "Conduct a Life-Cycle Economic Evaluation",
+        "subsectionIntent": "Intent: Utilize economic analyses to identify the full economic implications and the broader social and environmental benefits of the organisation and/or project.",
+        "subsectionMetric": "Metric: The comprehensiveness of the economic analyses used to determine the net impacts of the organisation and/or project, and their use in assessing alternatives to inform decision making.",
+        "subsectionDescription": "Applicability: It would be difficult to demonstrate that this credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
+      },
+      {
+        "question": "Has a life-cycle cost analysis been conducted to identify the financial impacts of the whole organisation and/or project?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Economy",
+        "subsection": "Conduct a Life-Cycle Economic Evaluation"
+      },
+      {
+        "question": "Have life-cycle cost analyses been used to compare alternatives for at least one major organisation and/or project component?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Economy",
+        "subsection": "Conduct a Life-Cycle Economic Evaluation"
+      },
+      {
+        "question": "Has the organisation's and/or project's team mapped the social, environmental, and financial costs and benefits of the organisation and/or project?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Economy",
+        "subsection": "Conduct a Life-Cycle Economic Evaluation"
+      },
+      {
+        "question": "Has a cost benefit analysis been conducted to identify the financial, social, and environmental impacts of the whole organisation and /or project?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Economy",
+        "subsection": "Conduct a Life-Cycle Economic Evaluation"
+      },
+      {
+        "question": "Have cost benefit analyses, including financial, environmental, and social benefits, been used to compare the alternatives for at least one major organisation and/or project component?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Economy",
+        "subsection": "Conduct a Life-Cycle Economic Evaluation"
       }
-      
     ]
   },  
   {
     "title": "Resource Allocation",
     "questions": [
       {
-        "question": "Your company continuously produces data from its customer-facing services.",
+        "question": "Is this credit applicable?",
         "questionType": 3,
         "agree": null,
-        "subsection": "Data Management",
-        "subsectionTitle": "Data Management and Governance",
-        "subsectionIntent": "Intent: Implement effective data management and governance practices to ensure the quality, security, and accessibility of data.",
-        "subsectionMetric": "Metric: Measures taken to assess data quality, security, and accessibility.",
-        "subsectionDescription": "Applicability: Proper data management and governance are essential for leveraging data effectively to support decision-making and improve organizational performance."
+        "section": "Materials",
+        "subsection": "Support Sustainable Procurement Practicies",
+        "subsectionTitle": "Support Sustainable Procurement Practicies",
+        "subsectionIntent": "Intent: Develop sustainable procurement policies and programs to source materials and equipment from manufacturers and suppliers that implement sustainable practices.",
+        "subsectionMetric": "Metric: The extent of sustainable procurement programs, and the percentage of materials sourced from manufacturers and/or suppliers that implement sustainable practices.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects that include the use or consumption of physical materials in construction or operation."
       },
       {
-        "question": "Your company uses tools to specify and manage data-lifecycles.",
+        "question": "Has the organisation's and/or project's team implemented a sustainable procurement policy or program?",
         "questionType": 3,
         "agree": null,
-        "subsection": "Data Governance",
-        "subsectionTitle": "Data Governance and Lifecycle Management",
-        "subsectionIntent": "Intent: Establish policies and procedures for governing data throughout its lifecycle, from creation to disposal, to ensure compliance, integrity, and usability.",
-        "subsectionMetric": "Metric: Measures taken to evaluate the effectiveness of data governance and lifecycle management processes.",
-        "subsectionDescription": "Applicability: Effective data governance and lifecycle management support regulatory compliance, mitigate risks, and enhance the value and utility of data assets."
+        "section": "Materials",
+        "subsection": "Support Sustainable Procurement Practicies"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Materials",
+        "subsection": "Reduce Operational Waste",
+        "subsectionTitle": "Reduce Operational Waste",
+        "subsectionIntent": "Intent: Reduce operational waste and divert waste streams from disposal to recycling and reuse.",
+        "subsectionMetric": "Metric: Percentage of total operational waste or byproducts diverted from disposal.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects that produce operational waste or byproducts. Organisations and/or projects that do not include any operational waste may apply to have this credit deemed not applicable with supporting documentation."
+      },
+      {
+        "question": "Has the organisation's and/or project's team developed a waste management plan to decrease organisation and/or project waste and divert waste from landfills during operation?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Materials",
+        "subsection": "Reduce Operational Waste"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Materials",
+        "subsection": "Reduce Construction Waste",
+        "subsectionTitle": "Reduce Construction Waste",
+        "subsectionIntent": "Intent: Divert construction and demolition waste streams from disposal to recycling and reuse.",
+        "subsectionMetric": "Metric: Percentage of total waste diverted from disposal.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects that produce construction waste. Organisations and/or projects that do not include any construction waste may apply to have this credit deemed not applicable with supporting documentation."
+      },
+      {
+        "question": "Has the organisation's and/or project's team developed a comprehensive waste management plan to decrease organisation and/or project waste and divert waste from landfills during construction?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Materials",
+        "subsection": "Reduce Construction Waste"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Energy",
+        "subsection": "Reduce Operational Energy Consumption",
+        "subsectionTitle": "Reduce Operational Energy Consumption",
+        "subsectionIntent": "Intent: Conserve energy by reducing overall operational energy consumption throughout the organisation and/or project life.",
+        "subsectionMetric": "Metric: Percentage of operational energy reductions achieved.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or Organisations and/or projects that consume energy during their operation. Organisations and/or projects that do not include operational energy may apply to have this credit deemed not applicable with supporting documentation. In rare cases, where the amount of operational energy use is insignificant in comparison to the scale of the organisation and/or project, teams may apply to have this credit deemed not applicable with supporting documentation. However, the reviewer may exercise his/her discretion in determining what constitutes an insignificant quantity of operational energy use in the context of the organisation and/or project."
+      },
+      {
+        "question": "Has the organisation's and/or project's team determined the estimated annual energy consumption of the organisation and/or project during operations?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Energy",
+        "subsection": "Reduce Operational Energy Consumption"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Energy",
+        "subsection": "Reduce Construction Energy Consumption",
+        "subsectionTitle": "Reduce Construction Energy Consumption",
+        "subsectionIntent": "Intent: Conserve resources and reduce greenhouse gases and air pollutant emissions by reducing energy consumption during construction.",
+        "subsectionMetric": "Metric: The number of strategies implemented on the organisation and/or project during construction that reduce energy consumption and emissions.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects that consume energy during construction. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an  recognition. In rare cases, where the amount of energy used during construction is insignificant in comparison to the scale of the organisation and/or project, teams may apply to have this credit deemed not applicable with supporting documentation. However, the reviewer may exercise his/her discretion in determining what constitutes an insignificant quantity of construction energy use in the context of the organisation and/or project."
+      },
+      {
+        "question": "Has the organisation's and/or project's team conducted planning reviews to reduce energy consumption during construction?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Energy",
+        "subsection": "Reduce Construction Energy Consumption"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Energy",
+        "subsection": "Commission and Monitor Energy Systems",
+        "subsectionTitle": "Commission and Monitor Energy Systems",
+        "subsectionIntent": "Intent: Ensure efficient functioning and extend useful life by specifying commissioning and monitoring of energy systems.",
+        "subsectionMetric": "Metric: The inclusion of monitoring equipment and software, the extent of commissioning, and the commissioning agent’s independence from the organisation and/or project.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects that consume energy during their operation. Organisations and/or projects that do not include operational energy may apply to have this credit deemed not applicable with supporting documentation. In rare cases, where the amount of operational energy use is insignificant in comparison to the scale of the organisation and/or project, teams may apply to have this credit deemed not applicable with supporting documentation. However, the reviewer may exercise his/her discretion in determining what constitutes an insignificant quantity of operational energy use in the context of the organisation and/or project."
+      },
+      {
+        "question": "Is there a plan for ongoing commissioning of the energy systems throughout the organisation and/or project’s life?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Energy",
+        "subsection": "Commission and Monitor Energy Systems"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Water",
+        "subsection": "Preserve Water Resources",
+        "subsectionTitle": "Preserve Water Resources",
+        "subsectionIntent": "Intent: Assess and reduce the negative net impact on fresh water availability, quantity, and quality at a watershed scale to positively impact the region’s water resources.",
+        "subsectionMetric": "Metric: The extent to which the organisation and/or project considers and contributes to positively addressing broader watershed issues.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects that consume water or impact receiving waters. Organisations and/or projects that do not include any impacts to water quantity or quality may apply to have this credit deemed not applicable with supporting documentation. In rare cases, where the impact to water quantity or quality is insignificant in comparison to the scale of the organisation and/or project, teams may apply to have this credit deemed not applicable with supporting documentation. However, the reviewer may exercise his/her discretion in determining what constitutes an insignificant impact to water quantity or quality use in the context of the organisation and/or project."
+      },
+      {
+        "question": "Has the organisation's and/or project's team conducted a watershed assessment?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Water",
+        "subsection": "Preserve Water Resources"
+      },
+      {
+        "question": "Has the organisation's and/or project's team estimated the water usage and wastewater generation over the life of the organisation and/or project?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Water",
+        "subsection": "Preserve Water Resources"
+      },
+      {
+        "question": "Does the organisation and/or the project include features to minimize the negative impacts of water usage, and/or watershed-scale issues?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Water",
+        "subsection": "Preserve Water Resources"
+      },
+      {
+        "question": "Does the organisation and/or the project have a net-zero impact on the quantity and availability of fresh surface water and groundwater supplies without compromising water quality?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Water",
+        "subsection": "Preserve Water Resources"
+      },
+      {
+        "question": "Is the organisation and/or the project part of a watershed-level or regional plan?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Water",
+        "subsection": "Preserve Water Resources"
+      },
+      {
+        "question": "Does the organisation and/or the project make a direct net-positive improvement to the watershed?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Water",
+        "subsection": "Preserve Water Resources"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Water",
+        "subsection": "Resuce Operational Water Consumption",
+        "subsectionTitle": "Resuce Operational Water Consumption",
+        "subsectionIntent": "Intent: Reduce overall water consumption while encouraging the use of greywater, recycled water, and stormwater to meet water needs.",
+        "subsectionMetric": "Metric: Percentage reduction in potable water use and overall water use.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects that consume water during operations. Organisations and/or projects that do not include any operational water consumption may apply to have this credit deemed not applicable with supporting documentation. In rare cases, where the amount of water consumption is insignificant in comparison to the scale of the organisation and/or project, teams may apply to have this credit deemed not applicable with supporting documentation. However, the reviewer may exercise his/her discretion in determining what constitutes an insignificant quantity of operational water use in the context of the organisation and/or project."
+      },
+      {
+        "question": "Has the organisation's and/or project's team conducted planning and design reviews to identify potable water reduction strategies during operation of the organisation and/or project?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Water",
+        "subsection": "Resuce Operational Water Consumption"
+      },
+      {
+        "question": "Does the organisation and/or the project have a net positive impact on water use?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Water",
+        "subsection": "Resuce Operational Water Consumption"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Water",
+        "subsection": "Resuce Construction Water Consumption",
+        "subsectionTitle": "Resuce Construction Water Consumption",
+        "subsectionIntent": "Intent: Reduce potable water consumption during construction.",
+        "subsectionMetric": "Metric: The number of strategies implemented during construction that reduce potable water consumption.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects that consume water during construction. Organisations and/or projects that do not include any operational water consumption may apply to have this credit deemed not applicable with supporting documentation. In cases where the amount of water consumption during operations is insignificant in comparison to the scale of the organisation and/or project, teams may apply to have this credit deemed not applicable with supporting documentation. However, the reviewer may exercise his/her discretion in determining what constitutes an insignificant quantity of operational energy use in the context of the organisation and/or project."
+      },
+      {
+        "question": "Has the organisation's and/or project's team conducted planning reviews to reduce water consumption during construction?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Water",
+        "subsection": "Resuce Construction Water Consumption"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Water",
+        "subsection": "Monitor Water Systems",
+        "subsectionTitle": "Monitor Water Systems",
+        "subsectionIntent": "Intent: Improve operational performance by including monitoring capabilities.",
+        "subsectionMetric": "Metric: Extent and capability of water monitoring equipment and inclusion of response plans.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects that consume water during their operation or include the conveyance of large quantities of water. Organisations and/or projects that do not include operational water use or water conveyance may apply to have this credit deemed not applicable with supporting documentation. In rare cases, where the amount of operational water use, or conveyance, is insignificant in comparison to the scale of the organisation and/or project, teams may apply to have this credit deemed not applicable with supporting documentation. However, the reviewer may exercise his/her discretion in determining what constitutes an insignificant quantity of water use in the context of the organisation and/or project."
+      },
+      {
+        "question": "Does the organisation and/or the project include real-time water monitoring?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Water",
+        "subsection": "Monitor Water Systems"
       }
     ]
   },
@@ -101,24 +1344,512 @@
     "title": "Natural World",
     "questions": [
       {
-        "question": "Your company actively supports local conservation efforts for endangered species.",
+        "question": "Is this credit applicable?",
         "questionType": 3,
         "agree": null,
-        "subsection": "Data Management",
-        "subsectionTitle": "Data Management and Governance",
-        "subsectionIntent": "Intent: Implement effective data management and governance practices to ensure the quality, security, and accessibility of data.",
-        "subsectionMetric": "Metric: Measures taken to assess data quality, security, and accessibility.",
-        "subsectionDescription": "Applicability: Proper data management and governance are essential for leveraging data effectively to support decision-making and improve organizational performance."
+        "section": "Siting",
+        "subsection": "Preserve Sites of High Ecological Value",
+        "subsectionTitle": "Preserve Sites of High Ecological Value",
+        "subsectionIntent": "Intent: Avoid placing the organisation and/or project and temporary works on a site that has been identified as being of high ecological value.",
+        "subsectionMetric": "Metric: Avoidance of high ecological value sites and establishment of protective buffer zones.",
+        "subsectionDescription": "Applicability: Organisations and/or projects that do not contain areas of high ecological value, and cannot demonstrate they actively avoided areas of high ecological value, may apply to have this credit deemed not applicable with supporting documentation."
       },
       {
-        "question": "Your company partners with local environmental organizations for habitat restoration projects.",
+        "question": "Has the organisation's and/or project's team identified whether the site contains areas of high ecological value?",
         "questionType": 3,
         "agree": null,
-        "subsection": "Data Governance",
-        "subsectionTitle": "Data Governance and Lifecycle Management",
-        "subsectionIntent": "Intent: Establish policies and procedures for governing data throughout its lifecycle, from creation to disposal, to ensure compliance, integrity, and usability.",
-        "subsectionMetric": "Metric: Measures taken to evaluate the effectiveness of data governance and lifecycle management processes.",
-        "subsectionDescription": "Applicability: Effective data governance and lifecycle management support regulatory compliance, mitigate risks, and enhance the value and utility of data assets."
+        "section": "Siting",
+        "subsection": "Preserve Sites of High Ecological Value"
+      },
+      {
+        "question": "Does the organisation and/or the project avoid developing or disturbing areas of high ecological value on site?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Siting",
+        "subsection": "Preserve Sites of High Ecological Value"
+      },
+      {
+        "question": "Does the organisation and/or the project preserve an effective protective buffer zone around areas of high ecological value?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Siting",
+        "subsection": "Preserve Sites of High Ecological Value"
+      },
+      {
+        "question": "Was the organisation and/or project intentionally sited to avoid areas of high ecological value?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Siting",
+        "subsection": "Preserve Sites of High Ecological Value"
+      },
+      {
+        "question": "Does the organisation and/or the project significantly increase the area of high ecological value?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Siting",
+        "subsection": "Preserve Sites of High Ecological Value"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Siting",
+        "subsection": "Provide Wetland and Surface Water Buffers",
+        "subsectionTitle": "Provide Wetland and Surface Water Buffers",
+        "subsectionIntent": "Intent: Protect, buffer, enhance, and restore wetlands, shorelines, and waterbodies by providing natural buffer zones, vegetation, and soil-protection zones.",
+        "subsectionMetric": "Metric: Type and quality of natural buffer zone established around all wetlands, shorelines, and waterbodies.",
+        "subsectionDescription": "Applicability: Organisations and/or projects that do not contain wetlands or surface waters, and for which no siting options containing wetlands or surface waters were possible or seriously considered, may apply to have this credit deemed not applicable with supporting documentation."
+      },
+      {
+        "question": "Has the organisation's and/or project's team identified wetlands and surface waters on or near the site?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Siting",
+        "subsection": "Provide Wetland and Surface Water Buffers"
+      },
+      {
+        "question": "Has the organisation's and/or project's team determined the type and width of buffer zones necessary to protect wetlands and surface waters?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Siting",
+        "subsection": "Provide Wetland and Surface Water Buffers"
+      },
+      {
+        "question": "Was the organisation and/or project intentionally sited to avoid wetlands and surface waters?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Siting",
+        "subsection": "Provide Wetland and Surface Water Buffers"
+      },
+      {
+        "question": "Will the organisation and/or project involve returning previously developed or disturbed sites within the buffer zone to a natural state?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Siting",
+        "subsection": "Provide Wetland and Surface Water Buffers"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Siting",
+        "subsection": "Preserve Prime Farmland",
+        "subsectionTitle": "Preserve Prime Farmland",
+        "subsectionIntent": "Intent: Identify and protect soils designated as prime farmland, unique farmland, or farmland of importance.",
+        "subsectionMetric": "Metric: Percentage of farmland avoided or preserved during development.",
+        "subsectionDescription": "Applicability: Organisations and/or projects that do not contain prime farmland, and for which no siting options containing prime farmland were possible or seriously considered, may apply to have this credit deemed not applicable with supporting documentation."
+      },
+      {
+        "question": "Has the organisation's and/or project's team assessed the site of the organisation and/or project for soils identified as prime farmland, unique farmland, or farmland of importance?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Siting",
+        "subsection": "Preserve Prime Farmland"
+      },
+      {
+        "question": "Has the organisation's and/or project's team mitigated any damage or disturbance to prime farmland, unique farmland, or farmland of importance?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Siting",
+        "subsection": "Preserve Prime Farmland"
+      },
+      {
+        "question": "Was the organisation and/or project intentionally sited to avoid prime farmland?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Siting",
+        "subsection": "Preserve Prime Farmland"
+      },
+      {
+        "question": "Does the organisation and/or the project preserve existing farmland for posterity or restore previously disturbed farmland?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Siting",
+        "subsection": "Preserve Prime Farmland"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Siting",
+        "subsection": "Preserve Undeveloped Land",
+        "subsectionTitle": "Preserve Undeveloped Land",
+        "subsectionIntent": "Intent: Conserve undeveloped land by locating organisations and/or projects on previously developed land.",
+        "subsectionMetric": "Metric: Percentage of organisation and/or project development that is located on previously developed land.",
+        "subsectionDescription": "Applicability: Assessment of this credit is determined by the extent to which the. organisation and/or  project is located on previously developed land or previously undeveloped land. As all land falls within these two classifications, it would be difficult to demonstrate that the credit is not applicable. Inability to locate the organisation and/or project on developed land is not sufficient justification to remove this credit from consideration."
+      },
+      {
+        "question": "Has the organisation and/or the project returned developed areas to a condition that supports natural open space, habitat, or natural hydrology?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Siting",
+        "subsection": "Preserve Undeveloped Land"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Reclaim Brownfields",
+        "subsectionTitle": "Reclaim Brownfields",
+        "subsectionIntent": "Intent: Locate organisations and/or projects on sites classified as brownfields.",
+        "subsectionMetric": "Metric: The extent of remediation of the brownfield site.",
+        "subsectionDescription": "Applicability: organisation or project teams that were unable to identify a suitable site may apply to have this credit deemed not applicable with supporting documentation that efforts were made. If no evidence is provided that any consideration was given to locating the organisation and/or. project on a brownfield, the credit is considered applicable and no points achieved."
+      },
+      {
+        "question": "Is the organisation and/or the project located on a site currently identified as a closed brownfield?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Reclaim Brownfields"
+      },
+      {
+        "question": "Is the organisation and/or the project located on a site currently identified as an active brownfield?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Reclaim Brownfields"
+      },
+      {
+        "question": "Has the brownfield site been closed or deregulated?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Reclaim Brownfields"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Manage Stormwater",
+        "subsectionTitle": "Manage Stormwater",
+        "subsectionIntent": "Intent: Minimize the impact of development on stormwater runoff quantity, rate, and quality.",
+        "subsectionMetric": "Metric: Degree to which the organisation and/or project infiltrates, evapotranspirates, reuses, and/or treats stormwater while not exceeding rate or quantity runoff targets.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects that impact stormwater runoff. In rare cases, where the impact on stormwater runoff is insignificant in comparison to the scale of the organisation and/or project, teams may apply to have this credit deemed not applicable with supporting documentation. However, the reviewer may exercise his/her discretion in determining what constitutes an insignificant impact on stormwater runoff in the context of the organisation and/or project."
+      },
+      {
+        "question": "Does the organisation and/or the project include an erosion, sedimentation, and pollution control plan for all construction activities?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Manage Stormwater"
+      },
+      {
+        "question": "Does the organisation and/or the project treat stormwater from other sites or does it function as part of a larger stormwater management plan?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Manage Stormwater"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Reduce Pesticide and Fertilizer Impacts",
+        "subsectionTitle": "Reduce Pesticide and Fertilizer Impacts",
+        "subsectionIntent": "Intent: Reduce non-point-source pollution by reducing the quantity, toxicity, bioavailability, and persistence of pesticides and fertilizers.",
+        "subsectionMetric": "Metric: Reductions in quantity, toxicity, bioavailability, and persistence of pesticides and fertilizers used on site, selection of plant species, and use of integrated pest management techniques.",
+        "subsectionDescription": "Applicability: Consideration is given as to whether the scope of the organisation and/or project includes exterior vegetated areas. Organisations and/or projects that do not include exterior vegetated areas may apply to have this credit deemed not applicable with supporting documentation."
+      },
+      {
+        "question": "Have operational policies and programs been put in place to control the application of fertilizers and pesticides?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Reduce Pesticide and Fertilizer Impacts"
+      },
+      {
+        "question": "Have runoff controls been put in place to minimize contamination of groundwater and surface water?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Reduce Pesticide and Fertilizer Impacts"
+      },
+      {
+        "question": "Has the organisation's and/or project's team selected pesticides and fertilizers that have lower toxicity, persistence, and bioavailability?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Reduce Pesticide and Fertilizer Impacts"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Protect Surface and Groundwater Quality",
+        "subsectionTitle": "Protect Surface and Groundwater Quality",
+        "subsectionIntent": "Intent: Preserve water resources by preventing pollutants from contaminating surface water and groundwater and monitoring impacts during construction and operations.",
+        "subsectionMetric": "Metric: Designs, plans, and programs instituted to prevent and monitor surface water and groundwater contamination during construction and operations.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects that contain or use hazardous and/or potentially polluting substances with the potential to contaminate water sources. In addition to chemical use, organisation or project teams should consider how chemical leaching from materials may be a source of contamination."
+      },
+      {
+        "question": "Has the organisation's and/or project's team determined the potential for surface water and/or groundwater contamination during construction and operations?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Protect Surface and Groundwater Quality"
+      },
+      {
+        "question": "Does the organisation and/or the project include spill and leak prevention and response plans, and avoid creating new pathways for contamination during construction and operations?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Protect Surface and Groundwater Quality"
+      },
+      {
+        "question": "Based on the types of impacts identified in criterion A, Does the organisation and/or the project reduces the risk of quality degradation to surface water and/or groundwater? This should include water temperature.",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Protect Surface and Groundwater Quality"
+      },
+      {
+        "question": "Have adequate and responsive surface water and/or groundwater quality monitoring and reporting systems been incorporated into the organisation and/or project?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Protect Surface and Groundwater Quality"
+      },
+      {
+        "question": "Has the organisation and/or the project actively eliminated at least one source of hazardous and/or potentially polluting substances, or replaced them with nonhazardous or nonpolluting substances or materials?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Protect Surface and Groundwater Quality"
+      },
+      {
+        "question": "Does the organisation and/or the project improve surface water and/or groundwater quality?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Conservation",
+        "subsection": "Protect Surface and Groundwater Quality"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Enhance Functional Habitats",
+        "subsectionTitle": "Enhance Functional Habitats",
+        "subsectionIntent": "Intent: Preserve and improve the functionality of terrestrial (land) habitats.",
+        "subsectionMetric": "Metric: The number of habitat functions addressed in order to preserve or enhance the net area and quality of functional habitat.",
+        "subsectionDescription": "Applicability: Consideration is given to whether the project contains or impacts natural habitat. Organisations and/or projects that do not contain or impact natural habitat may apply to have this credit deemed not applicable with supporting documentation."
+      },
+      {
+        "question": "Has the organisation's and/or project's team identified existing terrestrial habitats and sited the organisation and/or project to minimize impact?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Enhance Functional Habitats"
+      },
+      {
+        "question": "Does the organisation and/or the project increase the quantity of terrestrial habitat?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Enhance Functional Habitats"
+      },
+      {
+        "question": "Does the organisation and/or the project improve the quality of any existing or proposed new terrestrial habitat?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Enhance Functional Habitats"
+      },
+      {
+        "question": "Does the organisation and/or the project facilitate movement between terrestrial habitats, provide new connections, or remove barriers, in order to improve habitat connectivity?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Enhance Functional Habitats"
+      },
+      {
+        "question": "Does the organisation and/or the project return developed land to natural habitat, or set aside existing habitat for permanent conservation and protection?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Enhance Functional Habitats"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Enhance Wetland and Surface Water Functions",
+        "subsectionTitle": "Enhance Wetland and Surface Water Functions",
+        "subsectionIntent": "Intent: Maintain and restore the ecosystem functions of streams, wetlands, waterbodies, and their riparian areas.",
+        "subsectionMetric": "Metric: Number of functions maintained and restored.",
+        "subsectionDescription": "Applicability: Consideration is given to whether the project contains or impacts wetlands or surface waters. This includes direct, indirect, and/or cumulative impacts. Organisations and/or projects that do not contain or impact natural wetlands or surface waters may apply to have this credit deemed not applicable with supporting documentation"
+      },
+      {
+        "question": "Has the organisation's and/or project's team identified impacts to wetland and surface water functions?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Enhance Wetland and Surface Water Functions"
+      },
+      {
+        "question": "Does the organisation and/or the project protect or restore hydrologic connection?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Enhance Wetland and Surface Water Functions"
+      },
+      {
+        "question": "Does the organisation and/or the project protect or restore water quality?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Enhance Wetland and Surface Water Functions"
+      },
+      {
+        "question": "Does the organisation and/or the project protect or restore aquatic habitat?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Enhance Wetland and Surface Water Functions"
+      },
+      {
+        "question": "Does the organisation and/or the project protect sediment transport and reduce sedimentation?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Enhance Wetland and Surface Water Functions"
+      },
+      {
+        "question": "In addition to protecting all existing wetland and surface water functions, can the organisation and/or project demonstrate it has restored at least one previously degraded wetlands and/or surface water function?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Enhance Wetland and Surface Water Functions"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Maintain Floodplain Functions",
+        "subsectionTitle": "Maintain Floodplain Functions",
+        "subsectionIntent": "Intent: Preserve floodplain functions by limiting development and impacts of development in the floodplain.",
+        "subsectionMetric": "Metric: Efforts to avoid floodplains or maintain natural-acting floodplain functions.",
+        "subsectionDescription": "Applicability: Organisations and/or projects that are not within the floodplain and do not impact floodplain functions, may apply to have this credit deemed not applicable with supporting documentation. Some organisations and/or projects that are not directly within the floodplain may still have an impact on flooding and floodplain functions through their handling of stormwater runoff. These organisations and/or projects may also pursue achievement in this credit if they can demonstrate a direct connection to the floodplain. There are strong links between this credit and NW2.2 Manage Stormwater, and some project components and strategies may apply to both credits."
+      },
+      {
+        "question": "Has the organisation's and/or project's team identified the 100-year or design frequency floodplain in relation to the organisation and/or project location?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Maintain Floodplain Functions"
+      },
+      {
+        "question": "Does the organisation and/or the project mitigate impacts to floodplain functions?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Maintain Floodplain Functions"
+      },
+      {
+        "question": "Was the organisation and/or project intentionally sited to avoid floodplains?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Maintain Floodplain Functions"
+      },
+      
+      {
+        "question": "Does the organisation and/or the project remove structures from the floodplain or return previously developed areas to a vegetated state?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Maintain Floodplain Functions"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Control Invasive Species",
+        "subsectionTitle": "Control Invasive Species",
+        "subsectionIntent": "Intent: Use appropriate noninvasive species, and control or eliminate existing invasive species.",
+        "subsectionMetric": "Metric: Degree to which invasive species have been reduced or eliminated.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects with sites that contain invasive species. Organisation or project teams that conduct site investigations and do not identify existing invasive species may apply to have this credit deemed not applicable with supporting documentation."
+      },
+      {
+        "question": "Does the organisation and/or the project avoid introducing invasive species to the site?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Control Invasive Species"
+      },
+      {
+        "question": "Has the organisation's and/or project's team conducted a site assessment to determine if invasive species are present?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Control Invasive Species"
+      },
+      {
+        "question": "Does the organisation and/or the project implement controls for existing infestations of invasive species before, during and post-construction?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Control Invasive Species"
+      },
+      {
+        "question": "Does the organisation and/or the project guard against future infestations by supporting the establishment of native and/or noninvasive species?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Control Invasive Species"
+      },
+      {
+        "question": "Does the organisation and/or the project provide long-term controls to prevent the reintroduction of invasive species?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Control Invasive Species"
+      },
+      {
+        "question": "Does the organisation and/or the project include the ongoing control, suppression, or containment of major infestations of invasive species after construction?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Control Invasive Species"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Protect Soil Health",
+        "subsectionTitle": "Protect Soil Health",
+        "subsectionIntent": "Intent: Preserve the composition, structure and function of site soils.",
+        "subsectionMetric": "Metric: Degree to which the disruption of soil health has been minimized and restored.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects that impact soils during construction. Organisations and/or projects that do not impact soil (e.g. the internal refurbishment of an existing facility) may apply to have this credit deemed not applicable with supporting documentation."
+      },
+      {
+        "question": "Has the organisation's and/or project's team limited the area that is disturbed by development activities?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Protect Soil Health"
+      },
+      {
+        "question": "Have vegetated areas disturbed by development activities been restored for appropriate soil type, structure, and function to support healthy plant and tree growth?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Protect Soil Health"
+      },
+      {
+        "question": "Has the organisation and/or the project restored appropriate soil type, structure, and function to vegetated areas disturbed by previous development?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Ecology",
+        "subsection": "Protect Soil Health"
       }
     ]
   },
@@ -126,24 +1857,362 @@
     "title": "Climate And Resilience",
     "questions": [
       {
-        "question": "Your company actively supports local conservation efforts for endangered species.",
+        "question": "Is this credit applicable?",
         "questionType": 3,
         "agree": null,
-        "subsection": "Data Management",
-        "subsectionTitle": "Data Management and Governance",
-        "subsectionIntent": "Intent: Implement effective data management and governance practices to ensure the quality, security, and accessibility of data.",
-        "subsectionMetric": "Metric: Measures taken to assess data quality, security, and accessibility.",
-        "subsectionDescription": "Applicability: Proper data management and governance are essential for leveraging data effectively to support decision-making and improve organizational performance."
+        "section": "Emissions",
+        "subsection": "Reduce Net Embodied Carbon",
+        "subsectionTitle": "Reduce Net Embodied Carbon",
+        "subsectionIntent": "Intent: Reduce the impacts of material extraction, refinement/manufacture, and transport over the organisation and/or project life.",
+        "subsectionMetric": "Metric: Percentage of reduction in net embodied carbon of materials.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects that include the use or consumption of physical materials in construction or operation."
       },
       {
-        "question": "Your company partners with local environmental organizations for habitat restoration projects.",
+        "question": "Has the organisation's and/or project's team determined materials that are the primary contributors to embodied carbon for the project during construction and operation?",
         "questionType": 3,
         "agree": null,
-        "subsection": "Data Governance",
-        "subsectionTitle": "Data Governance and Lifecycle Management",
-        "subsectionIntent": "Intent: Establish policies and procedures for governing data throughout its lifecycle, from creation to disposal, to ensure compliance, integrity, and usability.",
-        "subsectionMetric": "Metric: Measures taken to evaluate the effectiveness of data governance and lifecycle management processes.",
-        "subsectionDescription": "Applicability: Effective data governance and lifecycle management support regulatory compliance, mitigate risks, and enhance the value and utility of data assets."
+        "section": "Emissions",
+        "subsection": "Reduce Net Embodied Carbon"
+      },
+      {
+        "question": "Has the organisation's and/or project's team calculated the primary contributors to overall embodied carbon?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Emissions",
+        "subsection": "Reduce Net Embodied Carbon"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Emissions",
+        "subsection": "Reduce Greenhouse Gas Emissions",
+        "subsectionTitle": "Reduce Greenhouse Gas Emissions",
+        "subsectionIntent": "Intent: Reduce greenhouse gas emissions during the operation of the organisation and/or project, reducing project contribution to climate change.",
+        "subsectionMetric": "Metric: Percentage of reduction in operational greenhouse gas emissions.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects that consume energy, fuel, or otherwise produce greenhouse gas emissions during their operation. Organisations and/or projects that do not include greenhouse gas emissions during operations may apply to have this credit deemed not applicable with supporting documentation. However, Organisations and/or projects that do not produce greenhouse gas emissions because of intentional planning decisions may apply for the Conserving level with supporting documentation."
+      },
+      {
+        "question": "Has the organisation's and/or project's team calculated and reported the annual greenhouse gas emissions of the organisation and/or project?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Emissions",
+        "subsection": "Reduce Greenhouse Gas Emissions"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Emissions",
+        "subsection": "Reduce Air Pollutant Emissions",
+        "subsectionTitle": "Reduce Air Pollutant Emissions",
+        "subsectionIntent": "Intent: Reduce emissions of air pollutants: particulate matter (including dust), ground-level ozone, carbon monoxide, sulfur oxides, nitrogen oxides, lead, and volatile organic compounds.",
+        "subsectionMetric": "Metric: Reduction of air pollutants compared to baseline.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects that directly produce any of the criteria pollutants. Organisations and/or projects that do not include air pollutant emissions may apply to have this credit deemed not applicable with supporting documentation. However, Organisations and/or projects that do not produce air pollutant emissions because of intentional planning decisions to choose non-polluting alternatives may apply for the Conserving level with supporting documentation."
+      },
+      {
+        "question": "Does the organisation and/or the project meet all relevant minimum air quality standards and regulations?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Emissions",
+        "subsection": "Reduce Air Pollutant Emissions"
+      },
+      {
+        "question": "Does the organisation and/or the project include the ongoing monitoring and management of direct air pollutant emissions?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Emissions",
+        "subsection": "Reduce Air Pollutant Emissions"
+      },
+      {
+        "question": "Has the organisation's and/or project's team assessed the materiality of volatile organic compounds to the health of construction workers and the project operators?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Emissions",
+        "subsection": "Reduce Air Pollutant Emissions"
+      },
+      {
+        "question": "Does the organisation and/or the project remove existing air pollutant sources?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Emissions",
+        "subsection": "Reduce Air Pollutant Emissions"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Avoid Unuitable Development",
+        "subsectionTitle": "Avoid Unuitable Development",
+        "subsectionIntent": "Intent: Minimize or avoid development on sites prone to hazards.",
+        "subsectionMetric": "Metric: The degree to which the organisation and/or project is designed and/or sited to avoid or mitigate site-related risks.",
+        "subsectionDescription": "Applicability:  Organisations and/or projects that are not located within regions at risk of site hazards, and therefore cannot demonstrate they actively avoided site hazards, may apply to have this credit deemed not applicable with supporting documentation."
+      },
+      {
+        "question": "Has the organisation's and/or project's team identified potential siting hazards, the vulnerability of the organisation and/or project to the hazard, and the potential for the project to exacerbate the hazard?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Avoid Unuitable Development"
+      },
+      {
+        "question": "Can the organisation's and/or project's team demonstrate that siting and project alternatives were seriously considered in order to minimize exposure to risk?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Avoid Unuitable Development"
+      },
+      {
+        "question": "Has the organisation's and/or project's team implemented strategies to mitigate the impact of site hazards?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Avoid Unuitable Development"
+      },
+      {
+        "question": "Can the organisation's and/or project's team demonstrate that the chosen project and site resulted in the lowest exposure to site hazards while still meeting project requirements?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Avoid Unuitable Development"
+      },
+      {
+        "question": "Was the site chosen to intentionally avoid known site hazards?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Avoid Unuitable Development"
+      },
+      {
+        "question": "Does the organisation and/or the project remove or modify structures subject to frequent damage?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Avoid Unuitable Development"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Assess Climate Change Vulnerability",
+        "subsectionTitle": "Assess Climate Change Vulnerability",
+        "subsectionIntent": "Intent: Develop a comprehensive climate change vulnerability assessment.",
+        "subsectionMetric": "Metric: Scope and comprehensiveness of climate change vulnerability assessment.",
+        "subsectionDescription": "Applicability: This credit is applicable to all organisations and/or projects potentially impacted by climate change, which is the vast majority of infrastructure."
+      },
+      {
+        "question": "Has the organisation's and/or project's team determined climate change threats to the organisation and/or project and its surroundings?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Assess Climate Change Vulnerability"
+      },
+      {
+        "question": "Has the organisation's and/or project's team determined the vulnerability of the organisation and/or project to climate change threats?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Assess Climate Change Vulnerability"
+      },
+      {
+        "question": "Has the organisation's and/or project's team determined the vulnerability of the infrastructure system to climate change threats?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Assess Climate Change Vulnerability"
+      },
+      {
+        "question": "Has the organisation's and/or project's team determined the vulnerability of the community to climate change threats?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Assess Climate Change Vulnerability"
+      },
+      {
+        "question": "Has the organisation's and/or project's team or owner shared their climate threat findings?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Assess Climate Change Vulnerability"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Evaluate Risk and Resilience",
+        "subsectionTitle": "Evaluate Risk and Resilience",
+        "subsectionIntent": "Intent: Conduct a comprehensive, multihazard risk and resilience evaluation.",
+        "subsectionMetric": "Metric: Scope and comprehensiveness of the multihazard risk and resilience evaluation.",
+        "subsectionDescription": "Applicability: It is likely that all organisations and/or projects would benefit from a thorough investigation of potential risks. It would, therefore, be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition. Risks are not always major catastrophic events; small and large projects alike may consider how crime/vandalism or personal injury are also potential risks with associated impacts."
+      },
+      {
+        "question": "Has the organisation's and/or project's team identified the critical functions and dependencies of the infrastructure asset and its primary components?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Evaluate Risk and Resilience"
+      },
+      {
+        "question": "Has the organisation's and/or project's team identified the threats or hazards to the organisation and/or project and its surroundings?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Evaluate Risk and Resilience"
+      },
+      {
+        "question": "Has the organisation's and/or project's team identified the vulnerabilities of the critical functions and dependencies of the infrastructure asset?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Evaluate Risk and Resilience"
+      },
+      {
+        "question": "Has the organisation's and/or project's team evaluated risks by determining the probability of a threat or hazard occurring and the associated impacts?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Evaluate Risk and Resilience"
+      },
+      {
+        "question": "Did the risk evaluation conducted by the organisation and/or the project include the participation of the owner and a diverse and integrated team of key stakeholders?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Evaluate Risk and Resilience"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Establish Resilience Goals and Strategies",
+        "subsectionTitle": "Establish Resilience Goals and Strategies",
+        "subsectionIntent": "Intent: To support increased organisation and/or project and community resilience through the establishment of clear objectives and goals.",
+        "subsectionMetric": "Metric: The degree to which resilience goals expand from initial commitments to quantifiable organisational and/or project objectives, long-term operating plans, and community-wide development plans.",
+        "subsectionDescription": "Applicability: All organisations and/or projects that are exposed to risks would benefit from establishing resilience goals and strategies. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
+      },
+      {
+        "question": "Has the organisation's and/or project's team identified the project performance goals and risk appetite of the owner?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Establish Resilience Goals and Strategies"
+      },
+      {
+        "question": "Has the organisation's and/or project's team developed risk management strategies based on a comprehensive risk evaluation?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Establish Resilience Goals and Strategies"
+      },
+      {
+        "question": "Have key stakeholders been engaged in developing resilience goals?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Establish Resilience Goals and Strategies"
+      },
+      {
+        "question": "Is the organisation and/or the project part of, or does it support, larger community resilience or climate change adaptation goals?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Establish Resilience Goals and Strategies"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Maximize Resilience",
+        "subsectionTitle": "Maximize Resilience",
+        "subsectionIntent": "Intent: Increase resilience, life-cycle system performance, and the ability to withstand hazards by maximizing durability.",
+        "subsectionMetric": "Metric: The degree to which the organisation and/or project incorporates elements that increase durability, the ability to withstand hazards, and extend useful life.",
+        "subsectionDescription": "Applicability: All organisations  and/or projects that are exposed to risks would benefit from increased resilience. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
+      },
+      {
+        "question": "Has the organisation's and/or project's team developed resilience goals and strategies based on a comprehensive risk evaluation?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Maximize Resilience"
+      },
+      {
+        "question": "Has the organisation's and/or project's team implemented resilience strategies sufficient to address major organisation and/or project risks and improve its resilience?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Maximize Resilience"
+      },
+      {
+        "question": "Has the organisation's and/or project's team periodically monitored the implementation of organisation and/or project resilience strategies and reviewed their continued effectiveness throughout organisation and/or project delivery?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Maximize Resilience"
+      },
+      {
+        "question": "Will resilience goals and strategies be incorporated into the ongoing operations and maintenance of the organisation and/or project?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Maximize Resilience"
+      },
+      {
+        "question": "Does the organisation and/or the project include methods for measuring or quantifying resilience performance targets?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Maximize Resilience"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Improve Infrastructure Integration",
+        "subsectionTitle": "Improve Infrastructure Integration",
+        "subsectionIntent": "Intent: Enhance the operational relationships and strengthen the functional integration of the organisation and/or project into connected, efficient, and diverse infrastructure systems.",
+        "subsectionMetric": "Metric: The degree to which the organisation and/or project is integrated into other connected systems, where beneficial and appropriate, in order to increase resilience and systems performance.",
+        "subsectionDescription": "Applicability: It is likely that all infrastructure would, and should, benefit from the application of an integrated systems approach. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or a project seeking an recognition."
+      },
+      {
+        "question": "Does the organisation and/or the project increase internal systems integration?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Improve Infrastructure Integration"
+      },
+      {
+        "question": "Will the infrastructure integration reduce the risk of systemic or cascading failures?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Improve Infrastructure Integration"
+      },
+      {
+        "question": "Does the organisation and/or the project increase external systems integration?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Improve Infrastructure Integration"
+      },
+      {
+        "question": "Does the organisation and/or the project integrate infrastructure networks?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Improve Infrastructure Integration"
+      },
+      {
+        "question": "Does the organisation and/or the project integrate data or monitoring systems in order to improve performance?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Resilience",
+        "subsection": "Improve Infrastructure Integration"
       }
     ]
   },
@@ -151,30 +2220,352 @@
     "title": "Castling",
     "questions": [
       {
-        "question": "Your company actively supports local conservation efforts for endangered species.",
+        "question": "Is this credit applicable?",
         "questionType": 3,
         "agree": null,
-        "subsection": "Data Management",
-        "subsectionTitle": "Data Management and Governance",
-        "subsectionIntent": "Intent: Implement effective data management and governance practices to ensure the quality, security, and accessibility of data.",
-        "subsectionMetric": "Metric: Measures taken to assess data quality, security, and accessibility.",
-        "subsectionDescription": "Applicability: Proper data management and governance are essential for leveraging data effectively to support decision-making and improve organizational performance."
+        "section": "Communication",
+        "subsection": "Effective Communication",
+        "subsectionTitle": "Effective Communication",
+        "subsectionIntent": "Intent: To ensure that the organisation's and/or project's communication is accessible to all audiences, promoting inclusion and effective reach.",
+        "subsectionMetric": "Metric: The extent to which the organisation's and/or project's communication has reached the community population.",
+        "subsectionDescription": "Applicability: It is likely that all organisations and/or projects can benefit from communication with the host and affected community. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or project seeking an recognition."
       },
       {
-        "question": "Your company partners with local environmental organizations for habitat restoration projects.",
+        "question": "Does the organisation's and/or project's team use a variety of media to reach the community, including traditional media (such as press, radio, and television) and digital media (such as social media and email) to disseminate information about the organisation and/or project?",
         "questionType": 3,
         "agree": null,
-        "subsection": "Data Governance",
-        "subsectionTitle": "Data Governance and Lifecycle Management",
-        "subsectionIntent": "Intent: Establish policies and procedures for governing data throughout its lifecycle, from creation to disposal, to ensure compliance, integrity, and usability.",
-        "subsectionMetric": "Metric: Measures taken to evaluate the effectiveness of data governance and lifecycle management processes.",
-        "subsectionDescription": "Applicability: Effective data governance and lifecycle management support regulatory compliance, mitigate risks, and enhance the value and utility of data assets."
+        "section": "Communication",
+        "subsection": "Effective Communication"
+      },
+      {
+        "question": "Does the organisation's and/or project's team target all community actors, including marginalized or vulnerable groups?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Communication",
+        "subsection": "Effective Communication"
+      },
+      {
+        "question": "Does the organisation's and/or project's team demonstrate effectiveness in reaching marginalized or vulnerable community groups?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Communication",
+        "subsection": "Effective Communication"
+      },
+      {
+        "question": "Has the organisation's and/or project's team incorporated new technologies to generate innovative and effective communication targeted to all community members?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Communication",
+        "subsection": "Effective Communication"
+      },
+      {
+        "question": " Has the organisation's and/or project's team managed to minimize the negative impact on the community by addressing the potential negative effects of its communication",
+        "questionType": 3,
+        "agree": null,
+        "section": "Communication",
+        "subsection": "Effective Communication"
+      },
+      {
+        "question": "Has the organisation's and/or project's team contributed to the restoration of natural or social systems through its communication?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Communication",
+        "subsection": "Effective Communication"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Communication",
+        "subsection": "Transparency",
+        "subsectionTitle": "Transparency",
+        "subsectionIntent": "Intent: To ensure access to clear and accurate information about the organisation's and/or project's activities, impact, and commitments.",
+        "subsectionMetric": "Metric: Percentage of published information that meets the criteria of clarity, accuracy, and relevance.",
+        "subsectionDescription": "Applicability: Transparency in communications is expected to be beneficial for most organisations and/or projects. It would therefore be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or project seeking an recognition."
+      },
+      {
+        "question": "Does the organisation's and/or project's team regularly publish clear, accurate, and up-to-date information about their activities, impact, and commitments?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Communication",
+        "subsection": "Transparency"
+      },
+      {
+        "question": "Does the organisation's and/or project's team use clear and understandable language in their communications to ensure that all stakeholders can understand the information?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Communication",
+        "subsection": "Transparency"
+      },
+      {
+        "question": "Has the organisation's and/or project's team established effective and accessible communication channels for the community to request and obtain additional information when needed?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Communication",
+        "subsection": "Transparency"
+      },
+      {
+        "question": "Does the organisation's and/or project's team encourage community participation in content creation by soliciting their feedback, ideas, or contributions?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Communication",
+        "subsection": "Transparency"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Communication",
+        "subsection": "Responsibility",
+        "subsectionTitle": "Responsibility",
+        "subsectionIntent": "Intent: To demonstrate accountability in the organisation's and/or project's communications to the community, avoiding greenwashing/colorwashing.",
+        "subsectionMetric": "Metric: The extent to which the organisation's and/or project's team is accountable and aware of their communications with key actions to avoid greenwashing/colorwashing.",
+        "subsectionDescription": "Applicability: It is likely that all organisations and/or projects can benefit from being accountable and aware in their communications. Although the types and scope of stakeholders may vary depending on the project, it would be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or project seeking an recognition."
+      },
+      {
+        "question": "Does the organisation's and/or project's team verify and avoid making false or misleading claims about the organisation and/or project in all areas, including operations and impacts?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Communication",
+        "subsection": "Responsibility"
+      },
+      {
+        "question": "Does the organisation's and/or project's team regularly review and update all of its environmental and social claims and statements to ensure they remain accurate and relevant?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Communication",
+        "subsection": "Responsibility"
+      },
+      {
+        "question": "Does the organisation's and/or project's team provide clear explanations and concrete examples that demonstrate how their actions are aligned with the environmental and social claims they have made?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Communication",
+        "subsection": "Responsibility"
+      },
+      {
+        "question": "Does the organisation's and/or project's team conduct periodic assessments of its suppliers and partners to ensure that they also avoid making misleading communications and maintain similar standards of accountability?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Communication",
+        "subsection": "Responsibility"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Voluntary compilance",
+        "subsectionTitle": "Voluntary compilance",
+        "subsectionIntent": "Intent: Number of voluntary commitments adopted by the organisation and/or project",
+        "subsectionMetric": "Metric: Extent of organisational policies, authorities, mechanisms, education, and business processes put in place.",
+        "subsectionDescription": "Applicability: It is likely that all organisations and/or projects can benefit from aligning with the demand of the community and the national and international context. It would be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or project seeking an recognition."
+      },
+      {
+        "question": "Has the organisation's and/or project's team conducted a comprehensive analysis of the most valued sustainability standards, benchmarks, and reports by the community and the international context, such as the SDGs, ESG, GRI, ISO, among others, and has identified those that are most relevant to their organisation and/or project?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Voluntary compilance"
+      },
+      {
+        "question": "Has the organisation's and/or project's team implemented recognised and valued sustainability standards, benchmarks, and reports in their organisation and/or project?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Voluntary compilance"
+      },
+      {
+        "question": "Has the organisation's and/or project's team set challenging and ambitious goals in line with relevant sustainability standards, benchmarks, and reports, such as Net Zero 2050, emission reduction, waste management, responsible water use, among others?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Voluntary compilance"
+      },
+      {
+        "question": "Has the organisation's and/or project's team set challenging and ambitious goals in line with relevant sustainability standards, benchmarks, and reports, such as Net Zero 2030, emission reduction, waste management, responsible water use, among others?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Voluntary compilance"
+      },
+      {
+        "question": "Does the organisation's and/or project's team provide transparent and regular reports on the degree of compliance with the ambitious goals set?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Voluntary compilance"
+      },
+      {
+        "question": "Does the organisation's and/or project's team provide reports on the compliance of goals that seek the restoration and improvement of environmental and social systems, generating a positive impact on the environment?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Voluntary compilance"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Positioning and Perception",
+        "subsectionTitle": "Positioning and Perception",
+        "subsectionIntent": "Intent: To achieve positioning and generate a positive perception of the organisation and/or project in relation to the industry, competitors, and stakeholders in terms of sustainability compliance.",
+        "subsectionMetric": "Metric: The degree of performance of the organisation and/or project in terms of sustainability in relation to the industry, competitors, and stakeholders.",
+        "subsectionDescription": "Applicability:  It is likely that all organisations and/or projects can benefit from evaluating and improving their positioning in relation to the industry, competitors, and stakeholders. It would be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or project seeking an recognition."
+      },
+      {
+        "question": "Has the organisation's and/or project's team conducted a clear definition of the positioning and perception of the organisation and/or project in relation to the industry and its competitors, identifying its value proposition and differentiators in terms of sustainability?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Positioning and Perception"
+      },
+      {
+        "question": "Has the organisation's and/or project's team conducted perception surveys to understand how stakeholders perceive the positioning of the organisation and/or project in terms of sustainability and has used this data to define its positioning in relation to stakeholders?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Positioning and Perception"
+      },
+      {
+        "question": "Has the organisation's and/or project's team conducted a comprehensive evaluation of the options available to improve the positioning of the organisation and/or project in terms of sustainability in relation to the industry, its competitors, and stakeholders, and has identified concrete actions to achieve this?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Positioning and Perception"
+      },
+      {
+        "question": " Has the organisation's and/or project's team set challenging and ambitious goals to improve the positioning of the organisation and/or project in relation to the industry, its competitors, and stakeholders in terms of sustainability, and has developed clear plans and strategies to achieve these goals?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Positioning and Perception"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Pledges",
+        "subsection": "Clarity",
+        "subsectionTitle": "Clarity",
+        "subsectionIntent": "Intent: To set clear and concise promises for the organisation and/or project.",
+        "subsectionMetric": "Metric: The degree of compliance with the criteria of understandability and conciseness in the promises made by the organisation and/or project.",
+        "subsectionDescription": "Applicability: It is likely that all organisations and/or projects can benefit from setting clear promises. It would be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or project seeking an recognition."
+      },
+      {
+        "question": "Has the organisation's and/or project's team evaluated whether the promises are easily understandable for all internal stakeholders?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Pledges",
+        "subsection": "Clarity"
+      },
+      {
+        "question": "Has the organisation's and/or project's team evaluated whether the promises are understandable for both the majority of internal and external stakeholders?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Pledges",
+        "subsection": "Clarity"
+      },
+      {
+        "question": "Does the organisation's and/or project's team provide adequate information to allow a full evaluation of the promises made?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Pledges",
+        "subsection": "Clarity"
+      },
+      {
+        "question": "Does the organisation's and/or project's team adjust the language used in the promises so that they are understandable even for those who are not familiar with sustainability concepts?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Pledges",
+        "subsection": "Clarity"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Pledges",
+        "subsection": "Realism",
+        "subsectionTitle": "Realism",
+        "subsectionIntent": "Intent: To define realistic and achievable promises for the organisation and/or project.",
+        "subsectionMetric": "Metric: The degree of compliance with the promises.",
+        "subsectionDescription": "Applicability: It is likely that all organisations and/or projects can benefit from defining realistic promises. It would be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or project seeking an recognition."
+      },
+      {
+        "question": "Has the organisation's and/or project's team comprehensively evaluated the existing resources, capabilities, and challenges of the organisation and/or project before setting the promises?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Pledges",
+        "subsection": "Realism"
+      },
+      {
+        "question": "Has the organisation's and/or project's team set promises that are realistic and achievable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Pledges",
+        "subsection": "Realism"
+      },
+      {
+        "question": "Has the organisation's and/or project's team developed clear plans to meet the announced promises?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Pledges",
+        "subsection": "Realism"
+      },
+      {
+        "question": "Has the organisation's and/or project's team adequately evaluated the potential risks and challenges associated with the announced promises?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Pledges",
+        "subsection": "Realism"
+      },
+      {
+        "question": "Is this credit applicable?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Accountability",
+        "subsectionTitle": "Accountability",
+        "subsectionIntent": "Intent: To provide accountability mechanisms for the fulfilment of the organisation's and/or project's promises.",
+        "subsectionMetric": "Metric: The degree of effectiveness of the accountability mechanisms.",
+        "subsectionDescription": "Applicability: It is likely that all organisations and/or projects can benefit from stablishing accountability processes. It would be difficult to demonstrate that the credit is not relevant or applicable to an organisation and/or project seeking an recognition."
+      },
+      {
+        "question": "Has the organisation's and/or project's team established accountability mechanisms that are effective for evaluating the fulfilment of the promises?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Accountability"
+      },
+      {
+        "question": "Has the organisation's and/or project's team verified that the implemented mechanisms are adequately documented, being clear and transparent?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Accountability"
+      },
+      {
+        "question": "Does the organisation's and/or project's team guarantee that all stakeholders have access to the accountability mechanisms and the corresponding documentation?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Accountability"
+      },
+      {
+        "question": "Is an independent audit conducted of the accountability mechanisms and the documentation of the fulfilment of the promises?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Accountability"
+      },
+      {
+        "question": " Is an evaluation conducted by a public committee of the accountability mechanisms and the documentation of the fulfilment of the promises?",
+        "questionType": 3,
+        "agree": null,
+        "section": "Compilance",
+        "subsection": "Accountability"
       }
     ]
-  }
-  
-  
-  
-  
-  
+  } 
 ]
