@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { createClient, SupabaseClient } from '@supabase/supabase-js';
 import {
   filter,
   forkJoin,
@@ -8,6 +8,7 @@ import {
   shareReplay,
   switchMap,
   take,
+  from,
 } from 'rxjs';
 import { Category } from '../models/category';
 import { TestAnswers } from '../models/test-answers';
@@ -23,12 +24,19 @@ import { DatePipe } from '@angular/common';
 @Injectable({
   providedIn: 'root',
 })
-
 export class ApiService {
   private testData$?: Observable<Category[]> | undefined;
-  firebaseUrl = environment.firebase.databaseUrl;
+  private supabase: SupabaseClient;
 
-  constructor(private datePipe: DatePipe, private http: HttpClient, private appService: AppService, private dataService: DataService) {
+  constructor(
+    private datePipe: DatePipe,
+    private appService: AppService,
+    private dataService: DataService
+  ) {
+    this.supabase = createClient(
+      environment.supabase.url,
+      environment.supabase.key
+    );
   }
 
   sendData(): void {
@@ -37,141 +45,145 @@ export class ApiService {
       param2: 'value98'
     };
 
-    this.dataService.sendDataToBackend(data)
+    from(this.supabase.from('your_table').insert(data))
       .subscribe(response => {
-        console.log('Response from backend:', response);
-      }, error => {
-        console.error('Error:', error);
+        if (response.error) {
+          console.error('Error:', response.error);
+        } else {
+          console.log('Data saved to Supabase:', response.data);
+        }
       });
   }
 
   getTestData(): Observable<Category[]> {
     if (!this.testData$) {
-      this.testData$ = this.http
-        .get<Category[]>('assets/data/test-data.json')
+      this.testData$ = from(this.supabase
+        .from('test_data')
+        .select('*')
+        .then(({ data, error }) => {
+          if (error) throw error;
+
+          return JSON.parse(data[0].questions) as Category[];
+        }))
         .pipe(shareReplay());
     }
-
     return this.testData$;
   }
+
   getfullTestData(): Observable<Category[]> {
     if (!this.testData$) {
       const fulltestString = localStorage.getItem("fullTest");
       const fulltest = fulltestString ? JSON.parse(fulltestString) : null;
       if (fulltest) {
-        this.testData$ = of(fulltest); // Convierte fulltest en un observable usando of() de RxJS
+        this.testData$ = of(fulltest);
       } else {
-        // Si no hay datos en el almacenamiento local, devuelve un observable vacío
         this.testData$ = of([]);
       }
     }
     return this.testData$;
   }
+
   getResources(): Observable<Resource[]> {
-    return this.http.get<Resource[]>('assets/data/resources.json');
+    return from(this.supabase
+      .from('resources')
+      .select('*')
+      .then(({ data, error }) => {
+        if (error) throw error;
+        return data as Resource[];
+      }));
   }
 
   getResults(): Observable<Result[]> {
-    return this.http.get<Result[]>('assets/data/results.json');
+    return from(this.supabase
+      .from('results')
+      .select('*')
+      .then(({ data, error }) => {
+        if (error) throw error;
+        return data as Result[];
+      }));
   }
 
-  saveUserData(user: User): Observable<FirebaseResponse> {
-    return this.http.post<FirebaseResponse>(
-      this.firebaseUrl + 'users.json',
-      user
-    );
+  saveUserData(user: User): Observable<any> {
+    return from(this.supabase
+      .from('users')
+      .insert(user)
+      .then(({ data, error }) => {
+        if (error) throw error;
+        return data;
+      }));
   }
 
-  updateUserData(userId: string, user: User): Observable<Partial<User>> {
-    return this.http.put<Partial<User>>(
-      this.firebaseUrl + `users/${userId}.json`,
-      user
-    );
+  updateUserData(userId: string, user: User): Observable<any> {
+    return from(this.supabase
+      .from('users')
+      .update(user)
+      .eq('id', userId)
+      .then(({ data, error }) => {
+        if (error) throw error;
+        return data;
+      }));
   }
+
   getAnswers(
     { answers }: TestAnswers,
     userIdInfo: string
-  ): Observable<FirebaseResponse> {
+  ): Observable<any> {
     return forkJoin([
-      // Combine multiple Observables into a single Observable
       this.appService.userInfo$.pipe(filter(Boolean), take(1)),
-      // Retrieve user information from the app service
-
       this.getTestData(),
-      // Retrieve test data from the server
     ]).pipe(
-      switchMap(([{ id: userIdInfo, ...user }, categories]) =>
-        // Map and switch to another Observable, using the combined results
-        this.http.put<FirebaseResponse>(
-          this.firebaseUrl + `users/${userIdInfo}.json`,
-          // Make an HTTP PUT request to update user data in Firebase
-          {
-            ...user,
-            // Spread user information
-            time: new Date().toString(),
-            // Add current timestamp to indicate the time of submission
-            answers: categories.map((category, ci) => ({
-              // Map through categories to structure the answers
-              category: category.title,
-              // Include the category title
-              questions: category.questions.map((question, qi) => ({
-                // Map through questions within each category
-                ...question,
-                // Spread question information
-                ...answers[ci][qi],
-                // Include the answers for each question
-              })),
+      switchMap(([{ id: userIdInfo, ...user }, categories]) => {
+        const updatedUser = {
+          ...user,
+          time: new Date().toString(),
+          answers: categories.map((category, ci) => ({
+            category: category.title,
+            questions: category.questions.map((question, qi) => ({
+              ...question,
+              ...answers[ci][qi],
             })),
-            // Map through questions and include answers for each category
-          }
-        )
-      )
+          })),
+        };
+        
+        return from(this.supabase
+          .from('users')
+          .update(updatedUser)
+          .eq('id', userIdInfo)
+          .then(({ data, error }) => {
+            if (error) throw error;
+            return data;
+          }));
+      })
     );
   }
 
-  submitAnswers({ answers }: TestAnswers): Observable<FirebaseResponse> {
-    // Function to submit test answers to the server
-    // Log a message indicating that the function has been called
-
+  submitAnswers({ answers }: TestAnswers): Observable<any> {
     return forkJoin([
-      // Combine multiple Observables into a single Observable
       this.appService.userInfo$.pipe(filter(Boolean), take(1)),
-      // Retrieve user information from the app service
-
       this.getTestData(),
-      // Retrieve test data from the server
     ]).pipe(
-      switchMap(([{ id: userId, ...user }, categories]) =>
-        // Map and switch to another Observable, using the combined results
-        this.http.put<FirebaseResponse>(
-          this.firebaseUrl + `users/${userId}.json`,
-          // Make an HTTP PUT request to update user data in Firebase
-          {
-            ...user,
-            // Spread user information
-            time: new Date().toString(),
-            // Add current timestamp to indicate the time of submission
-            answers: categories.map((category, ci) => ({
-              // Map through categories to structure the answers
-              category: category.title,
-              // Include the category title
-              questions: category.questions.map((question, qi) => ({
-                // Map through questions within each category
-                ...question,
-                // Spread question information
-                ...answers[ci][qi],
-                // Include the answers for each question
-              })),
+      switchMap(([{ id: userId, ...user }, categories]) => {
+        const updatedUser = {
+          ...user,
+          time: new Date().toString(),
+          answers: categories.map((category, ci) => ({
+            category: category.title,
+            questions: category.questions.map((question, qi) => ({
+              ...question,
+              ...answers[ci][qi],
             })),
-            // Map through questions and include answers for each category
-          }
-        )
-      )
+          })),
+        };
+        
+        return from(this.supabase
+          .from('users')
+          .update(updatedUser)
+          .eq('id', userId)
+          .then(({ data, error }) => {
+            if (error) throw error;
+            return data;
+          }));
+      })
     );
-    // End of switchMap operator
   }
-
-
-  // End of function
-
 }
