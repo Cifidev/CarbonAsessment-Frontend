@@ -10,20 +10,24 @@ export class LandingComponent implements OnInit {
   isUserInfoVisible = false;
 
   constructor(public translate: TranslateService) {
+    // Set default language
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
   }
 
   ngOnInit(): void {
   }
 
-  showUserInfo() {
+  showUserInfo() { 
     localStorage.clear();
     this.isUserInfoVisible = true;
   }
-  clickEnglish(){
-    this.translate.use('en');
-}
 
-clickSpanish(){
-  this.translate.use('es');
-}
+  clickEnglish() {
+    this.translate.use('en');
+  }
+
+  clickSpanish() {
+    this.translate.use('es');
+  }
 }

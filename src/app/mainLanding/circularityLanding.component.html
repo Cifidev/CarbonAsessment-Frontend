@@ -1,0 +1,67 @@
+<div class="landing-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <img src="assets/images/logo-white.png" alt="Circularity Finance" class="brand-logo">
+        <button (click)="toggleLanguage()" class="language-toggle">
+          {{ language === 'en' ? 'ES' : 'EN' }}
+        </button>
+      </div>
+    </header>
+  
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h2 class="title">{{ 'LANDING.TITLE' | translate }}</h2>
+        <p class="hero-subtitle">{{ 'LANDING.SUBTITLE' | translate }}</p>
+        <button (click)="startAssessment()" class="cta-button">
+          {{ 'LANDING.BUTTON' | translate }}
+        </button>
+      </div>
+      <div class="hero-background">
+        <div class="particles">
+          <div class="particle particle-1"></div>
+          <div class="particle particle-2"></div>
+          <div class="particle particle-3"></div>
+          <div class="particle particle-4"></div>
+          <div class="particle particle-5"></div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Feature Sections -->
+    <section class="features-section">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>{{ 'LANDING.DISCTITLE' | translate }}</h3>
+          <p>Evaluate your project's sustainability measures with our comprehensive assessment framework designed for quick and accurate analysis.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>{{ 'LANDING.PURPOSE' | translate }}</h3>
+          <p>Quickly identify sustainability gaps in your projects and implement targeted improvements to enhance your environmental impact.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌱</div>
+          <h3>Sustainability Impact</h3>
+          <p>Measure and improve your project's environmental footprint with our comprehensive assessment tools and actionable insights.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3>Performance Metrics</h3>
+          <p>Track and analyze key sustainability indicators to drive continuous improvement and achieve your environmental goals.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h3>Circular Economy</h3>
+          <p>Implement circular economy principles to optimize resource use, minimize waste, and create sustainable value in your projects.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>Stakeholder Engagement</h3>
+          <p>Enhance collaboration and transparency with stakeholders through our comprehensive assessment and reporting framework.</p>
+        </div>
+      </div>
+    </section>
+  </div>
